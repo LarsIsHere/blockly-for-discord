@@ -35,7 +35,7 @@
   </dialog>
   <script type="module">
     let code = "";
-    import {javascriptGenerator} from 'blockly/javascript';
+    import {javascriptGenerator} from './node_modules/blockly/javascript';
     function updateCode(event) {
       code = javascriptGenerator.workspaceToCode(workspace);
     }
