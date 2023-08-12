@@ -4,7 +4,7 @@ this site has not been finished yet and is not functional.
 
 Idea based on https://github.com/scratch-for-discord/Web-Application_Frontend
 
-currently:
+### currently:
 - looking for contributors
 
 image:
