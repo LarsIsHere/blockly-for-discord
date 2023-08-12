@@ -21,3 +21,29 @@ Blockly.Blocks['math_change'] = {
   }
 };
 
+var thingjson = {
+  "message0": "%1",
+  "args0": [
+    {
+      "type": "field_image",
+      "src": "https://scratch-blockly.vercel.app/discord.png",
+      "width": 50,
+      "height": 50,
+      "alt": "*",
+      "flipRtl": false
+    }
+  ],
+  "nextStatement": null,
+  "colour": 230,
+  "helpUrl": ""
+};
+
+Blockly.Blocks['logo'] = {
+  init: function() {
+    this.jsonInit(thingjson);
+    var thisBlock = this;
+    this.setTooltip(function() {
+      return 's';
+    });
+  }
+};
