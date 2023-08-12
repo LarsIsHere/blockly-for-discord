@@ -33,7 +33,7 @@
   </dialog>
   <script type="module">
     let code = "";
-    import {javascriptGenerator} from "./javascript";
+    import javascriptGenerator from "./javascript/javascriptGenerator.js";
     function updateCode(event) {
       code = javascriptGenerator.workspaceToCode(workspace);
     }
