@@ -32,12 +32,13 @@
     <hr>
     <button class="btn" id="close">Close</button>
   </dialog>
-  <script>
+  <script type="module">
     let code = "";
-      //code = javascriptGenerator.workspaceToCode(workspace);
-    Blockly.getMainWorkspace().onchange = (event) => {
-      code = Blockly.JavaScript.workspaceToCode(Blockly.getMainWorkspace())
+    import {javascriptGenerator} from 'blockly/javascript';
+    function updateCode(event) {
+      code = javascriptGenerator.workspaceToCode(workspace);
     }
+    workspace.addChangeListener(updateCode);
     const open = document.getElementById("open");
     const dialog = document.getElementById("dialogJS");
     const close = document.getElementById("close");
