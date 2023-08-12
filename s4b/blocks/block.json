@@ -1,0 +1,16 @@
+[{
+    "type": "fetch_html",
+    "message0": "Get HTML from %1",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "url",
+        "align": "CENTRE"
+      }
+    ],
+    "inputsInline": true,
+    "output": null,
+    "colour": 230,
+    "tooltip": "Gets the html code of a website (e.g. https://google.com)",
+    "helpUrl": ""
+  }]

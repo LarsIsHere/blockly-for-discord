@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@blockly/theme-dark": "^4.0.10",
+    "@blockly/zoom-to-fit": "^3.0.16"
+  }
+}
