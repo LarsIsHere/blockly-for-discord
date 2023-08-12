@@ -39,7 +39,7 @@
       //code = javascriptGenerator.workspaceToCode(workspace);
       code = Blockly.JavaScript.workspaceToCode(Blockly.getMainWorkspace())
     }
-    workspace.addChangeListener(updateCode);
+    document.getElementById("blocklyDiv").addChangeListener(updateCode);
     const open = document.getElementById("open");
     const dialog = document.getElementById("dialogJS");
     const close = document.getElementById("close");
