@@ -33,7 +33,7 @@
   </dialog>
   <script type="module">
     let code = "";
-    import {javascriptGenerator} from https://unpkg.com/blockly/javascript_compressed
+    import {javascriptGenerator} from blockly/generators/javascript;
     function updateCode(event) {
       code = javascriptGenerator.workspaceToCode(workspace);
     }
