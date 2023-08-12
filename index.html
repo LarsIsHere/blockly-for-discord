@@ -33,13 +33,11 @@
     <button class="btn" id="close">Close</button>
   </dialog>
   <script>
-    //const {javascriptGenerator} = require('blockly/javascript');
     let code = "";
-    function updateCode(event) {
       //code = javascriptGenerator.workspaceToCode(workspace);
+    document.getElementById("blocklyDiv").onchange = (event) => {
       code = Blockly.JavaScript.workspaceToCode(Blockly.getMainWorkspace())
     }
-    document.getElementById("blocklyDiv").addChangeListener(updateCode);
     const open = document.getElementById("open");
     const dialog = document.getElementById("dialogJS");
     const close = document.getElementById("close");
