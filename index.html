@@ -33,7 +33,7 @@
     <button class="btn" id="close">Close</button>
   </dialog>
   <script>
-    import {javascriptGenerator} from 'blockly/javascript';
+    const {javascriptGenerator} = require('blockly/javascript');
     let code = "";
     function updateCode(event) {
       code = javascriptGenerator.workspaceToCode(workspace);
