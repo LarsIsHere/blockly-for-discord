@@ -22,7 +22,9 @@ function start() {
           pinch: true},
      trashcan: true
     });
-
+    Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
+      return 1;
+    };
     
 }
 
