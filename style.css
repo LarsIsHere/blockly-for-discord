@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #121a2b;
+  font-family: sans-serif;
+  overflow: hidden;
+  margin-left: 0%;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 140%;
+  margin: 10px;
+}
+
+#blocklyDiv {
+  float: bottom;
+  height: 95%;
+  width: 100%;
+  color: white;
+  
+}
+.blocklyTreeRow {
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 0.5em;
+border-radius: 5px;
+  
+}
+
+.blocklyToolboxDiv{
+  width: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  background-color: #07090f;
+  min-width: max-content;
+}
+
+.blocklySvg {
+  background-color: #121a2b;
+  border-radius: 5px;
+}
+
+nav{
+  background-color: transparent;
+  height: max-content;
+  margin-left: 0.5%;
+}
+
+.blocklyFlyoutBackground{
+  fill: #07090f;
+}
+
+.btn{
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0058cc;
+  padding: 5px 15px;
+  border: solid #0168ce 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition : 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #0080ff;
+  border: solid #0080ff 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btn:active{
+  background-color: #006fee;
+  border: solid #006eed 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}

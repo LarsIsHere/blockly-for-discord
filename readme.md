@@ -1,12 +1,12 @@
 # Welcome to Blockly for Scratch
+The site is not been finished and parts of it are not functional\
+You can visit the site at https://scratch-blockly.vercel.app/
 
-this site has not been finished yet and is not functional, your still invited to visit the site https://scratch-blockly.vercel.app/
-
-
-Idea based on https://github.com/scratch-for-discord/Web-Application_Frontend
+Based on https://github.com/scratch-for-discord/Web-Application_Frontend
 
 ### currently:
-- looking for contributors
+- Looking for contributors
+- Making export functional
 
 image:
-![image](https://github.com/LarsIsHere/scratch-blockly/assets/118752107/47f07acd-4a00-449e-9789-7c3113194dbd)
+![image](https://github.com/LarsIsHere/scratch-blockly/assets/109528211/91bdd84c-7572-4095-bbdc-0127b4ea03e3)
