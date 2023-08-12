@@ -1,6 +1,7 @@
 # Welcome to Blockly for Scratch
 
-this site has not been finished yet and is not functional.
+this site has not been finished yet and is not functional, your still invited to visit the site https://scratch-blockly.vercel.app/
+
 
 Idea based on https://github.com/scratch-for-discord/Web-Application_Frontend
 
