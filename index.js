@@ -1,6 +1,4 @@
 
-
-
 'use strict';
 
 let workspace = null;
@@ -25,6 +23,4 @@ function start() {
     Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
       return 1;
     };
-    
 }
-
