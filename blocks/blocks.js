@@ -34,8 +34,7 @@ var thingjson = {
     }
   ],
   "nextStatement": null,
-  "colour": 230,
-  "helpUrl": ""
+  "colour": 230
 };
 
 Blockly.Blocks['logo'] = {
