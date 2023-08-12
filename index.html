@@ -35,7 +35,7 @@
   <script>
     let code = "";
       //code = javascriptGenerator.workspaceToCode(workspace);
-    document.getElementById("blocklyDiv").onchange = (event) => {
+    document.getElementsByClassName("blocklyWorkspace")[0].onchange = (event) => {
       code = Blockly.JavaScript.workspaceToCode(Blockly.getMainWorkspace())
     }
     const open = document.getElementById("open");
