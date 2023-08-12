@@ -30,15 +30,22 @@
     <hr>
     <p id="code">Code go here</p>
     <hr>
-    <button id="close">
+    <button class="btn" id="close">Close</button>
   </dialog>
   <script>
+    import {javascriptGenerator} from 'blockly/javascript';
+    let code = "";
+    function updateCode(event) {
+      code = javascriptGenerator.workspaceToCode(workspace);
+    }
+    workspace.addChangeListener(updateCode);
     const open = document.getElementById("open");
     const dialog = document.getElementById("dialogJS");
     const close = document.getElementById("close");
 
   open.addEventListener("click", () => {
     dialog.showModal();
+    document.getElementById('code').innerHTML = code;
   });
 
   close.addEventListener("click", (event) => {
