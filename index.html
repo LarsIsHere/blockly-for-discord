@@ -20,11 +20,31 @@
     <tr>
       <td><img src="logo.svg" alt="logo" style="color: white; height: 52px;"></td>
       <td><h1 style="color: white;">Blockly for Discord</h1></td>
-      <td><button class="btn">export</button></td>
+      <td><button class="btn" id="open">export</button></td>
      </tr>
   </table>
 </nav>
 <body onload="start()">
+  <dialog id="dialogJS" style="width: 100%; height: 100%;">
+    <h1>JavaScript code</h1>
+    <hr>
+    <p id="code">Code go here</p>
+    <hr>
+    <button id="close">
+  </dialog>
+  <script>
+    const open = document.getElementById("open");
+    const dialog = document.getElementById("dialogJS");
+    const close = document.getElementById("close");
+
+  open.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  close.addEventListener("click", (event) => {
+    dialog.close();
+  });
+  </script>
   <div id="blocklyDiv"></div>
 
   <!-- Toolbox Definition -->
