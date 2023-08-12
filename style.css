@@ -80,3 +80,16 @@ nav{
   border: solid #006eed 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
+
+.btn{
+  background-color: #cc5800;
+  
+}
+.btn:hover{
+  background-color: #ff8000;
+  border: solid #ff8000 1px;
+}
+.btn:active{
+  background-color: #ee6f00;
+  border: solid #ed6e00 1px;
+}
