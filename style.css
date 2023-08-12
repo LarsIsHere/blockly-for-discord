@@ -70,9 +70,14 @@ nav{
   align-items: center;
   cursor: pointer;
 }
-
 .btn:hover{
   background-color: #0080ff;
   border: solid #0080ff 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btn:active{
+  transform: translateY(-2);
+  background-color: #006fee;
+  border: solid #006eed 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
