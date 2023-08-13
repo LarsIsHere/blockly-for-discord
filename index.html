@@ -25,6 +25,38 @@
   </table>
 </nav>
 <body onload="start()">
+    <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.534); color: #ffffff;">
+    <h1 color="white">JavaScript code</h1>
+    <hr>
+    <textarea readonly id="codebox" rows="10" cols="100"></textarea>
+    <hr>
+    <button class="btnred" id="close">Close</button>
+  </dialog>
+  <script type="module">
+    /*let code = "no code for now :P";
+    /*import javascriptGenerator from "./javascript/javascriptGenerator.js";
+    function updateCode(event) {
+      code = javascriptGenerator.workspaceToCode(workspace);
+    }
+    workspace.addChangeListener(updateCode);*/
+    const open = document.getElementById("open");
+    const dialog = document.getElementById("dialogJS");
+    const close = document.getElementById("close");
+
+  open.addEventListener("click", () => {
+    dialog.showModal();
+    const codebox = document.getElementById("codebox");
+    const code = Blockly.JavaScript.workspaceToCode(workspace);
+  codebox.value = code;
+
+  });
+
+  close.addEventListener("click", (event) => {
+    dialog.close();
+  });
+  </script>
+
+
   <div id="blocklyDiv"></div>
 
   <!-- Toolbox Definition -->
