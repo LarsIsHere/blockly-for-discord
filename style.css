@@ -1,14 +1,13 @@
 html, body {
   height: 100%;
 }
-
 body {
   background-color: #121a2b;
   font-family: sans-serif;
   overflow: hidden;
   margin-left: 0%;
+  margin-right: 0%;
 }
-
 h1 {
   font-weight: normal;
   font-size: 140%;
@@ -19,17 +18,14 @@ h1 {
   float: bottom;
   height: 95%;
   width: 100%;
-  color: white;
-  
+  color: #fff;
 }
 .blocklyTreeRow {
-padding-top: 5px;
-padding-bottom: 5px;
-margin-bottom: 0.5em;
-border-radius: 5px;
-  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
 }
-
 .blocklyToolboxDiv{
   width: 5%;
   padding-left: 1%;
@@ -38,18 +34,19 @@ border-radius: 5px;
   background-color: #07090f;
   min-width: max-content;
 }
-
 .blocklySvg {
-  background-color: #121a2b;
+  background-color: #101829;
   border-radius: 5px;
 }
 
 nav{
-  background-color: transparent;
+  background-color: #07090f;
   height: max-content;
+  width: 100%
+}
+.ttt{
   margin-left: 0.5%;
 }
-
 .blocklyFlyoutBackground{
   fill: #07090f;
 }
@@ -80,16 +77,44 @@ nav{
   border: solid #006eed 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
+textarea{
+  width: 100%;
+  height: 70%;
+  border-color: white;
+  background-color: #ffffff2a;
+  color:white;
+  resize:none;
+}
+.red{
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #cc0000;
+  padding: 5px 15px;
+  border: solid #ce0101 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition : 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.red:hover{
+  background-color: #ff0000;
+  border: solid #ff0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.red:active{
+  background-color: #ee0000;
+  border: solid #ed0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
 
-.btn{
-  background-color: #cc5800;
-  
-}
-.btn:hover{
-  background-color: #ff8000;
-  border: solid #ff8000 1px;
-}
-.btn:active{
-  background-color: #ee6f00;
-  border: solid #ed6e00 1px;
+dialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #fff;
 }
