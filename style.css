@@ -80,3 +80,36 @@ nav{
   border: solid #006eed 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
+textarea{
+  width: 100%;
+  height: 70%;
+  border-color: white;
+  background-color: #ffffff2a;
+  color:white;
+}
+.btnred{
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #cc0000;
+  padding: 5px 15px;
+  border: solid #ce0101 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition : 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btnred:hover{
+  background-color: #ff0000;
+  border: solid #ff0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btnred:active{
+  background-color: #ee0000;
+  border: solid #ed0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
