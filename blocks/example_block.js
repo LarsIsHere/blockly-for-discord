@@ -1,5 +1,5 @@
 
-const blockName = "s4d_string_to_number";
+const blockName = "aw_block";
 
 const blockData = {
     "message0": "%1 aw",
@@ -22,9 +22,9 @@ Blockly.Blocks[blockName] = {
     }
 };
 
-javascript.javascriptGenerator.forBlock['block_type'] = function(block, generator) {
+javascript.javascriptGenerator.forBlock['aw_block'] = function(block, generator) {
     var value_name = generator.valueToCode(block, 'STRING', javascript.Order.ATOMIC);
     // TODO: Assemble javascript into code variable.
-    var code = '...\n';
+    var code = 'awwwww';
     return code;
   };
