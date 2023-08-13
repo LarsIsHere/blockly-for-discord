@@ -16,7 +16,7 @@ const blockName = "base_main_constructor";
     }
   ],
   "nextStatement": null,
-  "colour": #ffbf00,
+  "colour": '#ffbf00',
   "tooltip": "",
   "helpUrl": ""
 };
