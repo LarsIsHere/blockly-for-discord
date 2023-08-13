@@ -9,4 +9,5 @@ Based on https://github.com/scratch-for-discord/Web-Application_Frontend
 - Adding Plugins
 
 image:
-![image](https://github.com/LarsIsHere/scratch-blockly/assets/109528211/91bdd84c-7572-4095-bbdc-0127b4ea03e3)
+![image](https://github.com/LarsIsHere/scratch-blockly/assets/118752107/ca64898e-81df-4df2-af2b-f53275f2c798)
+
