@@ -6,7 +6,7 @@ Based on https://github.com/scratch-for-discord/Web-Application_Frontend
 
 ### currently:
 - Looking for contributors
-- Making export functional
+- Adding Plugins
 
 image:
 ![image](https://github.com/LarsIsHere/scratch-blockly/assets/109528211/91bdd84c-7572-4095-bbdc-0127b4ea03e3)
