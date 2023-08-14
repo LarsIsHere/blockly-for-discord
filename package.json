@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@blockly/disable-top-blocks": "^0.4.2",
     "@blockly/theme-dark": "^4.0.10",
     "@blockly/zoom-to-fit": "^3.0.16"
   }
