@@ -23,6 +23,6 @@ function start() {
     Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
       return 1;
     };
-    
+
     workspace.addChangeListener(Blockly.Events.disableOrphans);
 }
