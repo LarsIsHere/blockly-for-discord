@@ -28,6 +28,9 @@ function start() {
     const plugin = new CrossTabCopyPaste();
     plugin.init(options, () => {
     console.log('Use this error callback to handle TypeError while pasting');
+
+    const scrollOptions = new ScrollOptions(workspace);
+    scrollOptions.init();
   });
 
     Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
