@@ -29,10 +29,14 @@ function start() {
     plugin.init(options, () => {
     console.log('Use this error callback to handle TypeError while pasting');
   });
-  
+
     Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
       return 1;
     };
 
     workspace.addChangeListener(Blockly.Events.disableOrphans);
+    const workspaceSearch = new WorkspaceSearch(workspace);
+    workspace.addChangeListener(Blockly.Events.disableOrphans);
+    workspaceSearch.init();
+    workspaceSearch.open();
 }
