@@ -20,6 +20,16 @@ function start() {
           pinch: true},
      trashcan: true
     });
+
+    const options = {
+      contextMenu: true,
+      shortcut: true,
+    }
+    const plugin = new CrossTabCopyPaste();
+    plugin.init(options, () => {
+    console.log('Use this error callback to handle TypeError while pasting');
+  });
+  
     Blockly.VerticalFlyout.prototype.getFlyoutScale = function() {
       return 1;
     };
