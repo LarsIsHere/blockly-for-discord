@@ -39,4 +39,18 @@ function start() {
     workspace.addChangeListener(Blockly.Events.disableOrphans);
     workspaceSearch.init();
     workspaceSearch.open();
+    Toastify({
+      text: "If this is your main index.js file please add a 'start bot' block.",
+      duration: 7000,
+      destination: "https://github.com/apvarun/toastify-js",
+      newWindow: true,
+      close: false,
+      gravity: "bottom", 
+      position: "center", 
+      stopOnFocus: true, 
+      style: {
+        background: "#E49B0F",
+      },
+      onClick: function(){} 
+    }).showToast();
 }
