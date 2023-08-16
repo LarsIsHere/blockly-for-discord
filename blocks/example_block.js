@@ -1,7 +1,7 @@
 
-const blockName = "aw_block";
+const ExampleBlock = "aw_block";
 
-const blockData = {
+const ExampleBlockData = {
     "message0": "%1 aw",
     "args0": [
     {
@@ -16,9 +16,9 @@ const blockData = {
     "helpUrl": ""
 };
 
-Blockly.Blocks[blockName] = {
+Blockly.Blocks[ExampleBlock] = {
     init: function() {
-        this.jsonInit(blockData);
+        this.jsonInit(ExampleBlockData);
     }
 };
 
