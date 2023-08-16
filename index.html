@@ -13,7 +13,8 @@
   <script src="https://unpkg.com/@blockly/plugin-workspace-search@8.0.2/dist/index.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
+  <script src="https://unpkg.com/@blockly/block-dynamic-connection@0.4.0/dist/index.js"></script>
+  
 <script src="blocks\b4d\base_main_constructor.js"></script>
   
   <link rel="stylesheet" href="toolbox_style.css">
@@ -209,6 +210,7 @@
       <block type="text"></block>
       <block type="text_multiline"></block>
       <block type="text_join"></block>
+      <block type="dynamic_text_join"></block>
       <block type="text_append">
         <value name="TEXT">
           <shadow type="text"></shadow>
@@ -313,6 +315,7 @@
         <mutation items="0"></mutation>
       </block>
       <block type="lists_create_with"></block>
+      <block type="dynamic_list_create"></block>
       <block type="lists_repeat">
         <value name="NUM">
           <shadow type="math_number">
