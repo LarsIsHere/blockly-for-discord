@@ -3,15 +3,15 @@ html, body {
 }
 
 body {
-  background-color: #0d131f;
-  font-family: sans-serif;
+  font-family: Arial;
   overflow: hidden;
   margin-left: 0%;
   margin-right: 0%;
+  color: white;
+  background-color: #212529;
 }
 
 h1 {
-  font-weight: normal;
   font-size: 140%;
   margin: 10px;
 }
@@ -22,6 +22,10 @@ h1 {
   width: 100%;
   color: white;
   
+}
+.ParentLeft {
+  height: 93%;
+  width: 100%;
 }
 .blocklyTreeRow {
 padding-top: 5px;
@@ -36,20 +40,22 @@ border-radius: 5px;
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 1%;
-  background-color: #07090f;
+  background-color: #333333;
   min-width: max-content;
+  border-radius: 0 0.75rem 0 0;
 }
 
 .blocklySvg {
-  background-color: #121a2b;
+  background-color: #1e1e1e;
   border-radius: 5px;
 }
 
 nav{
   background-color: transparent;
   height: max-content;
-  margin-left: 0.5%;
-  background-color: #0d131f;
+  margin-top: 0px;
+  background-color: #212529;
+  caret-color: transparent;
 }
 
 .blocklyFlyoutBackground{
@@ -57,8 +63,6 @@ nav{
 }
 
 .btn{
-  font-family: Roboto, sans-serif;
-  font-weight: 0;
   font-size: 14px;
   color: #fff;
   background-color: #0058cc;
@@ -66,7 +70,7 @@ nav{
   border: solid #0168ce 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 50px;
-  transition : 500ms;
+  transition: 500ms;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,11 +91,10 @@ textarea{
   height: 70%;
   border-color: white;
   background-color: #ffffff2a;
-  color:white;
+  color: white;
+  resize: none;
 }
 .btnred{
-  font-family: Roboto, sans-serif;
-  font-weight: 0;
   font-size: 14px;
   color: #fff;
   background-color: #cc0000;
@@ -99,7 +102,7 @@ textarea{
   border: solid #ce0101 1px;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 50px;
-  transition : 500ms;
+  transition: 500ms;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -130,4 +133,31 @@ textarea{
   color: whitesmoke;
   border-radius: 5px;
   height: 25px;
+}
+
+.btnav{
+  font-size: 14px;
+  color: #ababab;
+  background-color: #0000;
+  border: 0px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btnav:hover{
+  color: #fff;
+}
+.btnav:active{
+  color: #9b9b9b;
+}
+
+dialog {
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #fff;
+  text-align: center;
+}
+.ParentLeft {
+  color: white;
 }
