@@ -119,8 +119,8 @@ textarea{
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
 .blockly-ws-search {
-  background-color: #07090f;
-  border: solid #0d131f 0.5px;
+  background-color: #212529;
+  border: solid #727272 0.5px;
   border-radius: 5px;
   box-shadow: 0px 0px 0px grey;
   justify-content: center;
@@ -129,7 +129,7 @@ textarea{
 }
 
 .blockly-ws-search-input input {
-  background: #0d131f;
+  background: #333333;
   color: whitesmoke;
   border-radius: 5px;
   height: 25px;
