@@ -130,6 +130,12 @@ textarea{
 .blockly-ws-search-close-btn {
   background: #212529;
 }
+.blockly-ws-search-next-btn {
+  background: #212529;
+}
+.blockly-ws-search-previous-btn {
+  background: #212529;
+}
 
 .blockly-ws-search-input input {
   background: #333333;
