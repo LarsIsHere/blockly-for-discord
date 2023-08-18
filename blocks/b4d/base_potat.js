@@ -1,12 +1,12 @@
 const ProcessEnv = "base_potat";
  const ProcessEnvData = {
-    "message0": "potat %1",
+    "message0": "potat",
   "args0": [
     {
     }
   ],
   "inputsInline": true,
-  "output": true,
+  "output": null,
   "colour": '#43A6C6',
   "tooltip": "love potato",
   "helpUrl": ""
