@@ -2,12 +2,12 @@ const potat = "base_potat";
  const potatdata = {
     "message0": "potat %1",
   "args0": [
-    {
+    
      {
       "type": "input_value",
       "name": "VALUE"
     }
-    }
+    
   ],
   "inputsInline": true,
   "output": null,
