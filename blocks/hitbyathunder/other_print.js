@@ -24,7 +24,7 @@ Blockly.Blocks[other_print] = {
 };
 
 javascript.javascriptGenerator.forBlock['other_print'] = function(block, generator) {
-    var value_code = generator.valueToCode(block, 'CODE', javascript.Order.ATOMIC);
+    var value_code = generator.valueToCode(block, 'PRINT_INPUT', javascript.Order.ATOMIC);
     // TODO: Assemble javascript into code variable.
     var code = `print("${input_print_input}");`;
     // TODO: Change ORDER_NONE to the correct strength.
