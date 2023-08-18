@@ -202,3 +202,10 @@ dialog {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.
+element.style {
+    text-align: left;
+}
+pre code.hljs {
+  outline: 0.5px solid #555a5f;
+}
