@@ -10,6 +10,7 @@ const potat = "base_potat";
     
   ],
   "inputsInline": true,
+  "nextStatement": true,
   "output": null,
   "colour": '#43A6C6',
   "tooltip": "love potato",
