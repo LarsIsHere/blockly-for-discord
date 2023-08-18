@@ -154,6 +154,7 @@ textarea{
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+  user-select: none;
 }
 .btnav:hover{
   color: #fff;
@@ -169,4 +170,34 @@ dialog {
 }
 .ParentLeft {
   color: white;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #16191b;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+  top: 6%;
+}
+.dropdown-content a {
+  color: #bebebe;
+  transition: 500ms;
+  padding: 11px 13px;
+  display: block;
+  text-decoration: none;
+  user-select: none;
+}
+.dropdown-content a:hover {
+  color: #fff;
+}
+.dropdown-content a:hover {
+  background-color: #1c2022;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
