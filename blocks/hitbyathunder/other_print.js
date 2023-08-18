@@ -12,7 +12,6 @@ const other_print = "other_print";
   "inputsInline": false,
   "nextStatement": null,
   "previousStatement": null,
-  "output": null,
   "colour": '#D14081',
   "tooltip": "Print something to the console",
   "helpUrl": ""
