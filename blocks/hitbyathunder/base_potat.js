@@ -3,14 +3,17 @@ const potat = "base_potat";
     "message0": "potat",
   "args0": [
     
-   {}
-    
-  ],
+        {
+      "type": "input_value",
+      "name": "potat"
+    }
+   
+ ],
   "inputsInline": true,
   "nextStatement": null,
   "previousStatement": null,
   "output": null,
-  "colour": '#43A6C6',
+  "colour": '#D14081',
   "tooltip": "love potato",
   "helpUrl": ""
  };
