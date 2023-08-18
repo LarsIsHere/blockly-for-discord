@@ -1,8 +1,12 @@
 const ProcessEnv = "base_potat";
  const ProcessEnvData = {
-    "message0": "potat",
+    "message0": "potat %1",
   "args0": [
     {
+     {
+      "type": "input_value",
+      "name": "VALUE"
+    }
     }
   ],
   "inputsInline": true,
