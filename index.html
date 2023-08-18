@@ -73,7 +73,13 @@
     const code = Blockly.JavaScript.workspaceToCode(workspace);
   codebox.value = code;
 
-     const exportp = document.getElementById("exportp");
+  });
+
+  close.addEventListener("click", (event) => {
+    dialog.close();
+  });
+
+  const exportp = document.getElementById("exportp");
 
   exportp.addEventListener("click", () => {
     
@@ -89,11 +95,7 @@
       downloadLink.click(); 
       
       document.body.removeChild(downloadLink); 
-  });
-
-  close.addEventListener("click", (event) => {
-    dialog.close();
-  });
+  })
   </script>
 
 
