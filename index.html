@@ -73,6 +73,22 @@
     const code = Blockly.JavaScript.workspaceToCode(workspace);
   codebox.value = code;
 
+     const exportp = document.getElementById("exportp");
+
+  exportp.addEventListener("click", () => {
+    
+    var exportedres = Blockly.serialization.workspaces.save(workspace);
+      var jsonText = JSON.stringify(exportedres, null, 2);
+      var blob = new Blob([jsonText], { type: "application/json" });
+      
+      var downloadLink = document.createElement("a");
+      downloadLink.href = URL.createObjectURL(blob);
+      downloadLink.download = "data.b4d-project";
+      document.body.appendChild(downloadLink);
+      
+      downloadLink.click(); 
+      
+      document.body.removeChild(downloadLink); 
   });
 
   close.addEventListener("click", (event) => {
