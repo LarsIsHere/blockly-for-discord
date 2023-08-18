@@ -1,6 +1,6 @@
 const potat = "base_potat";
  const potatdata = {
-    "message0": "potat",
+    "message0": "potat %1",
   "args0": [
     
         {
