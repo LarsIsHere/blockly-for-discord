@@ -7,7 +7,8 @@ const potat = "base_potat";
     
   ],
   "inputsInline": true,
-  "nextStatement": true,
+  "nextStatement": null,
+  "previousStatement": null,
   "output": null,
   "colour": '#43A6C6',
   "tooltip": "love potato",
