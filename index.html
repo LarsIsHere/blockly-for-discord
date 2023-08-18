@@ -15,7 +15,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://unpkg.com/@blockly/block-dynamic-connection@0.4.0/dist/index.js"></script>
 
-
+  <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
+  <script src="./highlight/highlight.min.js"></script>
+  
   <!--
     Block imports start here
   -->
@@ -52,17 +54,11 @@
     <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
     <h1 color="white">JavaScript code</h1>
     <hr>
-    <textarea readonly id="codebox" rows="10" cols="100"></textarea>
+    <pre><code class="language-javascript" id="codebox"></code></pre>
     <hr>
     <button class="btnred" id="close">Close</button>
   </dialog>
   <script type="module">
-    /*let code = "no code for now :P";
-    /*import javascriptGenerator from "./javascript/javascriptGenerator.js";
-    function updateCode(event) {
-      code = javascriptGenerator.workspaceToCode(workspace);
-    }
-    workspace.addChangeListener(updateCode);*/
     const open = document.getElementById("open");
     const dialog = document.getElementById("dialogJS");
     const close = document.getElementById("close");
@@ -71,8 +67,8 @@
     dialog.showModal();
     const codebox = document.getElementById("codebox");
     const code = Blockly.JavaScript.workspaceToCode(workspace);
-  codebox.value = code;
-
+    codebox.innerHTML = code;
+    hljs.highlightAll();
   });
 
   close.addEventListener("click", (event) => {
