@@ -1,5 +1,5 @@
-const ProcessEnv = "base_potat";
- const ProcessEnvData = {
+const potat = "base_potat";
+ const potatdata = {
     "message0": "potat %1",
   "args0": [
     {
@@ -15,9 +15,9 @@ const ProcessEnv = "base_potat";
   "tooltip": "love potato",
   "helpUrl": ""
  };
-Blockly.Blocks[ProcessEnv] = {
+Blockly.Blocks[potat] = {
     init: function() {
-        this.jsonInit(ProcessEnvData);
+        this.jsonInit(potatdata);
     }
 };
 
