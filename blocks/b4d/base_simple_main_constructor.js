@@ -8,7 +8,7 @@ const SimpleConstructorName = "base_simple_main_constructor";
       }
     ],
     "colour": 230,
-    "tooltip": "",
+    "tooltip": "This is the main block of your project. You need it to login to and use your bot!",
     "helpUrl": ""
  };
 Blockly.Blocks[SimpleConstructorName] = {

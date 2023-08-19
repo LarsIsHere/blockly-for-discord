@@ -13,7 +13,7 @@ const ConstructorName = "base_advanced_main_constructor";
       }
     ],
     "colour": 230,
-    "tooltip": "",
+    "tooltip": "Use this block if you want more control over your bot and the events that it's going to receive.",
     "helpUrl": ""
  };
 Blockly.Blocks[ConstructorName] = {
