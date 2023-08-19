@@ -448,8 +448,10 @@
     <sep></sep>
     <category name="Base" colour="#9fa55b">
       <block type="base_main_constructor">
-          <field name="TOKEN">token</field>
-      </block>
+    <shadow type="text">
+     <field name="TOKEN">token</field>
+    </shadow>
+    </block>
       <block type="base_process_env">
         <value name="CODE">
           <shadow type="text">
@@ -460,7 +462,11 @@
       
     </category>
     <category name="Other" colour="#D14081">
-     <block type="other_print"></block>
+     <block type="other_print">
+       <shadow type="text">
+  <field name="PRINTINPUT">token</field>
+</shadow>
+     </block>
     </category>
   </xml>
 
