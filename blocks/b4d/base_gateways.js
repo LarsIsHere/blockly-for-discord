@@ -1,4 +1,4 @@
-const gatewaysName = "base_gateways";
+hconst gatewaysName = "base_gateways";
  const gatewaysData = {
     "message0": "%1",
     "args0": [
@@ -95,7 +95,7 @@ const gatewaysName = "base_gateways";
     ],
     "output": null,
     "colour": 230,
-    "tooltip": "",
+    "tooltip": "Use this block with the advanced base block to define what events you want your bot to receive.",
     "helpUrl": ""
  };
 Blockly.Blocks[gatewaysName] = {
