@@ -27,5 +27,5 @@ javascript.javascriptGenerator.forBlock['other_print'] = function(block, generat
     // TODO: Assemble javascript into code variable.
     var code = `print("${value_printinput}");`;
     // TODO: Change ORDER_NONE to the correct strength.
-    return [code, javascript.Order.ATOMIC];
+    return code;
   };
