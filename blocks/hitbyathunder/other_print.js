@@ -5,7 +5,7 @@ const other_print = "other_print";
     
         {
       "type": "input_value",
-      "name": "printinput"
+      "name": "PRINTINPUT"
     }
    
  ],
