@@ -1,3 +1,4 @@
+// this is random bs. please don't use it as it will probably break your project.
 const potat = "base_potat";
  const potatdata = {
     "message0": "potat %1",
