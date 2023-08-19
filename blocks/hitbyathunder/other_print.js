@@ -5,7 +5,7 @@ const other_print = "other_print";
     
         {
       "type": "input_value",
-      "name": "print_input"
+      "name": "printinput"
     }
    
  ],
@@ -13,7 +13,7 @@ const other_print = "other_print";
   "nextStatement": null,
   "previousStatement": null,
   "colour": '#D14081',
-  "tooltip": "Print something to the console",
+  "tooltip": "Print something to the console (hbt)",
   "helpUrl": ""
  };
 Blockly.Blocks[other_print] = {
@@ -25,7 +25,7 @@ Blockly.Blocks[other_print] = {
 javascript.javascriptGenerator.forBlock['other_print'] = function(block, generator) {
     var value_code = generator.valueToCode(block, 'PRINT_INPUT', javascript.Order.ATOMIC);
     // TODO: Assemble javascript into code variable.
-    var code = `print("${input_print_input}");`;
+    var code = `print("${value_printinput}");`;
     // TODO: Change ORDER_NONE to the correct strength.
     return [code, javascript.Order.ATOMIC];
   };
