@@ -16,7 +16,7 @@ const blockName = "base_main_constructor";
   ],
   "nextStatement": null,
   "colour": '#F4B400',
-  "tooltip": "",
+  "tooltip": "This is the main block of your project. You need it to login to your bot!",
   "helpUrl": ""
  };
 Blockly.Blocks[blockName] = {

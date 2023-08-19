@@ -11,7 +11,7 @@ const ProcessEnv = "base_process_env";
   "inputsInline": true,
   "output": null,
   "colour": '#43A6C6',
-  "tooltip": "",
+  "tooltip": "This block will help you hide your token. Having your token public is a big security issue!",
   "helpUrl": ""
  };
 Blockly.Blocks[ProcessEnv] = {
