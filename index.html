@@ -24,7 +24,8 @@
   <!--
     Block imports start here
   -->
-<script src="blocks\b4d\base_main_constructor.js"></script>
+<script src="blocks\b4d\base_advanced_main_contructor.js"></script>
+<script src="blocks\b4d\base_simple_main_constructor.js"></script>
 <script src="blocks\b4d\base_process_env.js"></script>
 <script src="blocks\hitbyathunder\other_print.js"></script>
   <!--
@@ -441,7 +442,16 @@
     <category name="Functions" categorystyle="procedure_category" custom="PROCEDURE"></category>
     <sep></sep>
     <category name="Base" colour="#9fa55b">
-      <block type="base_main_constructor"></block>
+      <label text="Advanced"></label>
+      <block type="base_advanced_main_constructor">
+        <value name="intents">
+          <block type="lists_create_with">
+            <mutation items="1"></mutation>
+      </block>
+    </block>
+      <label text="Simple"></label>
+      <block type="base_simple_main_constructor"></block>
+      <label text="Other Blocks"></label>
       <block type="base_process_env">
         <value name="CODE">
           <shadow type="text">
