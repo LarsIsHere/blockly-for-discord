@@ -1,4 +1,4 @@
-hconst gatewaysName = "base_gateways";
+const gatewaysName = "base_gateways";
  const gatewaysData = {
     "message0": "%1",
     "args0": [
