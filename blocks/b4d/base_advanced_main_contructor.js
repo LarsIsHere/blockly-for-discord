@@ -35,7 +35,7 @@ javascript.javascriptGenerator.forBlock['base_advanced_main_constructor'] = func
     });
   
   client.once(Events.ClientReady, c => {
-    console.log("\`Ready! Logged in as \${c.user.tag} \`");
+    console.log(\`Ready! Logged in as \${c.user.tag} \`);
   });
   
   client.login(${value_token});\n`;
