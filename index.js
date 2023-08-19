@@ -42,7 +42,6 @@ function start() {
     Toastify({
       text: "If this is your main index.js file please add a 'start bot' block.",
       duration: 7000,
-      destination: "https://github.com/apvarun/toastify-js",
       newWindow: true,
       close: false,
       gravity: "bottom", 
