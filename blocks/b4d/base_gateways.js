@@ -94,7 +94,7 @@ const gatewaysName = "base_gateways";
       }
     ],
     "output": null,
-    "colour": 230,
+    "colour": "#008fe8",
     "tooltip": "Use this block with the advanced base block to define what events you want your bot to receive.",
     "helpUrl": ""
  };
@@ -106,8 +106,13 @@ Blockly.Blocks[gatewaysName] = {
 
 javascript.javascriptGenerator.forBlock['base_gateways'] = function(block, generator) {
     var dropdown_name = block.getFieldValue('NAME');
-    // TODO: Assemble javascript into code variable.
-    var code = '...';
+    if (dropdown_name === "all"){
+      var code = `All gateway intents go here!`;
+    }
+    else {
+      var comb = "GatewayIntentBits." + dropdown_name;
+      var code = comb;
+    }
     // TODO: Change ORDER_NONE to the correct strength.
-    return [code, javascript.ORDER.NONE];
+    return [code, javascript.Order.NONE];
   };

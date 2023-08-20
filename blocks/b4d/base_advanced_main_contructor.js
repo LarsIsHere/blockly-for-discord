@@ -12,7 +12,7 @@ const ConstructorName = "base_advanced_main_constructor";
         "check": "Array"
       }
     ],
-    "colour": 230,
+    "colour": "#009dff",
     "tooltip": "Use this block if you want more control over your bot and the events that it's going to receive.",
     "helpUrl": ""
  };

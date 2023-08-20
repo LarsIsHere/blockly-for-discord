@@ -7,7 +7,7 @@ const SimpleConstructorName = "base_simple_main_constructor";
         "name": "token"
       }
     ],
-    "colour": 230,
+    "colour": "#009dff",
     "tooltip": "This is the main block of your project. You need it to login to and use your bot!",
     "helpUrl": ""
  };
