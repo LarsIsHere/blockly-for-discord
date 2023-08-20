@@ -205,3 +205,6 @@ dialog {
 pre code.hljs {
   outline: 0.5px solid #555a5f;
 }
+.blocklyFlyoutLabelText {
+  color: #fff;
+}
