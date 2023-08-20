@@ -42,6 +42,7 @@ border-radius: 5px;
   padding-top: 1%;
   background-color: #333333;
   min-width: max-content;
+  outline: 0.5px solid #555a5f;
 }
 
 .blocklySvg {
@@ -204,4 +205,18 @@ dialog {
 }
 pre code.hljs {
   outline: 0.5px solid #555a5f;
+}
+.blocklyFlyoutButton {
+  fill: #080a10;
+}
+.blocklyFlyoutButton:hover {
+  fill: #232530;
+  padding-bottom: 5px;
+}
+.blocklyFlyoutButtonShadow {
+  fill: transparent;
+}
+*:focus {
+  outline: 0.5px solid #555a5f;
+  border-radius: 10px;
 }
