@@ -31,7 +31,7 @@ const nqData = {
     }
   ],
     "colour": "38b5cf",
-    "tooltip": 'Message author',
+    "tooltip": 'is message',
     "helpUrl": '',
     "output": 'Boolean',
 };
