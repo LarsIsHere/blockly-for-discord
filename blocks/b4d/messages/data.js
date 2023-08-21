@@ -20,10 +20,6 @@ const qData = {
           ".id"
         ],
         [
-          "message",
-          ""
-        ],
-        [
           "server id",
           ".guildId"
         ]
