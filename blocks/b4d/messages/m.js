@@ -1,6 +1,6 @@
-const qName = 'message_data';
+const nqName = 'message_data';
 
-const qData = {
+const nqData = {
     "message0": "is message %1 ?",
     "args0": [
     {
@@ -36,12 +36,12 @@ const qData = {
     "output": 'user',
 };
 
-Blockly.Blocks[qName] = {
+Blockly.Blocks[nqName] = {
     init: function() {
-        this.jsonInit(qData);
+        this.jsonInit(nqData);
     }
 };
-javascript.javascriptGenerator.forBlock[qName] = function() {
+javascript.javascriptGenerator.forBlock[nqName] = function() {
   var dropdown_name = block.getFieldValue('NAME');
   return [`message${dropdown_name}`, javascript.Order.NONE];
 };
