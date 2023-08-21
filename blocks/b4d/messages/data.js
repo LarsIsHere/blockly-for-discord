@@ -21,7 +21,7 @@ const qData = {
         ],
         [
           "message",
-          "OPTIONNAME"
+          ""
         ],
         [
           "server id",
