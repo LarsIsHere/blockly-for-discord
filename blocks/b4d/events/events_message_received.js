@@ -10,7 +10,7 @@ const EventsMessageName = "events_message_received";
         "name": "Event"
       }
     ],
-    "colour": "38b5cf",
+    "colour": "2f9aaf",
     "tooltip": "",
     "helpUrl": ""
  };
