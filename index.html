@@ -33,6 +33,8 @@
 <script src="blocks\b4d\events\events_application_command_permissions_update.js"></script>
 <script src="blocks\b4d\events\events_api_request.js"></script>
 <script src="blocks\b4d\events\events_api_response.js"></script>
+<script src="blocks\b4d\messages\data.js"></script>
+<script src="blocks\b4d\messages\m.js"></script>
   <!--
     Block imports end here
   -->
@@ -477,7 +479,14 @@
       <block type="events_api_request"></block>
       <block type="events_api_response"></block>
     </category>
-    
+    <sep></sep>
+    <category name="Messages" colour="#38b5cf">
+      <label text="Recive"></label>
+      <block type="events_message_received"></block>
+      <label text="data"></label>
+      <block type="message_data"></block>
+      <block type="message_m"></block>
+    </category>
     
     <!--<category name="Console" colour="#D14081">
      <block type="other_print">
@@ -494,5 +503,4 @@
 </body>
 
 </html>
-
 
