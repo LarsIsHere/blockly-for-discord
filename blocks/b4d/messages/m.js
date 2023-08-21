@@ -1,4 +1,4 @@
-const nqName = 'message_data';
+const nqName = 'message_m';
 
 const nqData = {
     "message0": "is message %1 ?",
