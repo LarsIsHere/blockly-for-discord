@@ -20,6 +20,10 @@ const qData = {
           ".channelId"
         ],
         [
+          "channel",
+          ".channel"
+        ],
+        [
           "object",
           ""
         ],
@@ -34,6 +38,10 @@ const qData = {
         [
           "server id",
           ".guildId"
+        ],
+        [
+          "server",
+          ".guild"
         ]
       ]
     }
@@ -41,7 +49,7 @@ const qData = {
     "colour": "38b5cf",
     "tooltip": 'Message data',
     "helpUrl": '',
-    "output": ['user',"Number","String","message","Objects"],
+    "output": ['user',"Number","String","message","Objects","server","channel"],
 };
 
 Blockly.Blocks[qName] = {
