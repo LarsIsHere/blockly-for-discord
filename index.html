@@ -33,6 +33,7 @@
 <script src="blocks\b4d\events\events_application_command_permissions_update.js"></script>
 <script src="blocks\b4d\events\events_api_request.js"></script>
 <script src="blocks\b4d\events\events_api_response.js"></script>
+<script type="module" src="blocks/b4d/messages/index.js"</script>
   <!--
     Block imports end here
   -->
@@ -452,8 +453,8 @@
         <value name="intents">
           <block type="lists_create_with">
             <mutation items="1"></mutation>
-      </block>
-     
+          </block>
+        </value>
     </block>
     <block type="base_gateways"></block>
       <label text="Simple"></label>
@@ -466,7 +467,6 @@
           </shadow>
         </value>
       </block>
-      
     </category>
     <category name="All Events" colour="#ffa200">
       <label text="Messages"></label>
@@ -477,7 +477,13 @@
       <block type="events_api_request"></block>
       <block type="events_api_response"></block>
     </category>
-    
+    <sep></sep>
+    <category name="Messages" colour="#38b5cf">
+      <label text="Recive"/>
+      <block type="events_message_received"></block>
+      <label text="data"/>
+      <block type="message_content"></block>
+    </category>
     
     <!--<category name="Console" colour="#D14081">
      <block type="other_print">
