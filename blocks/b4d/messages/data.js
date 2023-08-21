@@ -20,6 +20,10 @@ const qData = {
           ".id"
         ],
         [
+          "id",
+          ".createdTimestamp"
+        ],
+        [
           "server id",
           ".guildId"
         ]
