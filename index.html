@@ -37,6 +37,7 @@
 <script src="blocks\b4d\messages\m.js"></script>
 <script src="blocks\b4d\messages\time.js"></script>
 <script src="blocks\b4d\messages\author.js"></script>
+<script src="blocks\b4d\messages\message.js"></script>
   <!--
     Block imports end here
   -->
@@ -486,10 +487,11 @@
       <label text="Recive"></label>
       <block type="events_message_received"></block>
       <label text="data"></label>
-	  <block type="message_data"></block>
-	  <block type="message_author"></block>
-	  <block type="message_m"></block>
-	  <block type="message_time"></block>
+      <block type="message_message"></block>
+      <block type="message_data"></block>
+      <block type="message_author"></block>
+      <block type="message_m"></block>
+      <block type="message_time"></block>
     </category>
     
     <!--<category name="Console" colour="#D14081">
