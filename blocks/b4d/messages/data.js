@@ -12,15 +12,23 @@ const qData = {
           ".content"
         ],
         [
+          "author",
+          ".author"
+        ],
+        [
           "channel id",
           ".channelId"
+        ],
+        [
+          "object",
+          ""
         ],
         [
           "id",
           ".id"
         ],
         [
-          "id",
+          "message created timestamp (unix)",
           ".createdTimestamp"
         ],
         [
@@ -33,7 +41,7 @@ const qData = {
     "colour": "38b5cf",
     "tooltip": 'Message data',
     "helpUrl": '',
-    "output": 'user',
+    "output": ['user',"Number","String","message","Objects"],
 };
 
 Blockly.Blocks[qName] = {
