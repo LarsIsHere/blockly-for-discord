@@ -1,4 +1,4 @@
-# Welcome to Blockly for DISCORD
+# Welcome to Blockly for Discord
 The site is not been finished and parts of it are not functional\
 You can visit the site at [https://scratch-blockly.vercel.app/](https://blockly-for-discord.vercel.app/)
 
