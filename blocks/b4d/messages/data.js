@@ -41,7 +41,7 @@ Blockly.Blocks[qName] = {
         this.jsonInit(qData);
     }
 };
-javascript.javascriptGenerator.forBlock[qName] = function() {
+javascript.javascriptGenerator.forBlock[qName] = function(block) {
   var dropdown_name = block.getFieldValue('NAME');
   return [`message${dropdown_name}`, javascript.Order.NONE];
 };
