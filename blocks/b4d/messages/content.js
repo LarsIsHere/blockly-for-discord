@@ -1,6 +1,6 @@
-const Name = 'message_content';
+const dName = 'message_content';
 
-const Data = {
+const dData = {
     "message0": "message content",
     "colour": "38b5cf",
     "tooltip": 'Message content',
@@ -8,11 +8,11 @@ const Data = {
     "output": 'String',
 };
 
-Blockly.Blocks[Name] = {
+Blockly.Blocks[dName] = {
     init: function() {
-        this.jsonInit(Data);
+        this.jsonInit(dData);
     }
 };
-javascript.javascriptGenerator.forBlock[Name] = function() {
-    return 'message.content';
+javascript.javascriptGenerator.forBlock[dName] = function() {
+    return ['message.content', javascript.Order.NONE];
 };
