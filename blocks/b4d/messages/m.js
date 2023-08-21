@@ -33,7 +33,7 @@ const nqData = {
     "colour": "38b5cf",
     "tooltip": 'Message author',
     "helpUrl": '',
-    "output": 'user',
+    "output": 'Boolean',
 };
 
 Blockly.Blocks[nqName] = {
