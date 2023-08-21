@@ -33,7 +33,18 @@
 <script src="blocks\b4d\events\events_application_command_permissions_update.js"></script>
 <script src="blocks\b4d\events\events_api_request.js"></script>
 <script src="blocks\b4d\events\events_api_response.js"></script>
-<script src="blocks/b4d/messages/content.js"</script>
+<script src="blocks\b4d\messages\content.js"></script>
+<script src="blocks\b4d\messages\channelid.js"></script>
+<script src="blocks\b4d\messages\serverid.js"></script>
+<script src="blocks\b4d\messages\message.js"></script>
+<script src="blocks\b4d\messages\id.js"></script>
+<script src="blocks\b4d\messages\author.js"></script>
+<script src="blocks\b4d\messages\bot.js"></script>
+<script src="blocks\b4d\messages\system.js"></script>
+<script src="blocks\b4d\messages\pinned.js"></script>
+<script src="blocks\b4d\messages\tts.js"></script>
+<script src="blocks\b4d\messages\webhook.js"></script>
+<script src="blocks\b4d\messages\time.js"></script>
   <!--
     Block imports end here
   -->
@@ -453,8 +464,8 @@
         <value name="intents">
           <block type="lists_create_with">
             <mutation items="1"></mutation>
-          </block>
-        </value>
+      </block>
+     
     </block>
     <block type="base_gateways"></block>
       <label text="Simple"></label>
@@ -467,6 +478,7 @@
           </shadow>
         </value>
       </block>
+      
     </category>
     <category name="All Events" colour="#ffa200">
       <label text="Messages"></label>
@@ -479,10 +491,21 @@
     </category>
     <sep></sep>
     <category name="Messages" colour="#38b5cf">
-      <label text="Recive"/>
+      <label text="Recive"></label>
       <block type="events_message_received"></block>
-      <label text="data"/>
+      <label text="data"></label>
+	  <block type="message_message"></block>
       <block type="message_content"></block>
+	  <block type="message_id"></block>
+	  <block type="message_channelid"></block>
+	  <block type="message_serverid"></block>
+	  <block type="message_author"></block>
+	  <block type="message_time"></block>
+	  <block type="message_bot"></block>
+	  <block type="message_system"></block>
+	  <block type="message_pinned"></block>
+	  <block type="message_tts"></block>
+	  <block type="message_webhook"></block>
     </category>
     
     <!--<category name="Console" colour="#D14081">
@@ -500,5 +523,4 @@
 </body>
 
 </html>
-
 
