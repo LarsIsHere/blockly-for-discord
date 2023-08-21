@@ -8,10 +8,6 @@ const qData = {
       "name": "NAME",
       "options": [
         [
-          "author",
-          ".author"
-        ],
-        [
           "content",
           ".content"
         ],
