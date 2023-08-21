@@ -9,5 +9,6 @@ Inspired by / Based on https://github.com/scratch-for-discord/Web-Application_Fr
 - Adding Events, Themes, Settings page
 
 image:
-![image](https://github.com/LarsIsHere/scratch-blockly/assets/118752107/ca64898e-81df-4df2-af2b-f53275f2c798)
+![image](https://github.com/LarsIsHere/blockly-for-discord/assets/118752107/caf289d2-ab6a-4fe5-b086-4087623cf3c9)
+
 
