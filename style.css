@@ -220,3 +220,6 @@ pre code.hljs {
   outline: 0.5px solid #555a5f;
   border-radius: 10px;
 }
+.blocklyFlyoutLabelText {
+	filter: brightness(200);
+}
