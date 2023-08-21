@@ -31,7 +31,7 @@ const qData = {
     }
   ],
     "colour": "38b5cf",
-    "tooltip": 'Message author',
+    "tooltip": 'Message data',
     "helpUrl": '',
     "output": 'user',
 };
