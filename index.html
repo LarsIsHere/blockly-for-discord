@@ -57,12 +57,35 @@
               </div>
           </td>
           <td><button class="btnav">Settings</button></td>
-          <td><button class="btnav">Credits</button></td>
+          <td><button class="btnav" onclick="showCredits()">Credits</button></td>
       </tr>
   </table>
 </nav>
 <body onload="start()">
-    <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
+  <dialog id="creditsDialog" style="width: 75%; height: 80%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff; text-align: center;">
+    <h1 color="white">Credits</h1>
+    <h3>Project manager</h3>
+    <p>LarsIsHere</p>
+    <h3>Developers</h3>
+    <p>Inventionpro</p>
+    <h3>Contributors</h3>
+    <table>
+      <tr>
+        <td>HitByaThunder</td>
+        <td>Frostzzone</td>
+      </tr>
+    </table>
+    <button class="btnred" onclick="closeCredits()">Close</button>
+  </dialog>
+  <script>
+    function showCredits() {
+      document.getElementById("creditsDialog").showModal();
+    }
+    function closeCredits() {
+      document.getElementById("creditsDialog").close();
+    }
+  </script>
+  <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
     <h1 color="white">JavaScript code</h1>
     <hr>
     <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
