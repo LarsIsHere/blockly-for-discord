@@ -29,6 +29,8 @@
 <script src="blocks\b4d\base_process_env.js"></script>
 <script src="blocks\hitbyathunder\other_print.js"></script>
 <script src="blocks\b4d\base_gateways.js"></script>
+<script src="blocks\b4d\events\events_message_received.js"></script>
+<script src="blocks\b4d\events\events_application_command_permissions_update.js"></script>
   <!--
     Block imports end here
   -->
@@ -442,7 +444,7 @@
     <category name="Variables" categorystyle="variable_category" custom="VARIABLE"></category>
     <category name="Functions" categorystyle="procedure_category" custom="PROCEDURE"></category>
     <sep></sep>
-    <category name="Base" colour="#ffa200">
+    <category name="Base" colour="#009dff">
       <label text="Advanced"></label>
       <block type="base_advanced_main_constructor">
         <value name="intents">
@@ -464,6 +466,14 @@
       </block>
       
     </category>
+    <category name="All Events" colour="#ffa200">
+      <label text="Messages"></label>
+      <block type="events_message_received"></block>
+      <label text="Discord Applications"></label>
+      <block type="application_command_perm_update"></block>
+    </category>
+    
+    
     <!--<category name="Console" colour="#D14081">
      <block type="other_print">
      <value name="PRINTINPUT">
