@@ -1,6 +1,6 @@
-const qName = 'message_author';
+const uqName = 'message_author';
 
-const qData = {
+const uqData = {
     "message0": "message author",
     "colour": "38b5cf",
     "tooltip": 'Message author',
@@ -8,11 +8,11 @@ const qData = {
     "output": 'user',
 };
 
-Blockly.Blocks[qName] = {
+Blockly.Blocks[uqName] = {
     init: function() {
-        this.jsonInit(qData);
+        this.jsonInit(uqData);
     }
 };
-javascript.javascriptGenerator.forBlock[qName] = function() {
+javascript.javascriptGenerator.forBlock[uqName] = function() {
     return ['message.author', javascript.Order.NONE];
 };
