@@ -215,10 +215,10 @@ pre code.hljs {
 .blocklyFlyoutButtonShadow {
   fill: transparent;
 }
-*:focus {
+/**:focus {
   outline: 0.5px solid #555a5f;
   border-radius: 10px;
-}
+}*/
 
 .zelos-renderer.classic-theme .blocklyFlyoutLabelText {
   fill: rgb(201, 201, 201);
