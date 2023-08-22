@@ -11,7 +11,7 @@ const EventsMessageName = "events_message_received";
       }
     ],
     "colour": "2f9aaf",
-    "tooltip": "",
+    "tooltip": "You need this block to make the bot receive messages. Too many of these blocks can result in performance issues or the bot not responding to (some) messages",
     "helpUrl": ""
  };
 Blockly.Blocks[EventsMessageName] = {
