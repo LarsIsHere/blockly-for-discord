@@ -36,6 +36,10 @@
 <script src="blocks\b4d\events\events_api_response.js"></script>
 <script src="blocks\b4d\messages\data.js"></script>
 <script src="blocks\b4d\messages\m.js"></script>
+<script src="blocks\b4d\events\events_channel_creation.js"></script>
+<script src="blocks\b4d\events\events_channel_deletion.js"></script>
+<script src="blocks\b4d\events\events_channel_pins_update.js"></script>
+<script src="blocks\b4d\events\events_channel_updated.js"></script>
   <!--
     Block imports end here
   -->
@@ -479,10 +483,15 @@
       <label text="Client Events"></label>
       <block type="events_api_request"></block>
       <block type="events_api_response"></block>
+      <label text="Channel Events"></label>
+      <block type="events_channel_creation"></block>
+      <block type="events_channel_deletion"></block>
+      <block type="events_channel_pins_updated"></block>
+      <block type="events_channel_updated"></block>
     </category>
     <sep></sep>
     <category name="Messages" colour="#38b5cf">
-      <label text="Recive"></label>
+      <label text="Receiving Messages"></label>
       <block type="events_message_received"></block>
       <label text="data"></label>
       <block type="message_data"></block>
