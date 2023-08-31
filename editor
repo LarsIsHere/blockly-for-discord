@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blockly For Discord - Editor</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="icon" href="favicon.png">
+    <meta name="description" content="Generate pure DiscordJS code within seconds to make your very own Discord Bot">
+    <meta property="og:image" content="https://blockly-for-discord.xyz/logo.png"/>
+    <meta name="theme-color" content="#63d0ff">
+  </head>
+  <body>
+    <h2>Rederecting</h2>
+    <p>click button if it doesn't happen in 4 seconds</p>
+    <a href="/editor.html"><button class="btn">Go</button></a>
+    <script>
+      location.href="https://blockly-for-discord.xyz/editor.html";
+    </script>
+  </body>
+</html
