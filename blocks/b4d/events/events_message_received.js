@@ -23,7 +23,7 @@ Blockly.Blocks[EventsMessageName] = {
 javascript.javascriptGenerator.forBlock['events_message_received'] = function(block, generator) {
     var statements_event = generator.statementToCode(block, 'Event');
     // TODO: Assemble javascript into code variable.
-    var code = `client.on("message", (message) => {
+    var code = `client.on('messageCreate', (message) => {
         ${statements_event}
     });\n`;
     return code;
