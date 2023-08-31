@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+/*body {
+} */
+
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logotext {
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #cfcfcf;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: 500ms;
+}
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    height: 100vh;
+    background: url('test.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+}
+.content {
+    color: white;
+    max-width: 650px;
+}
+
+.content h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #659eff;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.content .button {
+    width: max-content;
+    height: max-content;
+    display: inline-flex;
+}
+
+
+.tryout {
+	background-color:#2d5fbb;
+	border-radius:10px;
+	outline: 1px solid #7d92d3;
+    margin-right: 10px;
+	display:inline-block;
+    border: none;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+    margin-top: 15px;
+}
+
+.tryout:hover {
+	background-color:#3c7ffc;
+}
+.tryout:active {
+	position:relative;
+	top:1px;
+}
+
+.docs {
+	background-color:#2d5fbb00;
+	border-radius:10px;
+	outline: 1px solid #7d92d3;
+	display:inline-block;
+    border: none;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+    margin-top: 15px;
+}
+
+.docs:hover {
+	background-color:#476e9e44;
+}
+.docs:active {
+	position:relative;
+	top:1px;
+}
