@@ -44,7 +44,7 @@
     Block imports end here
   -->
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" id="theme-link">
 </head>
 <nav>
   <a href="https://discord.gg/77XrD6UTB3" target="_blank"><img style="user-select: none; float: right; width: 25px; padding: 15px; height: 19px;" src="discord.png" alt="discord logo"></a>
@@ -62,13 +62,75 @@
                   <a>Export as ZIP</a>
               </div>
           </td>
-          <td><button class="btnav">Settings</button></td>
+          <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
           <td><button class="btnav">Credits</button></td>
       </tr>
   </table>
 </nav>
 <body onload="start()">
-    <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
+  <dialog id="settings" style="width:80%;height:60%;background-color: #16191b; outline: 0.5px solid #2e3338;">
+    <div style="background-color:#141719;text-align:left;position:absolute;top:0;left:0;right:0;"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 style="margin-left:10px;">Settings</h3></div>
+    <div style="margin-top:40px; float: left;">
+      <div style="margin-left: 10px;" class="projectname">
+        <h4 style="text-align: left;margin-bottom: 2px;">Project Name</h4>
+        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">This defines the project name when downloading the project.</p>
+        <table>
+          <tr>
+            <td>
+              <input type="text" class="setproleft" value="My Project" id="projectname"><input type="text" class="setproright" value="b4d" id="projectprefix">
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+      <div style="margin-left: 10px;" class="uitheme">
+        <h4 style="text-align: left; margin-bottom: 2px;">UI Theme</h4>
+        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px; ">With this you can change the main theme of the site. When you first visit the page, your device default will be chosen.</p>
+        <table>
+		    <tr>
+            <td>
+              <select name="theme" id="themedrop" style="padding-right: 4px;">
+                <option value="darktheme">Dark Theme</option>
+                <option value="olddarktheme">Dark Theme (old)</option>
+                <option value="lighttheme">Light Theme</option>
+              </select>
+            </td>
+            <td><button class="bluebtn">System Default</button></td>
+          <tr>
+        </table>
+      </div>
+      <div style="margin-left: 10px;">
+      <h4 style="text-align: left; margin-bottom: 2px;">Block Renderer</h4>
+      <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">Here you can change the renderer for the blocks. Changing this will require you to refresh the page.</p>
+      <table>
+		    <tr>
+            <td>
+              <select name="renderer" id="renderdrop" style="padding-right: 4px;">
+                <option value="zelos">Zelos</option>
+                <option value="geras">Geras</option>
+                <option value="minim">Minimalistic</option>
+              </select>
+            </td>
+          <tr>
+        </table>
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 style="text-align: left; margin-bottom: 2px;">Plugins</h4>
+        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
+      </div>
+      
+    </div>
+
+  </dialog>
+  <script>
+    function settingsOpen() {
+	  document.getElementById("settings").showModal();
+	}
+	function settingsClose() {
+	  document.getElementById("settings").close();
+	}
+  </script>
+  <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
     <h1 color="white">JavaScript code</h1>
     <hr>
     <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
@@ -99,10 +161,13 @@
     var exportedres = Blockly.serialization.workspaces.save(workspace);
       var jsonText = JSON.stringify(exportedres, null, 2);
       var blob = new Blob([jsonText], { type: "application/json" });
+
+      var filename = document.getElementById('projectname').value
+      var prefix = document.getElementById('projectprefix').value
       
       var downloadLink = document.createElement("a");
       downloadLink.href = URL.createObjectURL(blob);
-      downloadLink.download = "data.bdp";
+      downloadLink.download = filename + "." + prefix;
       document.body.appendChild(downloadLink);
       
       downloadLink.click(); 
@@ -514,4 +579,3 @@
 </body>
 
 </html>
-

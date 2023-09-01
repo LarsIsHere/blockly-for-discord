@@ -223,3 +223,77 @@ pre code.hljs {
 .zelos-renderer.classic-theme .blocklyFlyoutLabelText {
   fill: rgb(201, 201, 201);
 }
+
+select {
+  color: #fff;
+    border: none;
+    background-color: #16191b;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    outline: 0.5px solid #2e3338;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+}
+option {
+  color: #fff;
+  background-color: #16191b;
+}
+option:disabled {
+  background-color: #06090b;
+}
+
+.bluebtn {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006eed;
+    border:none;
+    border-radius: 0.5rem;
+    outline: 0.5px solid #1a83fa;
+    color: white;
+    transition: 500ms;
+    font-size: 20;
+    
+}
+
+.bluebtn:hover {
+  background-color: #1a83fa;
+}
+
+.settingsuicontent {
+  align-items: center;
+}
+
+.setproleft {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    border:none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: white;
+    font-size: 20;
+}
+.setproright {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    width: 25px;
+    border:none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: rgb(145, 145, 145);
+    font-size: 20;
+}
+.setproright:focus {
+  color: white;
+}
