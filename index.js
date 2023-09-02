@@ -4,6 +4,17 @@
 let workspace = null;
 
 function start() {
+  const navbar = document.getElementById('navbarr');
+
+  // Get the blocklyDiv element
+  const blocklyDiv = document.getElementById('blocklyDiv');
+  
+  // Calculate the height of the navbar and add an 8px margin at the top
+  const navbarHeight = navbar.getBoundingClientRect().height + 8; // Add 8px margin
+  
+  // Set the height of blocklyDiv to 100% - navbarHeight
+  blocklyDiv.style.height = `calc(100% - ${navbarHeight}px)`;
+
   if (localStorage.getItem("theme") === null) {
 
     if (window.matchMedia) {
