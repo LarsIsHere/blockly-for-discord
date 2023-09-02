@@ -18,7 +18,7 @@ h1 {
 
 #blocklyDiv {
   float: bottom;
-  height: 93%;
+  height: 91%;
   width: 100%;
   color: black;
   
@@ -354,8 +354,4 @@ option:disabled {
 
 hr {
 	border: 1px solid #000;
-}
-
-#blocklyDiv {
-	height: 91%;
 }
