@@ -27,7 +27,7 @@ function start() {
     var theme = localStorage.getItem("theme");
     changeTheme(theme)
 
-  } 
+  }
 
   const dropdown = document.getElementById('themedrop');
   dropdown.addEventListener('change', function() {
@@ -96,4 +96,10 @@ function start() {
       // Change the href attribute to the selected theme's CSS file
       themeLink.href = `${themeName}.css`;
   }
+  $('#dddd').hide().show(0);
+setTimeout(function(){
+var evt = document.createEvent('UIEvents');
+evt.initUIEvent('resize', true, false,window,0);
+window.dispatchEvent(evt);
+}, 500);
 }
