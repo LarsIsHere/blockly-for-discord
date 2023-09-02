@@ -18,7 +18,7 @@ h1 {
 
 #blocklyDiv {
   float: bottom;
-  height: 93%;
+  height: 91%;
   width: 100%;
   color: white;
   
@@ -51,7 +51,7 @@ border-radius: 5px;
 
 nav{
   background-color: transparent;
-  height: max-content;
+  height: 9.6%;
   margin-top: 0px;
   background-color: #212529;
   caret-color: transparent;
