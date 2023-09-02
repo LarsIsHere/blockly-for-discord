@@ -17,8 +17,7 @@ h1 {
 }
 
 #blocklyDiv {
-  float: bottom;
-  height: 93%;
+  height: 100%;
   width: 100%;
   color: white;
   

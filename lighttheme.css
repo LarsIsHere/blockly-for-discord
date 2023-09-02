@@ -8,7 +8,7 @@ html, body {
     margin-left: 0%;
     margin-right: 0%;
     color: black;
-    background-color: #c5c5c5;
+    background-color: #b0b0b0;
   }
   
   h1 {
@@ -18,7 +18,7 @@ html, body {
   
   #blocklyDiv {
     float: bottom;
-    height: 93%;
+    height: 91%;
     width: 100%;
     color: black;
     
@@ -50,12 +50,15 @@ html, body {
   }
   
   .blocklyTreeLabel {
-      color: #fff;
+      color: #eee;
+  }
+  
+  .blocklyScrollbarHandle {
+      fill: #444;
   }
   
   nav{
     background-color: transparent;
-    height: max-content;
     margin-top: 0px;
     background-color: #b0b0b0;
     caret-color: transparent;
@@ -122,7 +125,7 @@ html, body {
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   }
   .blockly-ws-search {
-    background-color: #dedad6;
+    background-color: #a5a5a5;
     border: solid #8d8d8d 0.5px;
     border-radius: 5px;
     box-shadow: 0px 0px 0px grey;
@@ -141,11 +144,15 @@ html, body {
   }
   
   .blockly-ws-search-input input {
-    background: #cccccc;
-    color: black;
+    background: #c0c0c0;
+    color: #000;
     border-radius: 5px;
     height: 25px;
     outline: 0.5px solid #d1ccc7;
+  }
+  
+  .toastify {
+      color: #000;
   }
   
   .btnav{
@@ -226,15 +233,12 @@ html, body {
   
   select {
     color: #000;
-      border: none;
-      background-color: #e9e6e4;
-      padding-top: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      outline: 0.5px solid #d1ccc7;
-      border-radius: 0.5rem;
-      margin-right: 10px;
+    border: none;
+    background-color: #e9e6e4;
+    padding: 8px 18px;
+    outline: 0.5px solid #2e3338;
+    border-radius: 0.5rem;
+    margin-right: 10px;
   }
   option {
     color: #000;
@@ -246,16 +250,16 @@ html, body {
   
   .bluebtn {
     padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006eed;
-      border:none;
-      border-radius: 0.5rem;
-      outline: 0.5px solid #1a83fa;
-      color: white;
-      transition: 500ms;
-      font-size: 20;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006eed;
+    border:none;
+    border-radius: 0.5rem;
+    outline: 0.5px solid #1a83fa;
+    color: white;
+    transition: 500ms;
+    font-size: 20;
       
   }
   
@@ -269,33 +273,33 @@ html, body {
   
   .setproleft {
     padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006fed00;
-      border:none;
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      outline: 0.5px solid #2e3338;
-      color: white;
-      font-size: 20;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    border:none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: black;
+    font-size: 20;
   }
   .setproright {
     padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006fed00;
-      width: 25px;
-      border:none;
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      outline: 0.5px solid #2e3338;
-      color: rgb(145, 145, 145);
-      font-size: 20;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #0000;
+    width: 25px;
+    border:none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: rgb(110, 110, 110);
+    font-size: 20;
   }
   .setproright:focus {
-    color: white;
+    color: black;
   }
   
   .discordico {
@@ -343,6 +347,10 @@ html, body {
   .javagendialog {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.726);
+    background-color: #8884;
     color: #000;
+  }
+  
+  hr {
+      border: 1px solid #000;
   }
