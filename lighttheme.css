@@ -1,348 +1,361 @@
 html, body {
-    height: 100%;
-  }
+  height: 100%;
+}
+
+body {
+  font-family: Arial;
+  overflow: hidden;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: black;
+  background-color: #b0b0b0;
+}
+
+h1 {
+  font-size: 140%;
+  margin: 10px;
+}
+
+#blocklyDiv {
+  float: bottom;
+  height: 93%;
+  width: 100%;
+  color: black;
   
-  body {
-    font-family: Arial;
-    overflow: hidden;
-    margin-left: 0%;
-    margin-right: 0%;
-    color: black;
-    background-color: #c5c5c5;
-  }
-  
-  h1 {
-    font-size: 140%;
-    margin: 10px;
-  }
-  
-  #blocklyDiv {
-    float: bottom;
-    height: 93%;
-    width: 100%;
-    color: black;
-    
-  }
-  .ParentLeft {
-    height: 93%;
-    width: 100%;
-  }
-  .blocklyTreeRow {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 0.5em;
+}
+.ParentLeft {
+  height: 93%;
+  width: 100%;
+}
+.blocklyTreeRow {
+padding-top: 6px;
+padding-bottom: 6px;
+margin-bottom: 0.5em;
+border-radius: 5px;
+}
+
+.blocklyToolboxDiv{
+  width: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  background-color: #b9b9b9;
+  min-width: max-content;
+  outline: 0.5px solid #AAA5A0;
+}
+
+.blocklySvg {
+  background-color: #c5c5c5;
   border-radius: 5px;
-  }
-  
-  .blocklyToolboxDiv{
-    width: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    background-color: #b9b9b9;
-    min-width: max-content;
-    outline: 0.5px solid #AAA5A0;
-  }
-  
-  .blocklySvg {
-    background-color: #c5c5c5;
-    border-radius: 5px;
-  }
-  
-  .blocklyTreeLabel {
-      color: #fff;
-  }
-  
-  nav{
-    background-color: transparent;
-    height: max-content;
-    margin-top: 0px;
-    background-color: #b0b0b0;
-    caret-color: transparent;
-  }
-  
-  .blocklyFlyoutBackground{
-    fill: #f8f6f0;
-  }
-  
-  .btn{
-    font-size: 14px;
-    color: #000;
-    background-color: #0058cc;
-    padding: 5px 15px;
-    border: solid #0168ce 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 50px;
-    transition: 500ms;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-  }
-  .btn:hover{
-    background-color: #0080ff;
-    border: solid #0080ff 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  }
-  .btn:active{
-    background-color: #006fee;
-    border: solid #006eed 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  }
-  textarea{
-    width: 100%;
-    height: 70%;
-    outline: 0.5px solid #d1ccc7;
-    background-color: #e4e4e4;
-    color: black;
-    resize: none;
-  }
-  .btnred{
-    font-size: 14px;
-    color: #fff;
-    background-color: #cc0000;
-    padding: 5px 15px;
-    border: solid #ce0101 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-    border-radius: 50px;
-    transition: 500ms;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-  }
-  .btnred:hover{
-    background-color: #ff0000;
-    border: solid #ff0000 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  }
-  .btnred:active{
-    background-color: #ee0000;
-    border: solid #ed0000 1px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  }
-  .blockly-ws-search {
-    background-color: #dedad6;
-    border: solid #8d8d8d 0.5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 0px grey;
-    justify-content: center;
-    padding: 0.5em;
-    z-index: 70;
-  }
-  .blockly-ws-search-close-btn {
-    background: #dedad6;
-  }
-  .blockly-ws-search-next-btn {
-    background: #dedad6;
-  }
-  .blockly-ws-search-previous-btn {
-    background: #dedad6;
-  }
-  
-  .blockly-ws-search-input input {
-    background: #cccccc;
-    color: black;
-    border-radius: 5px;
-    height: 25px;
-    outline: 0.5px solid #d1ccc7;
-  }
-  
-  .btnav{
-    font-size: 14px;
-    color: #545454;
-    background-color: #0000;
-    border: 0px;
-    transition: 500ms;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-  }
-  .btnav:hover{
-    color: #000000;
-  }
-  .btnav:active{
-    color: #646464;
-  }
-  
-  dialog {
-    background-color: rgba(255, 255, 255, 0.726);
-    color: #000;
-    text-align: center;
-    border: transparent;
-  }
-  .ParentLeft {
-    color: black;
-  }
-  
-  /* Dropdown content */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e9e6e4;
-    min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    z-index: 1;
-    outline: 0.5px solid #d1ccc7;
-    top: 6%;
-  }
-  .dropdown-content a {
-    color: #414141;
-    transition: 500ms;
-    padding: 11px 13px;
-    display: block;
-    text-decoration: none;
-    user-select: none;
-  }
-  .dropdown-content a:hover {
-    color: #000;
-  }
-  .dropdown-content a:hover {
-    background-color: #e3dfdd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  pre code.hljs {
-    outline: 0.5px solid #aaa5a0;
-  }
-  .blocklyFlyoutButton {
-    fill: #f7f5ef;
-  }
-  .blocklyFlyoutButton:hover {
-    fill: #dcdacf;
-    padding-bottom: 5px;
-  }
-  .blocklyFlyoutButtonShadow {
-    fill: transparent;
-  }
-  
-  .zelos-renderer.classic-theme .blocklyFlyoutLabelText {
-    fill: #363636;
-  }
-  
-  select {
-    color: #000;
-      border: none;
-      background-color: #e9e6e4;
-      padding-top: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 10px;
-      outline: 0.5px solid #d1ccc7;
-      border-radius: 0.5rem;
-      margin-right: 10px;
-  }
-  option {
-    color: #000;
-    background-color: #e9e6e4;
-  }
-  option:disabled {
-    background-color: #f9f6f4;
-  }
-  
-  .bluebtn {
-    padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006eed;
-      border:none;
-      border-radius: 0.5rem;
-      outline: 0.5px solid #1a83fa;
-      color: white;
-      transition: 500ms;
-      font-size: 20;
-      
-  }
-  
-  .bluebtn:hover {
-    background-color: #1a83fa;
-  }
-  
-  .settingsuicontent {
-    align-items: center;
-  }
-  
-  .setproleft {
-    padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006fed00;
-      border:none;
-      border-top-left-radius: 0.5rem;
-      border-bottom-left-radius: 0.5rem;
-      outline: 0.5px solid #2e3338;
-      color: white;
-      font-size: 20;
-  }
-  .setproright {
-    padding-top: 8px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 8px;
-      background-color: #006fed00;
-      width: 25px;
-      border:none;
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
-      outline: 0.5px solid #2e3338;
-      color: rgb(145, 145, 145);
-      font-size: 20;
-  }
-  .setproright:focus {
-    color: white;
-  }
-  
-  .discordico {
-    user-select: none;
-    float: right;
-    width: 25px;
-    padding: 15px;
-    height: 19px;
-  }
-  .logo {
-    user-select: none;
-    color: black;
-    height: 52px;
-    width: 52px;
-  }
-  .logotext {
-    color: black;
-    user-select: none;
-  }
-  .settingsdialog {
-    width: 80%;
-    height: 60%;
-    background-color: #e9e6e4; 
-    outline: 0.5px solid #d1ccc7;
-  }
-  
-  .dialogdiv {
-    background-color:#ebe8e6;
-    text-align:left;
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .settingsheader {
-    margin-left:10px;
-  }
-  .settingspara {
-    color: #474747;
-    text-align: left;
-    margin-top: 5px;
-  }
-  
-  .javagendialog {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.726);
-    color: #000;
-  }
+}
+
+.blocklyTreeLabel {
+	color: #eee;
+}
+
+.blocklyScrollbarHandle {
+	fill: #444;
+}
+
+nav{
+  background-color: transparent;
+  height: 9.6%;
+  margin-top: 0px;
+  background-color: #b0b0b0;
+  caret-color: transparent;
+}
+
+.blocklyFlyoutBackground{
+  fill: #f8f6f0;
+}
+
+.btn{
+  font-size: 14px;
+  color: #000;
+  background-color: #0058cc;
+  padding: 5px 15px;
+  border: solid #0168ce 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #0080ff;
+  border: solid #0080ff 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btn:active{
+  background-color: #006fee;
+  border: solid #006eed 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+textarea{
+  width: 100%;
+  height: 70%;
+  outline: 0.5px solid #d1ccc7;
+  background-color: #e4e4e4;
+  color: black;
+  resize: none;
+}
+.btnred{
+  font-size: 14px;
+  color: #fff;
+  background-color: #cc0000;
+  padding: 5px 15px;
+  border: solid #ce0101 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btnred:hover{
+  background-color: #ff0000;
+  border: solid #ff0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btnred:active{
+  background-color: #ee0000;
+  border: solid #ed0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.blockly-ws-search {
+  background-color: #a5a5a5;
+  border: solid #8d8d8d 0.5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px grey;
+  justify-content: center;
+  padding: 0.5em;
+  z-index: 70;
+}
+.blockly-ws-search-close-btn {
+  background: #dedad6;
+}
+.blockly-ws-search-next-btn {
+  background: #dedad6;
+}
+.blockly-ws-search-previous-btn {
+  background: #dedad6;
+}
+
+.blockly-ws-search-input input {
+  background: #c0c0c0;
+  color: #000;
+  border-radius: 5px;
+  height: 25px;
+  outline: 0.5px solid #d1ccc7;
+}
+
+.toastify {
+	color: #000;
+}
+
+.btnav{
+  font-size: 14px;
+  color: #545454;
+  background-color: #0000;
+  border: 0px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.btnav:hover{
+  color: #000000;
+}
+.btnav:active{
+  color: #646464;
+}
+
+dialog {
+  background-color: rgba(255, 255, 255, 0.726);
+  color: #000;
+  text-align: center;
+  border: transparent;
+}
+.ParentLeft {
+  color: black;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e9e6e4;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  outline: 0.5px solid #d1ccc7;
+  top: 6%;
+}
+.dropdown-content a {
+  color: #414141;
+  transition: 500ms;
+  padding: 11px 13px;
+  display: block;
+  text-decoration: none;
+  user-select: none;
+}
+.dropdown-content a:hover {
+  color: #000;
+}
+.dropdown-content a:hover {
+  background-color: #e3dfdd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+pre code.hljs {
+  outline: 0.5px solid #aaa5a0;
+}
+.blocklyFlyoutButton {
+  fill: #f7f5ef;
+}
+.blocklyFlyoutButton:hover {
+  fill: #dcdacf;
+  padding-bottom: 5px;
+}
+.blocklyFlyoutButtonShadow {
+  fill: transparent;
+}
+
+.zelos-renderer.classic-theme .blocklyFlyoutLabelText {
+  fill: #363636;
+}
+
+select {
+  color: #000;
+  border: none;
+  background-color: #e9e6e4;
+  padding: 8px 18px;
+  outline: 0.5px solid #2e3338;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+option {
+  color: #000;
+  background-color: #e9e6e4;
+}
+option:disabled {
+  background-color: #f9f6f4;
+}
+
+.bluebtn {
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #006eed;
+  border:none;
+  border-radius: 0.5rem;
+  outline: 0.5px solid #1a83fa;
+  color: white;
+  transition: 500ms;
+  font-size: 20;
+    
+}
+
+.bluebtn:hover {
+  background-color: #1a83fa;
+}
+
+.settingsuicontent {
+  align-items: center;
+}
+
+.setproleft {
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #006fed00;
+  border:none;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  outline: 0.5px solid #2e3338;
+  color: black;
+  font-size: 20;
+}
+.setproright {
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #0000;
+  width: 25px;
+  border:none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  outline: 0.5px solid #2e3338;
+  color: rgb(110, 110, 110);
+  font-size: 20;
+}
+.setproright:focus {
+  color: black;
+}
+
+.discordico {
+  user-select: none;
+  float: right;
+  width: 25px;
+  padding: 15px;
+  height: 19px;
+}
+.logo {
+  user-select: none;
+  color: black;
+  height: 52px;
+  width: 52px;
+}
+.logotext {
+  color: black;
+  user-select: none;
+}
+.settingsdialog {
+  width: 80%;
+  height: 60%;
+  background-color: #e9e6e4; 
+  outline: 0.5px solid #d1ccc7;
+}
+
+.dialogdiv {
+  background-color:#ebe8e6;
+  text-align:left;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.settingsheader {
+  margin-left:10px;
+}
+.settingspara {
+  color: #474747;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.javagendialog {
+  width: 100%;
+  height: 100%;
+  background-color: #8884;
+  color: #000;
+}
+
+hr {
+	border: 1px solid #000;
+}
+
+#blocklyDiv {
+	height: 91%;
+}
