@@ -47,11 +47,11 @@
   <link rel="stylesheet" href="style.css" id="theme-link">
 </head>
 <nav>
-  <a href="https://discord.gg/77XrD6UTB3" target="_blank"><img style="user-select: none; float: right; width: 25px; padding: 15px; height: 19px;" src="discord.png" alt="discord logo"></a>
+  <a href="https://discord.gg/77XrD6UTB3" target="_blank"><img class="discordico" src="discord.png" alt="discord logo"></a>
   <table style="margin-left: 0.5%">
       <tr>
-          <td><img src="logo.svg" alt="logo" style="user-select: none; color: white; height: 52px; width: 52px;"></td>
-          <a href="#"><td><h1 style="color: white; user-select: none;">Blockly for Discord</h1></td></a>
+          <td><img src="logo.svg" alt="logo" class="logo"></td>
+          <a href="#"><td><h1 class="logotext">Blockly for Discord</h1></td></a>
           
           <td class="dropdown">
               <button class="btnav">File</button>
@@ -68,12 +68,12 @@
   </table>
 </nav>
 <body onload="start()">
-  <dialog id="settings" style="width:80%;height:60%;background-color: #16191b; outline: 0.5px solid #2e3338;">
-    <div style="background-color:#141719;text-align:left;position:absolute;top:0;left:0;right:0;"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 style="margin-left:10px;">Settings</h3></div>
+  <dialog id="settings" class="settingsdialog">
+    <div class="dialogdiv"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Settings</h3></div>
     <div style="margin-top:40px; float: left;">
       <div style="margin-left: 10px;" class="projectname">
         <h4 style="text-align: left;margin-bottom: 2px;">Project Name</h4>
-        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">This defines the project name when downloading the project.</p>
+        <p class="settingspara">This defines the project name when downloading the project.</p>
         <table>
           <tr>
             <td>
@@ -85,7 +85,7 @@
       </div>
       <div style="margin-left: 10px;" class="uitheme">
         <h4 style="text-align: left; margin-bottom: 2px;">UI Theme</h4>
-        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px; ">With this you can change the main theme of the site. When you first visit the page, your device default will be chosen.</p>
+        <p class="settingspara">With this you can change the main theme of the site. When you first visit the page, your device default will be chosen.</p>
         <table>
 		    <tr>
             <td>
@@ -101,7 +101,7 @@
       </div>
       <div style="margin-left: 10px;">
       <h4 style="text-align: left; margin-bottom: 2px;">Block Renderer</h4>
-      <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">Here you can change the renderer for the blocks. Changing this will require you to refresh the page.</p>
+      <p class="settingspara">Here you can change the renderer for the blocks. Changing this will require you to refresh the page.</p>
       <table>
 		    <tr>
             <td>
@@ -116,7 +116,7 @@
       </div>
       <div style="margin-left: 10px;">
         <h4 style="text-align: left; margin-bottom: 2px;">Plugins</h4>
-        <p style="color: rgb(184, 184, 184);text-align: left; margin-top: 5px;">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
+        <p class="settingspara">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
         <button class="bluebtn">Clear Cache</button>
       </div>
       
@@ -131,8 +131,8 @@
 	  document.getElementById("settings").close();
 	}
   </script>
-  <dialog id="dialogJS" style="width: 100%; height: 100%;  background-color: rgba(0, 0, 0, 0.726); color: #ffffff;">
-    <h1 color="white">JavaScript code</h1>
+  <dialog id="dialogJS" class="javagendialog">
+    <h1>JavaScript code</h1>
     <hr>
     <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
     <hr>

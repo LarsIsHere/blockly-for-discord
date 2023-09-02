@@ -297,3 +297,52 @@ option:disabled {
 .setproright:focus {
   color: white;
 }
+
+.discordico {
+  user-select: none;
+  float: right;
+  width: 25px;
+  padding: 15px;
+  height: 19px;
+}
+.logo {
+  user-select: none; 
+  color: white; 
+  height: 52px; 
+  width: 52px;
+}
+.logotext {
+  color: white; 
+  user-select: none;
+}
+.settingsdialog {
+  width:80%;
+  height:60%;
+  background-color: #16191b; 
+  outline: 0.5px solid #2e3338;
+}
+
+.dialogdiv {
+  background-color:#141719;
+  text-align:left;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+
+.settingsheader {
+  margin-left:10px;
+}
+.settingspara {
+  color: rgb(184, 184, 184);
+  text-align: left; 
+  margin-top: 5px;
+}
+
+.javagendialog {
+  width: 100%; 
+  height: 100%;  
+  background-color: rgba(0, 0, 0, 0.726); 
+  color: #ffffff;
+}
