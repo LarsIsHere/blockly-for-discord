@@ -13,10 +13,20 @@ function start() {
     changeTheme(selectedValue)
   });
   
+  const renderdropdown = document.getElementById('renderdrop');
+  renderdropdown.addEventListener('change', function() {
+
+    const selectedValuer = renderdropdown.value;
+    localStorage.setItem("renderer", selectedValuer);
+  });
+
+  var rendererc = localStorage.getItem("renderer")
+
+  //injection @Blockly lib
   workspace = Blockly.inject('blocklyDiv',
     {
       toolbox: document.getElementById('toolbox-categories'),
-      renderer: 'zelos',
+      renderer: rendererc,
       CORNER_RADIUS: 20,
       zoom:
          {controls: true,

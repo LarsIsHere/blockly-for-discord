@@ -66,9 +66,14 @@ changeTheme(style)
 } else {
 var theme = localStorage.getItem("theme");
 changeTheme(theme)
-
 }
 
+  </script>
+
+  <script>
+    if (localStorage.getItem("renderer") === null) {
+  localStorage.setItem("renderer", "zelos")
+} 
   </script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
@@ -137,7 +142,6 @@ changeTheme(theme)
                 <select name="renderer" id="renderdrop" style="padding-right: 4px;">
                   <option value="zelos">Zelos</option>
                   <option value="geras">Geras</option>
-                  <option value="minim">Minimalistic</option>
                 </select>
               </td>
             <tr>
