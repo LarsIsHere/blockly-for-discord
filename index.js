@@ -70,6 +70,8 @@ function start() {
 function changeTheme(themeName) {
   // Get the theme link element by its ID
   const themeLink = document.getElementById('theme-link');
+  // Get dropdown
+  const dropdown = document.getElementById('themedrop');
 
   // Change the href attribute to the selected theme's CSS file
   themeLink.href = `${themeName}.css`;
