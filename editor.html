@@ -153,7 +153,15 @@ changeTheme(theme)
   
     </dialog>
     <script>
-      function settingsOpen() {
+    function settingsOpen() {
+      const dropdown = document.getElementById('themedrop');
+      let themeName = String(document.getElementById('theme-link').href).replaceAll(".css","")
+      for(var i, j = 0; i = dropdown.options[j]; j++) {
+        if(i.value == themeName) {
+          dropdown.selectedIndex = j;
+          break;
+        }
+      }
       document.getElementById("settings").showModal();
     }
     function settingsClose() {
