@@ -5,32 +5,6 @@ let workspace = null;
 
 function start() {
 
-
-  if (localStorage.getItem("theme") === null) {
-
-    if (window.matchMedia) {
-    // Check if the dark-mode Media-Query matches
-    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-  
-      localStorage.setItem("theme", "style");
-      var style = "style"
-      changeTheme(style)
-    } else {
-  
-      localStorage.setItem("theme", "lighttheme");
-      var lighttheme = "lighttheme"
-      changeTheme(lighttheme)
-    }
-  } else {
-    localStorage.setItem("theme", "style");
-    changeTheme(style)
-  }
-  } else {
-    var theme = localStorage.getItem("theme");
-    changeTheme(theme)
-
-  }
-
   const dropdown = document.getElementById('themedrop');
   dropdown.addEventListener('change', function() {
 
@@ -89,18 +63,14 @@ function start() {
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
 
+
+} 
+
   
-    function changeTheme(themeName) {
-      // Get the theme link element by its ID
-      const themeLink = document.getElementById('theme-link');
-  
-      // Change the href attribute to the selected theme's CSS file
-      themeLink.href = `${themeName}.css`;
-  }
-  $('#dddd').hide().show(0);
-setTimeout(function(){
-var evt = document.createEvent('UIEvents');
-evt.initUIEvent('resize', true, false,window,0);
-window.dispatchEvent(evt);
-}, 500);
+function changeTheme(themeName) {
+  // Get the theme link element by its ID
+  const themeLink = document.getElementById('theme-link');
+
+  // Change the href attribute to the selected theme's CSS file
+  themeLink.href = `${themeName}.css`;
 }
