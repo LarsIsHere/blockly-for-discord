@@ -46,139 +46,144 @@
   
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<nav id="navbarr">
-  <a href="https://discord.gg/77XrD6UTB3" target="_blank"><img class="discordico" src="discord.png" alt="discord logo" ></a>
-  <table style="margin-left: 0.5%">
-      <tr>
-          <td><img src="logo.svg" alt="logo" class="logo"></td>
-          <a href="#"><td><h1 class="logotext">Blockly for Discord</h1></td></a>
-          
-          <td class="dropdown">
-              <button class="btnav">File</button>
-              <div class="dropdown-content">
-                  <a>Import Project</a>
-                  <a id="exportp">Export Project</a>
-                  <a id="open">Export JavaScript</a>
-                  <a>Export as ZIP</a>
-              </div>
-          </td>
-          <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
-          <td><button class="btnav">Credits</button></td>
-      </tr>
-  </table>
-</nav>
+
 <body onload="start()">
-  <dialog id="settings" class="settingsdialog">
-    <div class="dialogdiv"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Settings</h3></div>
-    <div style="margin-top:40px; float: left;">
-      <div style="margin-left: 10px;" class="projectname">
-        <h4 style="text-align: left;margin-bottom: 2px;">Project Name</h4>
-        <p class="settingspara">This defines the project name when downloading the project.</p>
+  <div class="page">
+    <nav id="navbarr">
+      <a href="https://discord.gg/77XrD6UTB3" target="_blank"><img class="discordico" src="discord.png" alt="discord logo" ></a>
+      <table style="margin-left: 0.5%">
+          <tr>
+              <td><img src="logo.svg" alt="logo" class="logo"></td>
+              <a href="#"><td><h1 class="logotext">Blockly for Discord</h1></td></a>
+              
+              <td class="dropdown">
+                  <button class="btnav">File</button>
+                  <div class="dropdown-content">
+                      <a>Import Project</a>
+                      <a id="exportp">Export Project</a>
+                      <a id="open">Export JavaScript</a>
+                      <a>Export as ZIP</a>
+                  </div>
+              </td>
+              <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
+              <td><button class="btnav">Credits</button></td>
+          </tr>
+      </table>
+    </nav>
+  
+    <dialog id="settings" class="settingsdialog">
+      <div class="dialogdiv"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Settings</h3></div>
+      <div style="margin-top:40px; float: left;">
+        <div style="margin-left: 10px;" class="projectname">
+          <h4 style="text-align: left;margin-bottom: 2px;">Project Name</h4>
+          <p class="settingspara">This defines the project name when downloading the project.</p>
+          <table>
+            <tr>
+              <td>
+                <input type="text" class="setproleft" value="My Project" id="projectname"><input type="text" class="setproright" value="b4d" id="projectprefix">
+              </td>
+            </tr>
+          </table>
+          
+        </div>
+        <div style="margin-left: 10px;" class="uitheme">
+          <h4 style="text-align: left; margin-bottom: 2px;">UI Theme</h4>
+          <p class="settingspara">With this you can change the main theme of the site. When you first visit the page, your device default will be chosen.</p>
+          <table>
+          <tr>
+              <td>
+                <select name="theme" id="themedrop" style="padding-right: 4px;">
+                  <option value="style">Dark Theme</option>
+                  <option value="olddarktheme">Dark Theme (old)</option>
+                  <option value="lighttheme">Light Theme</option>
+                </select>
+              </td>
+              <td><button class="bluebtn">System Default</button></td>
+            <tr>
+          </table>
+        </div>
+        <div style="margin-left: 10px;">
+        <h4 style="text-align: left; margin-bottom: 2px;">Block Renderer</h4>
+        <p class="settingspara">Here you can change the renderer for the blocks. Changing this will require you to refresh the page.</p>
         <table>
           <tr>
-            <td>
-              <input type="text" class="setproleft" value="My Project" id="projectname"><input type="text" class="setproright" value="b4d" id="projectprefix">
-            </td>
-          </tr>
-        </table>
+              <td>
+                <select name="renderer" id="renderdrop" style="padding-right: 4px;">
+                  <option value="zelos">Zelos</option>
+                  <option value="geras">Geras</option>
+                  <option value="minim">Minimalistic</option>
+                </select>
+              </td>
+            <tr>
+          </table>
+        </div>
+        <div style="margin-left: 10px;">
+          <h4 style="text-align: left; margin-bottom: 2px;">Plugins</h4>
+          <p class="settingspara">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
+          <button class="bluebtn">Clear Cache</button>
+        </div>
         
       </div>
-      <div style="margin-left: 10px;" class="uitheme">
-        <h4 style="text-align: left; margin-bottom: 2px;">UI Theme</h4>
-        <p class="settingspara">With this you can change the main theme of the site. When you first visit the page, your device default will be chosen.</p>
-        <table>
-		    <tr>
-            <td>
-              <select name="theme" id="themedrop" style="padding-right: 4px;">
-                <option value="style">Dark Theme</option>
-                <option value="olddarktheme">Dark Theme (old)</option>
-                <option value="lighttheme">Light Theme</option>
-              </select>
-            </td>
-            <td><button class="bluebtn">System Default</button></td>
-          <tr>
-        </table>
-      </div>
-      <div style="margin-left: 10px;">
-      <h4 style="text-align: left; margin-bottom: 2px;">Block Renderer</h4>
-      <p class="settingspara">Here you can change the renderer for the blocks. Changing this will require you to refresh the page.</p>
-      <table>
-		    <tr>
-            <td>
-              <select name="renderer" id="renderdrop" style="padding-right: 4px;">
-                <option value="zelos">Zelos</option>
-                <option value="geras">Geras</option>
-                <option value="minim">Minimalistic</option>
-              </select>
-            </td>
-          <tr>
-        </table>
-      </div>
-      <div style="margin-left: 10px;">
-        <h4 style="text-align: left; margin-bottom: 2px;">Plugins</h4>
-        <p class="settingspara">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
-        <button class="bluebtn">Clear Cache</button>
-      </div>
+  
+    </dialog>
+    <script>
+      function settingsOpen() {
+      document.getElementById("settings").showModal();
+    }
+    function settingsClose() {
+      document.getElementById("settings").close();
+    }
+    </script>
+    <dialog id="dialogJS" class="javagendialog">
+      <h1>JavaScript code</h1>
+      <hr>
+      <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
+      <hr>
+      <button class="btnred" id="close">Close</button>
+    </dialog>
+    <script type="module">
+      const open = document.getElementById("open");
+      const dialog = document.getElementById("dialogJS");
+      const close = document.getElementById("close");
+  
+    open.addEventListener("click", () => {
+      dialog.showModal();
+      const codebox = document.getElementById("codebox");
+      const code = Blockly.JavaScript.workspaceToCode(workspace);
+      codebox.innerHTML = code;
+      hljs.highlightAll();
+    });
+  
+    close.addEventListener("click", (event) => {
+      dialog.close();
+    });
+  
+    const exportp = document.getElementById("exportp");
+  
+    exportp.addEventListener("click", () => {
       
-    </div>
-
-  </dialog>
-  <script>
-    function settingsOpen() {
-	  document.getElementById("settings").showModal();
-	}
-	function settingsClose() {
-	  document.getElementById("settings").close();
-	}
-  </script>
-  <dialog id="dialogJS" class="javagendialog">
-    <h1>JavaScript code</h1>
-    <hr>
-    <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
-    <hr>
-    <button class="btnred" id="close">Close</button>
-  </dialog>
-  <script type="module">
-    const open = document.getElementById("open");
-    const dialog = document.getElementById("dialogJS");
-    const close = document.getElementById("close");
-
-  open.addEventListener("click", () => {
-    dialog.showModal();
-    const codebox = document.getElementById("codebox");
-    const code = Blockly.JavaScript.workspaceToCode(workspace);
-    codebox.innerHTML = code;
-    hljs.highlightAll();
-  });
-
-  close.addEventListener("click", (event) => {
-    dialog.close();
-  });
-
-  const exportp = document.getElementById("exportp");
-
-  exportp.addEventListener("click", () => {
-    
-    var exportedres = Blockly.serialization.workspaces.save(workspace);
-      var jsonText = JSON.stringify(exportedres, null, 2);
-      var blob = new Blob([jsonText], { type: "application/json" });
-
-      var filename = document.getElementById('projectname').value
-      var prefix = document.getElementById('projectprefix').value
-      
-      var downloadLink = document.createElement("a");
-      downloadLink.href = URL.createObjectURL(blob);
-      downloadLink.download = filename + "." + prefix;
-      document.body.appendChild(downloadLink);
-      
-      downloadLink.click(); 
-      
-      document.body.removeChild(downloadLink); 
-  })
-  </script>
-
-
-  <div id="blocklyDiv"></div>
+      var exportedres = Blockly.serialization.workspaces.save(workspace);
+        var jsonText = JSON.stringify(exportedres, null, 2);
+        var blob = new Blob([jsonText], { type: "application/json" });
+  
+        var filename = document.getElementById('projectname').value
+        var prefix = document.getElementById('projectprefix').value
+        
+        var downloadLink = document.createElement("a");
+        downloadLink.href = URL.createObjectURL(blob);
+        downloadLink.download = filename + "." + prefix;
+        document.body.appendChild(downloadLink);
+        
+        downloadLink.click(); 
+        
+        document.body.removeChild(downloadLink); 
+    })
+    </script>
+  
+  
+    <div id="blocklyDiv"></div>
+  </div>
+  
 
   <!-- Toolbox Definition -->
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox-categories" style="display: none">
