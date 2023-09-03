@@ -70,7 +70,6 @@ function start() {
 
     workspace.addChangeListener(Blockly.Events.disableOrphans);
     const workspaceSearch = new WorkspaceSearch(workspace);
-    workspace.addChangeListener(Blockly.Events.disableOrphans);
     workspaceSearch.init();
     workspaceSearch.open();
     Toastify({

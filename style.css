@@ -121,7 +121,9 @@ textarea{
   border-radius: 5px;
   box-shadow: 0px 0px 0px grey;
   justify-content: center;
+  position: sticky;
   padding: 0.5em;
+  float: right;
   z-index: 70;
 }
 .blockly-ws-search-close-btn {
