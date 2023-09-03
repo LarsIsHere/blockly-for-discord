@@ -155,7 +155,7 @@ changeTheme(theme)
     <script>
     function settingsOpen() {
       const dropdown = document.getElementById('themedrop');
-      let themeName = String(document.getElementById('theme-link').href).replaceAll(".css","")
+      let themeName = String(document.getElementById('theme-link').href).replaceAll(".css","").split('/').slice(-1)[0];
       for(var i, j = 0; i = dropdown.options[j]; j++) {
         if(i.value == themeName) {
           dropdown.selectedIndex = j;
