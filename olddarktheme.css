@@ -1,0 +1,301 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: white;
+  background-color: #121a2b;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 140%;
+  margin: 10px;
+}
+
+#blocklyDiv {
+  flex: 1;
+  color: white;
+}
+.ParentLeft {
+  height: 93%;
+  width: 100%;
+}
+.blocklyTreeRow {
+padding-top: 5px;
+padding-bottom: 5px;
+margin-bottom: 0.5em;
+border-radius: 5px;
+}
+
+.blocklyToolboxDiv{
+  width: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  background-color: #07090f;
+  min-width: max-content;
+}
+
+.blocklySvg {
+  background-color: #121a2b;
+  border-radius: 5px;
+}
+
+nav{
+  background-color: transparent;
+  height: max-content;
+  margin-top: 0px;
+  caret-color: transparent;
+}
+
+.blocklyFlyoutBackground{
+  fill: #07090f;
+}
+
+.btn, .btnav, .bluebtn{
+  font-size: 14px;
+  color: #fff;
+  background-color: #0058cc;
+  padding: 5px 15px;
+  border: solid #0168ce 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover, .btnav:hover, .bluebtn:hover{
+  background-color: #0080ff;
+  border: solid #0080ff 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btn:active, .btnav:active{
+  background-color: #006fee;
+  border: solid #006eed 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+textarea{
+  width: 100%;
+  height: 70%;
+  outline: 0.5px solid #2e3338;
+  background-color: #ffffff2a;
+  color: white;
+  resize: none;
+}
+.btnred{
+  font-size: 14px;
+  color: #fff;
+  background-color: #cc0000;
+  padding: 5px 15px;
+  border: solid #ce0101 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 500ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.btnred:hover{
+  background-color: #ff0000;
+  border: solid #ff0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.btnred:active{
+  background-color: #ee0000;
+  border: solid #ed0000 1px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+}
+.blockly-ws-search {
+  background-color: #121a2b;
+  border: solid #727272 0.5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px grey;
+  justify-content: center;
+  position: sticky;
+  padding: 0.5em;
+  float: right;
+  z-index: 70;
+}
+
+.blockly-ws-search-input input {
+  background: #222a3b;
+  color: #fff;
+  border-radius: 5px;
+  height: 25px;
+}
+
+dialog {
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #ffffff;
+  text-align: center;
+  border: transparent;
+}
+dialog h1 {
+	text-align: left;
+}
+code {
+  border: 1px white solid;
+  background-color: #ffffff2a;
+  color:white;
+}
+.ParentLeft {
+  color: white;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #121a2b;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 6%;
+}
+.dropdown-content a {
+  color: #fff;
+  transition: 500ms;
+  padding: 11px 13px;
+  display: block;
+  text-decoration: none;
+  user-select: none;
+}
+.dropdown-content a:hover {
+  color: #ddd;
+  background-color: #020a1b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.blocklyFlyoutButton {
+  fill: #080a10;
+}
+.blocklyFlyoutButton:hover {
+  fill: #232530;
+  padding-bottom: 5px;
+}
+.blocklyFlyoutButtonShadow {
+  fill: transparent;
+}
+.zelos-renderer.classic-theme .blocklyFlyoutLabelText {
+  fill: #fff;
+}
+
+select {
+  color: #fff;
+    border: none;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    outline: 0.5px solid #2e3338;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+}
+option {
+  color: #fff;
+  background-color: #121a2b;
+}
+option:disabled {
+  background-color: #020a1b;
+}
+
+.settingsuicontent {
+  align-items: center;
+}
+
+.setproleft {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    border:none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: white;
+    font-size: 20;
+}
+.setproright {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    width: 25px;
+    border:none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: rgb(145, 145, 145);
+    font-size: 20;
+}
+.setproright:focus {
+  color: white;
+}
+
+.discordico {
+  user-select: none;
+  float: right;
+  width: 25px;
+  padding: 15px;
+  height: 19px;
+}
+.logo {
+  user-select: none;
+  color: white;
+  height: 52px;
+  width: 52px;
+}
+.logotext {
+  color: white;
+  user-select: none;
+}
+.settingsdialog {
+  width: 80%;
+  height: 60%;
+  background-color: #121a2b; 
+}
+
+.dialogdiv {
+  background-color:#020a1b;
+  text-align:left;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.settingsheader {
+  margin-left:10px;
+}
+.settingspara {
+  color: rgb(184, 184, 184);
+  text-align: left;
+  margin-top: 5px;
+}
+
+.javagendialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #ffffff;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
