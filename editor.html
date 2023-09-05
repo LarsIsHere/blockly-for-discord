@@ -105,8 +105,17 @@ changeTheme(theme)
       </table>
     </nav>
     
-    <dialog id="settingsdialog" class="settingsdialog">
-      <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button>
+    <dialog id="livedialog" class="settingsdialog">
+      <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
+      <div style="margin-top:40px; float: left;">
+        <h4 style="text-align: left;margin-bottom: 2px;">Join Collaboration</h4>
+        <table>
+          <tr>
+            <td>
+              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456" max="6" min="1">
+            </td>
+          </tr>
+        </table>
     </dialog>
 
     <dialog id="settings" class="settingsdialog">

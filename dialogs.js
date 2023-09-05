@@ -1,9 +1,9 @@
 function livecollabOpen() {
-    document.getElementById("settingsdialog").showModal();
+    document.getElementById("livedialog").showModal();
   }
 
   function livecollabClose() {
-    document.getElementById("settingsdialog").close();
+    document.getElementById("livedialog").close();
   }
 
   function settingsOpen() {
