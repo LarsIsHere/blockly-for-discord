@@ -91,16 +91,16 @@ changeTheme(theme)
               <td class="dropdown">
                   <button class="btnav">File</button>
                   <div class="dropdown-content">
-                      <a>Import Project</a>
-                      <a id="exportp">Export Project</a>
-                      <a id="open">Export JavaScript</a>
-                      <a>Export as ZIP</a>
+                      <a>Import</a>
+                      <a id="exportp">Export as Project</a>
+                      <a id="open">Export as JS</a>
+                      <a>Export as File</a>
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
-              <td><button class="btnav">Credits</button></td>
               <td><button class="btnav">Test Bot</button></td>
               <td><button onclick="livecollabOpen()" class="btnav">Live Collaboration</button></td>
+              <td><button class="btnav">Credits</button></td>
           </tr>
       </table>
     </nav>
@@ -108,14 +108,36 @@ changeTheme(theme)
     <dialog id="livedialog" class="settingsdialog">
       <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
       <div style="margin-top:40px; float: left;">
+        <div style="margin-left: 10px;">
         <h4 style="text-align: left;margin-bottom: 2px;">Join Collaboration</h4>
+        <p class="settingspara">With this you can join someones collaboration and make a project live together. Just ask the host for the "Collab Code" and enter it here.</p>
+        <table>
+          <td>
+            <select name="theme" id="serverdrop" style="padding-right: 4px; margin-bottom: 5px;">
+              <option value="style">Server - EU</option>
+              <option value="olddarktheme">Server - ASIA</option>
+            </select>
+          </td>
+        </table>
+        
         <table>
           <tr>
             <td>
-              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456" max="6" min="1">
+              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456"><button class="bluebtn">Join</button>
             </td>
           </tr>
         </table>
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 style="text-align: left;margin-bottom: 2px;">Host Collaboration</h4>
+        <p class="settingspara">Here you can host a collaboration and decide what kind of access visitors get. You can also end the session.</p>
+
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 style="text-align: left;margin-bottom: 2px;">General Settings and Controls</h4>
+        <p class="settingspara">A couple settings you might want to change depending on your preferences.</p>
+      </div>
+    </div>
     </dialog>
 
     <dialog id="settings" class="settingsdialog">

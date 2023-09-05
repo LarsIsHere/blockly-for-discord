@@ -363,6 +363,7 @@ option:disabled {
     border-radius: 0.5rem;
     outline: 0.5px solid #2e3338;
     color: white;
+    margin-right: 10px;
     font-size: 20;
     
 }
