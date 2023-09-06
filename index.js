@@ -72,7 +72,7 @@ function start() {
     document.getElementsByClassName("blockly-ws-search-close-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
-
+    
 
 } 
 
