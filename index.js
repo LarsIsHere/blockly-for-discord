@@ -43,6 +43,8 @@ function start() {
       contextMenu: true,
       shortcut: true,
     }
+    const backpack = new Backpack(workspace);
+backpack.init();
     const plugin = new CrossTabCopyPaste();
     plugin.init(options, () => {
     console.log('Use this error callback to handle TypeError while pasting');
