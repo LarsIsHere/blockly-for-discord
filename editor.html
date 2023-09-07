@@ -113,9 +113,9 @@ changeTheme(theme)
         <p class="settingspara">With this you can join someones collaboration and make a project live together. Just ask the host for the "Collab Code" and enter it here.</p>
         <table>
           <td>
-            <select name="theme" id="serverdrop" style="padding-right: 4px; margin-bottom: 5px;">
-              <option value="style">Server - EU</option>
-              <option value="olddarktheme">Server - ASIA</option>
+            <select name="serverdrop" id="serverdrop" style="padding-right: 4px; margin-bottom: 5px;">
+              <option value="eu">Server - EU</option>
+              <option value="asia">Server - ASIA</option>
             </select>
           </td>
         </table>
@@ -131,6 +131,23 @@ changeTheme(theme)
       <div style="margin-left: 10px;">
         <h4 style="text-align: left;margin-bottom: 2px;">Host Collaboration</h4>
         <p class="settingspara">Here you can host a collaboration and decide what kind of access visitors get. You can also end the session.</p>
+        <table style="width: 10%;">
+          <tbody>
+            <tr>
+              <td style="white-space: nowrap;">Server Location</td>
+              <td><select name="serverdrophost" id="serverdrophost" style="padding-right: 4px; margin-bottom: 5px;">
+                <option value="eu">Server - EU</option>
+                <option value="asia">Server - ASIA</option></select></td>
+            </tr>
+            <tr>
+              <td style="white-space: nowrap;">Visitor Access</td>
+              <td><select name="accessdrophost" id="accessdrophost" style="padding-right: 4px; margin-bottom: 5px;">
+                <option value="viewonly">View Only</option>
+                <option value="edit">Editor</option></select></td>
+                <td><button class="bluebtn">Host</button></td>
+            </tr>
+          </tbody>
+          </table>
 
       </div>
       <div style="margin-left: 10px;">
