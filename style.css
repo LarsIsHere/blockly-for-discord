@@ -124,7 +124,7 @@ textarea{
   position: sticky;
   padding: 0.5em;
   float: right;
-  z-index: 70;
+  z-index: 2;
 }
 .blockly-ws-search-close-btn {
   background: #212529;
