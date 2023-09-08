@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="style.css" id="theme-link">
   <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
   <script src="./highlight/highlight.min.js"></script>
+  <script src="Modals.js"></script>
   <script src="dialogs.js"></script>
   <script src="https://unpkg.com/@blockly/workspace-backpack@5.2.0/dist/index.js"></script>
   
@@ -116,7 +117,7 @@ changeTheme(theme)
           <td>
             <select name="serverdrop" id="serverdrop" style="padding-right: 4px; margin-bottom: 5px;">
               <option value="eu">Server - EU</option>
-              <option value="asia">Server - ASIA</option>
+              <option value="asia">Server - ASIA</option> 
             </select>
           </td>
         </table>
@@ -124,7 +125,7 @@ changeTheme(theme)
         <table>
           <tr>
             <td>
-              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456"><button class="bluebtn">Join</button>
+              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456"><button onclick="Collab()" class="bluebtn">Join</button>
             </td>
           </tr>
         </table>
@@ -145,7 +146,7 @@ changeTheme(theme)
               <td><select name="accessdrophost" id="accessdrophost" style="padding-right: 4px; margin-bottom: 5px;">
                 <option value="viewonly">View Only</option>
                 <option value="edit">Editor</option></select></td>
-                <td><button class="bluebtn">Host</button></td>
+                <td><button onclick="Collab()" class="bluebtn">Host</button></td>
             </tr>
           </tbody>
           </table>

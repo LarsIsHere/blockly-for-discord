@@ -86,3 +86,7 @@ function changeTheme(themeName) {
   // Change the href attribute to the selected theme's CSS file
   themeLink.href = `${themeName}.css`;
 }
+
+function Collab() {
+  WarningModal ("This is currently still being developed and not ready for use.", 2000);
+}
