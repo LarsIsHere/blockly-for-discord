@@ -78,6 +78,12 @@ changeTheme(theme)
   localStorage.setItem("renderer", "zelos")
 } 
   </script>
+  <script>
+    if (checkMobile()) {
+      document.getElementById("tb").remove();
+      document.getElementById("lc").remove();
+    }
+  </script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
