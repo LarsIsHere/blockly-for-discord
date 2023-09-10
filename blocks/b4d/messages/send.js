@@ -1,26 +1,8 @@
 const send = 'message_send';
 
 const datasend = {
-  "message0": "respond %1 %2 with text %3 with embeds %4",
+  "message0": "respond in channel %1 with text %2 with embeds %3",
   "args0": [
-    {
-      "type": "field_dropdown",
-      "name": "type",
-      "options": [
-        [
-          "in channel",
-          "a"
-        ],
-        [
-          "as reply",
-          "b"
-        ],
-        [
-          "as reply (no ping)",
-          "c"
-        ]
-      ]
-    },
     {
       "type": "input_dummy"
     },
@@ -48,19 +30,9 @@ Blockly.Blocks[send] = {
     }
 };
 javascript.javascriptGenerator.forBlock[send] = function(block, generator) {
-  var dropdown_name = block.getFieldValue('type');
   var value_text = generator.valueToCode(block, 'text', javascript.Order.ATOMIC);
   var value_embed = generator.valueToCode(block, 'embed', javascript.Order.ATOMIC);
-  if (dropdown_name == "a") {
-    return `message.channel.send({
+  return `message.channel.send({
   content: ${value_text},${value_embed == "" ? "" : `\nembeds: ${value_embed},`}
 });\n`
-  } else {
-    return `message.reply({
-  content: ${value_text},${value_embed == "" ? "" : `\nembeds: ${value_embed},`}
-  allowedMentions: {
-    repliedUser: ${dropdown_name == "b" ? "true" : "false"}
-  }
-});\n`
-  }
 };
