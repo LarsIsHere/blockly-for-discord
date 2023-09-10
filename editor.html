@@ -100,9 +100,16 @@ changeTheme(theme)
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
-              <td><button id="testbotnav" class="btnav">Test Bot</button></td>
-              <td><button id="livecollabnav" onclick="livecollabOpen()" class="btnav">Live Collaboration</button></td>
+              <td><button class="btnav" id="tb">Test Bot</button></td>
+              <td><button onclick="livecollabOpen()" class="btnav" id="lc">Live Collaboration</button></td>
               <td><button class="btnav">Credits</button></td>
+              <script>
+                // sorry for script in body but other way doesn't work
+                if (checkMobile()) {
+                  document.getElementById("tb").remove();
+                  document.getElementById("lc").remove();
+                }
+              </script>
           </tr>
       </table>
     </nav>
