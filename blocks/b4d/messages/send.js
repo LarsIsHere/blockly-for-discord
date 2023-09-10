@@ -63,6 +63,6 @@ javascript.javascriptGenerator.forBlock[send] = function(block, generator) {
   allowedMentions: {
     repliedUser: ${dropdown_name == "b" ? "true" : "false"}
   }
-});`
+});\n`
   }
 };
