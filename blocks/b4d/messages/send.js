@@ -53,13 +53,11 @@ javascript.javascriptGenerator.forBlock[send] = function(block, generator) {
   var value_embed = generator.valueToCode(block, 'embed', javascript.Order.ATOMIC);
   if (dropdown_name == "a") {
     return `message.channel.send({
-  content: ${value_text},
-  ${value_embed == "" ? "" : `embeds: ${value_embed},`}
-})`
+  content: ${value_text},${value_embed == "" ? "" : `\nembeds: ${value_embed},`}
+});\n`
   } else {
     return `message.reply({
-  content: ${value_text},
-  ${value_embed == "" ? "" : `embeds: ${value_embed},`}
+  content: ${value_text},${value_embed == "" ? "" : `\nembeds: ${value_embed},`}
   allowedMentions: {
     repliedUser: ${dropdown_name == "b" ? "true" : "false"}
   }
