@@ -47,7 +47,7 @@ Blockly.Blocks[send] = {
         this.jsonInit(datasend);
     }
 };
-javascript.javascriptGenerator.forBlock[send] = function(block) {
+javascript.javascriptGenerator.forBlock[send] = function(block, generator) {
   var dropdown_name = block.getFieldValue('type');
   var value_text = generator.valueToCode(block, 'text', javascript.Order.ATOMIC);
   var value_embed = generator.valueToCode(block, 'embed', javascript.Order.ATOMIC);
