@@ -24,8 +24,8 @@ javascript.javascriptGenerator.forBlock['events_message_received'] = function(bl
     var statements_event = generator.statementToCode(block, 'Event');
     // TODO: Assemble javascript into code variable.
     var code = `client.on('messageCreate', (message) => {
-        ${statements_event}
-    });\n`;
+ ${statements_event}
+});\n`;
     return code;
   };
 
