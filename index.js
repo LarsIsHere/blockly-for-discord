@@ -74,11 +74,6 @@ backpack.init();
     document.getElementsByClassName("blockly-ws-search-close-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
-    const isMobile = navigator.userAgentData.mobile;
-    if (isMobile === true) {
-      document.getElementById("testbotnav").remove();
-      document.getElementById("livecollabnav").remove();
-    }
 
 } 
 
