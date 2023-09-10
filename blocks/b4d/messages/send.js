@@ -1,11 +1,8 @@
 const send = 'message_send';
 
 const datasend = {
-  "message0": "respond in channel %1 with text %2 with embeds %3",
+  "message0": "send text %1 with embeds %2",
   "args0": [
-    {
-      "type": "input_dummy"
-    },
     {
       "type": "input_value",
       "name": "text",
