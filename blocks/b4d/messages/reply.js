@@ -1,11 +1,8 @@
 const rsend = 'message_reply';
 
 const rdatasend = {
-  "message0": "reply %1 with text %2 with embeds %3 with ping? %4",
+  "message0": "reply with text %1 with embeds %2 with ping? %3",
   "args0": [
-    {
-      "type": "input_dummy"
-    },
     {
       "type": "input_value",
       "name": "text",
