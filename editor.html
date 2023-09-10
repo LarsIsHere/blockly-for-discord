@@ -40,6 +40,7 @@
 <script src="blocks\b4d\messages\data.js"></script>
 <script src="blocks\b4d\messages\m.js"></script>
 <script src="blocks\b4d\messages\send.js"></script>
+<script src="blocks\b4d\messages\reply.js"></script>
 <script src="blocks\b4d\events\events_channel_creation.js"></script>
 <script src="blocks\b4d\events\events_channel_deletion.js"></script>
 <script src="blocks\b4d\events\events_channel_pins_update.js"></script>
@@ -659,6 +660,18 @@ changeTheme(theme)
         <value name="text">
           <shadow type="text">
             <field name="TEXT">Hey!</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="message_reply">
+        <value name="text">
+          <shadow type="text">
+            <field name="TEXT">Hey!</field>
+          </shadow>
+        </value>
+        <value name="ping">
+          <shadow type="logic_boolean">
+            <field name="BOOL">TRUE</field>
           </shadow>
         </value>
       </block>
