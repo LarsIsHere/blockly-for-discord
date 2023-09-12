@@ -13,7 +13,7 @@ const EmbedBuilderName = "embed_builder";
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "#ebb134",
+    "colour": "#eba234",
     "tooltip": "",
     "helpUrl": ""
  };
