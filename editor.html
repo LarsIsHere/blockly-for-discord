@@ -45,7 +45,9 @@
 <script src="blocks\b4d\events\events_channel_deletion.js"></script>
 <script src="blocks\b4d\events\events_channel_pins_update.js"></script>
 <script src="blocks\b4d\events\events_channel_updated.js"></script>
-  <!--
+<script src="blocks\b4d\embeds\embedbuilder.js"></script>
+<script src="blocks\b4d\text\raw_text.js"></script>
+  <!-- 
     Block imports end here
   -->
   <script>
@@ -417,6 +419,7 @@ changeTheme(theme)
     <category name="Text" categorystyle="text_category">
       <block type="text"></block>
       <block type="text_multiline"></block>
+      <block type="raw_text"></block>
       <block type="text_join"></block>
       <block type="dynamic_text_join"></block>
       <block type="text_append">
@@ -619,6 +622,7 @@ changeTheme(theme)
         <value name="intents">
           <block type="lists_create_with">
             <mutation items="1"></mutation>
+          </value>
       </block>
      
     </block>
@@ -635,7 +639,7 @@ changeTheme(theme)
       </block>
       
     </category>
-    <category name="All Events" colour="#ffa200">
+    <category name="All Events" colour="#50C878">
       <label text="Messages"></label>
       <block type="events_message_received"></block>
       <label text="Discord Applications"></label>
@@ -686,7 +690,13 @@ changeTheme(theme)
     </value>
      </block>
     </category> -->
-    
+    <category name="Embeds" colour="#ebb134">
+      <block type="embed_builder">
+        <value name="name">
+          <block type="raw_text"></block>
+        </value>
+      </block>
+    </category>
   </xml>
 
 </body>
