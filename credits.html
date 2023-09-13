@@ -1,0 +1,29 @@
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<link rel="stylesheet" href="credits.css">
+
+<div id="app" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 10%; font-size:350%;"></div>
+<script>var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+    
+    typewriter
+      .pauseFor(2500)
+      .typeString('12/08/2023 - <strong><span style="color: #4984e3;">Blockly for Discord</span></strong> came to life.')
+      .pauseFor(300)
+      .deleteAll()
+      .typeString('Its such an <strong>inspiring</strong> project,<br> and we just cant help but give credit to what we used and who helped.')
+      .pauseFor(1000)
+      .deleteAll()
+      .typeString('<br>So here is to all of you ❤️<br><br>')
+      .pauseFor(500)
+      .typeString('<strong>Lead Developers</strong><br>')
+      .pauseFor(500)
+      .typeString('LarsIsHere<br>')
+      .typeString('Inventionpro')
+      // .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
+      // .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+      // .pauseFor(1000)
+      .start();</script>
