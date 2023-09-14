@@ -44,7 +44,7 @@ function start() {
       shortcut: true,
     }
     const backpack = new Backpack(workspace);
-backpack.init();
+ backpack.init();
     const plugin = new CrossTabCopyPaste();
     plugin.init(options, () => {
     console.log('Use this error callback to handle TypeError while pasting');
@@ -75,6 +75,37 @@ backpack.init();
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
 
+    /*document.getElementById('importp').addEventListener("click", () => {
+      var inputElement = document.createElement("input");
+      inputElement.type = "file";
+    
+      // Define a function to handle the file selection
+      inputElement.addEventListener("change", (event) => {
+        var file = event.target.files[0]; // Get the selected file
+    
+        if (file) {
+          var reader = new FileReader();
+    
+          reader.onload = function (e) {
+            try {
+              var jsont = JSON.parse(e.target.result); // Parse the JSON content
+    
+              // Load the Blockly workspace with the parsed JSON
+              Blockly.serialization.workspaces.load(jsont);
+              alert("Workspace imported successfully!");
+            } catch (error) {
+              alert("Error importing workspace: " + error);
+              console.log(error);
+            }
+          };
+    
+          reader.readAsText(file); // Read the file as text
+        }
+      });
+    
+      // Trigger the file input dialog when this input element is clicked
+      inputElement.click();
+    }); */
 } 
 
 function changeTheme(themeName) {
@@ -116,3 +147,4 @@ downloadLink.download = 'screenshot.png';
 downloadLink.click();
   })
 }
+

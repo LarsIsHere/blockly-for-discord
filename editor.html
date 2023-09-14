@@ -97,7 +97,8 @@ changeTheme(theme)
               <td class="dropdown">
                   <button class="btnav">File</button>
                   <div class="dropdown-content">
-                      <a>Import</a>
+                      <a id="importp">Import</a>
+                      <input type="file" id="fileInput" style="display: none;">
                       <a id="exportp">Export as Project</a>
                       <a id="open">Export as JS</a>
                       <a>Export as File</a>
@@ -268,6 +269,8 @@ changeTheme(theme)
         
         document.body.removeChild(downloadLink); 
     })
+
+
     </script>
   
   
