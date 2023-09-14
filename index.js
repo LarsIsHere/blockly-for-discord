@@ -75,7 +75,7 @@ function start() {
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
 
-    /*document.getElementById('importp').addEventListener("click", () => {
+    document.getElementById('importp').addEventListener("click", () => {
       var inputElement = document.createElement("input");
       inputElement.type = "file";
     
@@ -88,10 +88,14 @@ function start() {
     
           reader.onload = function (e) {
             try {
-              var jsont = JSON.parse(e.target.result); // Parse the JSON content
+              var xmlTexte = e.target.result; // Get the XML content as text
     
-              // Load the Blockly workspace with the parsed JSON
-              Blockly.serialization.workspaces.load(jsont);
+              // Create a new Blockly workspace
+    
+              // Load the Blockly workspace with the parsed XML
+              var xmlDome = Blockly.utils.xml.textToDom(xmlTexte);
+              Blockly.Xml.domToWorkspace(xmlDome, workspace);
+    
               alert("Workspace imported successfully!");
             } catch (error) {
               alert("Error importing workspace: " + error);
@@ -105,7 +109,7 @@ function start() {
     
       // Trigger the file input dialog when this input element is clicked
       inputElement.click();
-    }); */
+    });
 } 
 
 function changeTheme(themeName) {
