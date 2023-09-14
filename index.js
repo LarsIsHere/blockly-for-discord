@@ -95,11 +95,12 @@ function start() {
               // Load the Blockly workspace with the parsed XML
               var xmlDome = Blockly.utils.xml.textToDom(xmlTexte);
               Blockly.Xml.domToWorkspace(xmlDome, workspace);
-    
-              alert("Workspace imported successfully!");
+              var fileName = file.name;
+              SucessModal ("Imported " + fileName + " successfully", 3000, "bottom", "center")
             } catch (error) {
-              alert("Error importing workspace: " + error);
               console.log(error);
+              var fileName = file.name;
+              WarningModal ("Error importing " + fileName +", look in the console for more information", 3000, "bottom", "center")
             }
           };
     
