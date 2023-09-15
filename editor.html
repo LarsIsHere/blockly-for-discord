@@ -252,24 +252,21 @@ changeTheme(theme)
     const exportp = document.getElementById("exportp");
   
     exportp.addEventListener("click", () => {
-      
-      var exportedres = Blockly.serialization.workspaces.save(workspace);
-        var jsonText = JSON.stringify(exportedres, null, 2);
-        var blob = new Blob([jsonText], { type: "application/json" });
-  
-        var filename = document.getElementById('projectname').value
-        var prefix = document.getElementById('projectprefix').value
-        
-        var downloadLink = document.createElement("a");
-        downloadLink.href = URL.createObjectURL(blob);
-        downloadLink.download = filename + "." + prefix;
-        document.body.appendChild(downloadLink);
-        
-        downloadLink.click(); 
-        
-        document.body.removeChild(downloadLink); 
-    })
+  var xmlDom = Blockly.Xml.workspaceToDom(workspace);
+  var xmlText = Blockly.Xml.domToPrettyText(xmlDom);
 
+  var filename = document.getElementById('projectname').value;
+  var prefix = document.getElementById('projectprefix').value;
+
+  var downloadLink = document.createElement("a");
+  downloadLink.href = "data:text/xml;charset=utf-8," + encodeURIComponent(xmlText);
+  downloadLink.download = filename + "." + prefix;
+  document.body.appendChild(downloadLink);
+
+  downloadLink.click();
+
+  document.body.removeChild(downloadLink);
+});
 
     </script>
   
