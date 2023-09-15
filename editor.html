@@ -11,6 +11,7 @@
   <meta name="theme-color" content="#63d0ff">
 
   <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+  <script src="toolbox_search_min.js"></script>
   <script src="index.js"></script>
   <script src="custom_category.js"></script>
   <script src="https://unpkg.com/@blockly/plugin-cross-tab-copy-paste@4.0.2/dist/index.js"></script>
@@ -277,6 +278,7 @@ changeTheme(theme)
 
   <!-- Toolbox Definition -->
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox-categories" style="display: none">
+    <search name="Search"></search>
     <category name="Logic" categorystyle="logic_category">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
