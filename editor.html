@@ -224,9 +224,33 @@ changeTheme(theme)
           <p class="settingspara">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
           <button class="bluebtn">Clear Cache</button>
         </div>
-        
+        <table>
+          <tr>
+            <td>Continuous toolbox*</td>
+            <td><label class="switch">
+              <input type="checkbox" id="switch-plugin-ct">
+              <span class="slider"></span>
+            </label></td>
+            <td>Disable Top-blocks</td>
+            <td><label class="switch">
+              <input type="checkbox" id="switch-plugin-stp" checked="true">
+              <span class="slider"></span>
+            </label></td>
+          </tr>
+          <tr>
+            <td>Backpack</td>
+            <td><label class="switch">
+              <input type="checkbox" id="switch-plugin-b" checked="true">
+              <span class="slider"></span>
+            </label></td>
+            <td>Content highlighting</td>
+            <td><label class="switch">
+              <input type="checkbox" id="switch-plugin-ch" checked="true">
+              <span class="slider"></span>
+            </label></td>
+          </tr>
+        </table>
       </div>
-  
     </dialog>
     <dialog id="dialogJS" class="javagendialog">
       <h1>JavaScript code</h1>
