@@ -91,29 +91,41 @@ textarea{
   color: white;
   resize: none;
 }
-.btnred{
-  font-size: 14px;
-  color: #fff;
+.btnwarning{
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
   background-color: #cc0000;
-  padding: 5px 15px;
-  border: solid #ce0101 1px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 50px;
+  border:none;
+  border-radius: 0.5rem;
+  outline: 0.5px solid #ff0000;
+  color: white;
   transition: 500ms;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
+  font-size: 20;
+}
+
+.btndefault{
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #3f3f3f;
+  border:none;
+  border-radius: 0.5rem;
+  outline: 1px solid #818181;
+  color: white;
+  transition: 500ms;
+  font-size: 20;
+}
+.btndefault:hover{
+  background-color: #818181;
 }
 .btnred:hover{
   background-color: #ff0000;
-  border: solid #ff0000 1px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 }
 .btnred:active{
-  background-color: #ee0000;
-  border: solid #ed0000 1px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  background-color: #ff0000;
 }
 .blockly-ws-search {
   background-color: #212529;
@@ -124,7 +136,7 @@ textarea{
   position: sticky;
   padding: 0.5em;
   float: right;
-  z-index: 70;
+  z-index: 2;
 }
 .blockly-ws-search-close-btn {
   background: #212529;
@@ -352,4 +364,21 @@ option:disabled {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.joincollab {
+  padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-color: #006fed00;
+    border:none;
+    border-radius: 0.5rem;
+    outline: 0.5px solid #2e3338;
+    color: white;
+    margin-right: 10px;
+    font-size: 20;
+    
+}
+.joincollab::-webkit-outer-spin-button, .joincollab::-webkit-inner-spin-button {
+        display: none;
 }

@@ -2,16 +2,16 @@
 <html id="dddd">
 <head>
   <meta charset="utf-8">
-  <title>Blockly for Discord</title>
+  <title>Editor - Blockly for Discord</title>
   <link rel="icon" href="favicon.png">
+  <link rel="canonical" href="https://blockly-for-discord.xyz/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Generate pure DiscordJS code within seconds to make your very own Discord Bot. Just drag the blocks right onto the workspace. No coding required!">
+  <meta name="description" content="This is the editor of Blockly For Discord. Where you can make the bots with no coding knowledge whatsoever.">
   <meta property="og:image" content="https://blockly-for-discord.xyz/logo.png"/>
   <meta name="theme-color" content="#63d0ff">
 
   <script src="https://unpkg.com/blockly/blockly.min.js"></script>
   <script src="index.js"></script>
-  <script> src="blocks\block.js"</script>
   <script src="custom_category.js"></script>
   <script src="https://unpkg.com/@blockly/plugin-cross-tab-copy-paste@4.0.2/dist/index.js"></script>
   <script src="https://unpkg.com/@blockly/plugin-workspace-search@8.0.2/dist/index.js"></script>
@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="style.css" id="theme-link">
   <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
   <script src="./highlight/highlight.min.js"></script>
+  <script src="Modals.js"></script>
+  <script src="dialogs.js"></script>
+  <script src="https://unpkg.com/@blockly/workspace-backpack@5.2.0/dist/index.js"></script>
   
   <!--
     Block imports start here
@@ -36,11 +39,15 @@
 <script src="blocks\b4d\events\events_api_response.js"></script>
 <script src="blocks\b4d\messages\data.js"></script>
 <script src="blocks\b4d\messages\m.js"></script>
+<script src="blocks\b4d\messages\send.js"></script>
+<script src="blocks\b4d\messages\reply.js"></script>
 <script src="blocks\b4d\events\events_channel_creation.js"></script>
 <script src="blocks\b4d\events\events_channel_deletion.js"></script>
 <script src="blocks\b4d\events\events_channel_pins_update.js"></script>
 <script src="blocks\b4d\events\events_channel_updated.js"></script>
-  <!--
+<script src="blocks\b4d\embeds\embedbuilder.js"></script>
+<script src="blocks\b4d\text\raw_text.js"></script>
+  <!-- 
     Block imports end here
   -->
   <script>
@@ -90,19 +97,81 @@ changeTheme(theme)
               <td class="dropdown">
                   <button class="btnav">File</button>
                   <div class="dropdown-content">
-                      <a>Import Project</a>
-                      <a id="exportp">Export Project</a>
-                      <a id="open">Export JavaScript</a>
-                      <a>Export as ZIP</a>
+                      <a id="importp">Import</a>
+                      <input type="file" id="fileInput" style="display: none;">
+                      <a id="exportp">Export as Project</a>
+                      <a id="open">Export as JS</a>
+                      <a>Export as File</a>
+                      <a onclick="screenshotspace()">Take Screenshot</a>
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
-              <td><button class="btnav">Credits</button></td>
-              <td><button class="btnav">Test Bot</button></td>
+              <td><button class="btnav" id="tb">Test Bot</button></td>
+              <td><button onclick="livecollabOpen()" class="btnav" id="lc">Live Collaboration</button></td>
+              <td><a class="btnav" style="text-decoration: none;">Credits</a></td>
+              <script>
+                // sorry for script in body but other way doesn't work
+                if (checkMobile()) {
+                  document.getElementById("tb").remove();
+                  document.getElementById("lc").remove();
+                }
+              </script>
           </tr>
       </table>
     </nav>
-  
+    
+    <dialog id="livedialog" class="settingsdialog">
+      <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
+      <div style="margin-top:40px; float: left;">
+        <div style="margin-left: 10px;">
+        <h4 style="text-align: left;margin-bottom: 2px;">Join Collaboration</h4>
+        <p class="settingspara">With this you can join someones collaboration and make a project live together. Just ask the host for the "Collab Code" and enter it here.</p>
+        <table>
+          <td>
+            <select name="serverdrop" id="serverdrop" style="padding-right: 4px; margin-bottom: 5px;">
+              <option value="eu">Server - EU</option>
+              <option value="asia">Server - ASIA</option> 
+            </select>
+          </td>
+        </table>
+        
+        <table>
+          <tr>
+            <td>
+              <input type="number" class="joincollab"id="livecollabjoin" placeholder="e.g 123456"><button onclick="Collab()" class="bluebtn">Join</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 style="text-align: left;margin-bottom: 2px;">Host Collaboration</h4>
+        <p class="settingspara">Here you can host a collaboration and decide what kind of access visitors get. You can also end the session.</p>
+        <table style="width: 10%;">
+          <tbody>
+            <tr>
+              <td style="white-space: nowrap;">Server Location</td>
+              <td><select name="serverdrophost" id="serverdrophost" style="padding-right: 4px; margin-bottom: 5px;">
+                <option value="eu">Server - EU</option>
+                <option value="asia">Server - ASIA</option></select></td>
+            </tr>
+            <tr>
+              <td style="white-space: nowrap;">Visitor Access</td>
+              <td><select name="accessdrophost" id="accessdrophost" style="padding-right: 4px; margin-bottom: 5px;">
+                <option value="viewonly">View Only</option>
+                <option value="edit">Editor</option></select></td>
+                <td><button onclick="Collab()" class="bluebtn">Host</button></td>
+            </tr>
+          </tbody>
+          </table>
+
+      </div>
+      <div style="margin-left: 10px;">
+        <h4 style="text-align: left;margin-bottom: 2px;">General Settings and Controls</h4>
+        <p class="settingspara">A couple settings you might want to change depending on your preferences.</p>
+      </div>
+    </div>
+    </dialog>
+
     <dialog id="settings" class="settingsdialog">
       <div class="dialogdiv"><button onclick="settingsClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Settings</h3></div>
       <div style="margin-top:40px; float: left;">
@@ -128,6 +197,7 @@ changeTheme(theme)
                   <option value="style">Dark Theme</option>
                   <option value="olddarktheme">Dark Theme (old)</option>
                   <option value="lighttheme">Light Theme</option>
+                  <option value="neon">Neon Theme</option>
                 </select>
               </td>
               <td><button class="bluebtn">System Default</button></td>
@@ -157,20 +227,10 @@ changeTheme(theme)
       </div>
   
     </dialog>
-    <script>
-      function settingsOpen() {
-      document.getElementById("settings").showModal();
-    }
-    function settingsClose() {
-      document.getElementById("settings").close();
-    }
-    </script>
     <dialog id="dialogJS" class="javagendialog">
       <h1>JavaScript code</h1>
-      <hr>
       <pre style="text-align: left;"><code style="text-align: left;" class="language-javascript" id="codebox"></code></pre>
-      <hr>
-      <button class="btnred" id="close">Close</button>
+      <button class="btndefault" id="close">Close</button>
     </dialog>
     <script type="module">
       const open = document.getElementById("open");
@@ -209,6 +269,8 @@ changeTheme(theme)
         
         document.body.removeChild(downloadLink); 
     })
+
+
     </script>
   
   
@@ -360,6 +422,7 @@ changeTheme(theme)
     <category name="Text" categorystyle="text_category">
       <block type="text"></block>
       <block type="text_multiline"></block>
+      <block type="raw_text"></block>
       <block type="text_join"></block>
       <block type="dynamic_text_join"></block>
       <block type="text_append">
@@ -562,6 +625,7 @@ changeTheme(theme)
         <value name="intents">
           <block type="lists_create_with">
             <mutation items="1"></mutation>
+          </value>
       </block>
      
     </block>
@@ -578,7 +642,7 @@ changeTheme(theme)
       </block>
       
     </category>
-    <category name="All Events" colour="#ffa200">
+    <category name="All Events" colour="#50C878">
       <label text="Messages"></label>
       <block type="events_message_received"></block>
       <label text="Discord Applications"></label>
@@ -599,6 +663,25 @@ changeTheme(theme)
       <label text="data"></label>
       <block type="message_data"></block>
       <block type="message_m"></block>
+      <block type="message_send">
+        <value name="text">
+          <shadow type="text">
+            <field name="TEXT">Hey!</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="message_reply">
+        <value name="text">
+          <shadow type="text">
+            <field name="TEXT">Hey!</field>
+          </shadow>
+        </value>
+        <value name="ping">
+          <shadow type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+        </value>
+      </block>
     </category>
     
     <!--<category name="Console" colour="#D14081">
@@ -610,7 +693,15 @@ changeTheme(theme)
     </value>
      </block>
     </category> -->
-    
+    <category name="Embeds" colour="#ebb134">
+      <label text="Embed Builder"></label>
+      <block type="embed_builder">
+        <value name="name">
+          <block type="raw_text"></block>
+        </value>
+      </block>
+      <label text="Embed Object"></label>
+    </category>
   </xml>
 
 </body>
