@@ -157,3 +157,6 @@ downloadLink.click();
   })
 }
 
+function cleanup () {
+  workspace.cleanUp();
+}
