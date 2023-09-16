@@ -410,8 +410,8 @@ input:focus {
 .switch {
   position: relative;
   display: inline-block;
-  width: 54px;
-  height: 28px;
+  width: 50px;
+  height: 24px;
   margin-right: 10px:
 }
 .switch input { 
@@ -426,7 +426,7 @@ input:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f88;
+  background-color: #888;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
@@ -434,8 +434,8 @@ input:focus {
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -444,7 +444,7 @@ input:focus {
   border-radius: 50%;
 }
 input:checked + .slider {
-  background-color: #8f8;
+  background-color: #88f;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
