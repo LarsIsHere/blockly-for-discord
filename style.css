@@ -412,7 +412,9 @@ input:focus {
   display: inline-block;
   width: 50px;
   height: 24px;
-  margin-right: 10px:
+}
+td > .switch {
+  margin-right: 15px:
 }
 .switch input { 
   opacity: 0;
