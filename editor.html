@@ -135,7 +135,9 @@ changeTheme(style)
 var theme = localStorage.getItem("theme");
 changeTheme(theme)
 }
-
+if (localStorage.getItem("blocktheme") === null) {
+  localStorage.setItem("blocktheme", "Blockly.Themes.Classic");
+}
   </script>
 
   <script>
@@ -260,6 +262,26 @@ changeTheme(theme)
                   <option value="olddarktheme">Dark Theme (old)</option>
                   <option value="lighttheme">Light Theme</option>
                   <option value="neon">Neon Theme</option>
+                </select>
+              </td>
+              <td><button class="bluebtn">System Default</button></td>
+            <tr>
+          </table>
+        </div>
+        <div style="margin-left: 10px;" class="blocktheme">
+          <h4 style="text-align: left; margin-bottom: 2px;">Block Theme</h4>
+          <p class="settingspara">Changes the block theme of the blockly imported blocks</p>
+          <table>
+          <tr>
+              <td>
+                <select name="blocktheme" id="blockthemedrop" style="padding-right: 4px;">
+                  <option value="Blockly.Themes.Classic">Classic Theme</option>
+                  <option value="Blockly.Themes.Zelos">Scratch Theme</option>
+                  <!-- 
+                  <option value="">High Contrast Theme</option>
+                  <option value="deuteranopia">Deuteranopia Theme</option>
+                  <option value="tritanopia">Tritanopia Theme</option> 
+                -->
                 </select>
               </td>
               <td><button class="bluebtn">System Default</button></td>

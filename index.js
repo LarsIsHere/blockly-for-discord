@@ -21,13 +21,22 @@ function start() {
   });
 
   var rendererc = localStorage.getItem("renderer")
+  var blockthemef = localStorage.getItem("blocktheme")
+  
+  const blockdropdown = document.getElementById('blockthemedrop');
+  blockdropdown.addEventListener('change', function() {
 
+    const selectedValuet = blockdropdown.value;
+    localStorage.setItem("blocktheme", selectedValuet);
+    
+  });
   //injection @Blockly lib
   workspace = Blockly.inject('blocklyDiv',
     {
       toolbox: document.getElementById('toolbox-categories'),
       renderer: rendererc,
       CORNER_RADIUS: 20,
+      theme: blockthemef,
       zoom:
          {controls: true,
           wheel: true,
