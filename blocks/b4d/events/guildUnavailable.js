@@ -14,9 +14,9 @@ const EventsguildUnavailableName = "guildUnavailable";
     "tooltip": "Emitted whenever a guild becomes unavailable, likely due to a server outage.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildUnavailableName] = {
+Blockly.Blocks[EventsguildUnavailableName] = {
     init: function() {
-        this.jsonInit(guildUnavailableData);
+        this.jsonInit(EventsguildUnavailableData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildUnavailable'] = function(block, generator) {

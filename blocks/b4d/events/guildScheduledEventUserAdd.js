@@ -14,9 +14,9 @@ const EventsguildScheduledEventUserAddName = "guildScheduledEventUserAdd";
     "tooltip": "Emitted whenever a user subscribes to a guild scheduled event",
     "helpUrl": ""
  };
-Blockly.Blocks[guildScheduledEventUserAddName] = {
+Blockly.Blocks[EventsguildScheduledEventUserAddName] = {
     init: function() {
-        this.jsonInit(guildScheduledEventUserAddData);
+        this.jsonInit(EventsguildScheduledEventUserAddData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildScheduledEventUserAdd'] = function(block, generator) {

@@ -14,9 +14,9 @@ const EventsmessageReactionRemoveName = "messageReactionRemove";
     "tooltip": "Emitted whenever a reaction is removed from a cached message.",
     "helpUrl": ""
  };
-Blockly.Blocks[messageReactionRemoveName] = {
+Blockly.Blocks[EventsmessageReactionRemoveName] = {
     init: function() {
-        this.jsonInit(messageReactionRemoveData);
+        this.jsonInit(EventsmessageReactionRemoveData);
     }
 };
 javascript.javascriptGenerator.forBlock['messageReactionRemove'] = function(block, generator) {

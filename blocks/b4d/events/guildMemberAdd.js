@@ -14,9 +14,9 @@ const EventsguildMemberAddName = "guildMemberAdd";
     "tooltip": "Emitted whenever a user joins a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildMemberAddName] = {
+Blockly.Blocks[EventsguildMemberAddName] = {
     init: function() {
-        this.jsonInit(guildMemberAddData);
+        this.jsonInit(EventsguildMemberAddData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildMemberAdd'] = function(block, generator) {

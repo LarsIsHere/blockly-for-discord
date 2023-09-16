@@ -14,9 +14,9 @@ const EventsguildCreateName = "guildCreate";
     "tooltip": "Emitted whenever the client joins a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildCreateName] = {
+Blockly.Blocks[EventsguildCreateName] = {
     init: function() {
-        this.jsonInit(guildCreateData);
+        this.jsonInit(EventsguildCreateData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildCreate'] = function(block, generator) {

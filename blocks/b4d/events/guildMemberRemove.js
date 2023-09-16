@@ -14,9 +14,9 @@ const EventsguildMemberRemoveName = "guildMemberRemove";
     "tooltip": "Emitted whenever a member leaves a guild, or is kicked.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildMemberRemoveName] = {
+Blockly.Blocks[EventsguildMemberRemoveName] = {
     init: function() {
-        this.jsonInit(guildMemberRemoveData);
+        this.jsonInit(EventsguildMemberRemoveData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildMemberRemove'] = function(block, generator) {

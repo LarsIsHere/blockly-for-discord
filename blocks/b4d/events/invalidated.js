@@ -14,9 +14,9 @@ const EventsinvalidatedName = "invalidated";
     "tooltip": "Emitted when the client's session becomes invalidated. You are expected to handle closing the process gracefully and preventing a boot loop if you are listening to this event.",
     "helpUrl": ""
  };
-Blockly.Blocks[invalidatedName] = {
+Blockly.Blocks[EventsinvalidatedName] = {
     init: function() {
-        this.jsonInit(invalidatedData);
+        this.jsonInit(EventsinvalidatedData);
     }
 };
 javascript.javascriptGenerator.forBlock['invalidated'] = function(block, generator) {

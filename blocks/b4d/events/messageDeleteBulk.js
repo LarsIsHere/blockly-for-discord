@@ -14,9 +14,9 @@ const EventsmessageDeleteBulkName = "messageDeleteBulk";
     "tooltip": "Emitted whenever messages are deleted in bulk.",
     "helpUrl": ""
  };
-Blockly.Blocks[messageDeleteBulkName] = {
+Blockly.Blocks[EventsmessageDeleteBulkName] = {
     init: function() {
-        this.jsonInit(messageDeleteBulkData);
+        this.jsonInit(EventsmessageDeleteBulkData);
     }
 };
 javascript.javascriptGenerator.forBlock['messageDeleteBulk'] = function(block, generator) {

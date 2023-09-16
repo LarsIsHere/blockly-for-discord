@@ -14,9 +14,9 @@ const EventsguildDeleteName = "guildDelete";
     "tooltip": "Emitted whenever a guild kicks the client or the guild is deleted/left.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildDeleteName] = {
+Blockly.Blocks[EventsguildDeleteName] = {
     init: function() {
-        this.jsonInit(guildDeleteData);
+        this.jsonInit(EventsguildDeleteData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildDelete'] = function(block, generator) {

@@ -14,9 +14,9 @@ const EventsdebugName = "debug";
     "tooltip": "Emitted for general debugging information.",
     "helpUrl": ""
  };
-Blockly.Blocks[EventsApiRequestName] = {
+Blockly.Blocks[EventsdebugName] = {
     init: function() {
-        this.jsonInit(EventsApiRequestData);
+        this.jsonInit(EventsdebugData);
     }
 };
 javascript.javascriptGenerator.forBlock['debug'] = function(block, generator) {

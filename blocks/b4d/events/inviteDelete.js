@@ -14,9 +14,9 @@ const EventsinviteDeleteName = "inviteDelete";
     "tooltip": "Emitted when an invite is deleted.",
     "helpUrl": ""
  };
-Blockly.Blocks[inviteDeleteName] = {
+Blockly.Blocks[EventsinviteDeleteName] = {
     init: function() {
-        this.jsonInit(inviteDeleteData);
+        this.jsonInit(EventsinviteDeleteData);
     }
 };
 javascript.javascriptGenerator.forBlock['inviteDelete'] = function(block, generator) {

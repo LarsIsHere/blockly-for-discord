@@ -14,9 +14,9 @@ const EventsguildBanAddName = "guildBanAdd";
     "tooltip": "Emitted whenever a member is banned from a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildBanAddName] = {
+Blockly.Blocks[EventsguildBanAddName] = {
     init: function() {
-        this.jsonInit(guildBanAddData);
+        this.jsonInit(EventsguildBanAddData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildBanAdd'] = function(block, generator) {

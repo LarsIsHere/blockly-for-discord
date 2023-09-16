@@ -14,9 +14,9 @@ const EventsguildIntegrationsUpdateName = "guildIntegrationsUpdate";
     "tooltip": "Emitted whenever a guild integration is updated.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildIntegrationsUpdateName] = {
+Blockly.Blocks[EventsguildIntegrationsUpdateName] = {
     init: function() {
-        this.jsonInit(guildIntegrationsUpdateData);
+        this.jsonInit(EventsguildIntegrationsUpdateData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildIntegrationsUpdate'] = function(block, generator) {

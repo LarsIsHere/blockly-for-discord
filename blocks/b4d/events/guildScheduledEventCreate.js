@@ -14,9 +14,9 @@ const EventsguildScheduledEventCreateName = "guildScheduledEventCreate";
     "tooltip": "Emitted whenever a guild scheduled event is created.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildScheduledEventCreateName] = {
+Blockly.Blocks[EventsguildScheduledEventCreateName] = {
     init: function() {
-        this.jsonInit(guildScheduledEventCreateData);
+        this.jsonInit(EventsguildScheduledEventCreateData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildScheduledEventCreate'] = function(block, generator) {

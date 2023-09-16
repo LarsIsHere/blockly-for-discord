@@ -14,9 +14,9 @@ const EventsguildScheduledEventUserRemoveName = "guildScheduledEventUserRemove";
     "tooltip": "Emitted whenever a user unsubscribes from a guild scheduled event",
     "helpUrl": ""
  };
-Blockly.Blocks[guildScheduledEventUserRemoveName] = {
+Blockly.Blocks[EventsguildScheduledEventUserRemoveName] = {
     init: function() {
-        this.jsonInit(guildScheduledEventUserRemoveData);
+        this.jsonInit(EventsguildScheduledEventUserRemoveData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildScheduledEventUserRemove'] = function(block, generator) {

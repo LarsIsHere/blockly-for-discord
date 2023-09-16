@@ -14,9 +14,9 @@ const EventsmessageReactionAddName = "messageReactionAdd";
     "tooltip": "Emitted whenever a reaction is added to a cached message.",
     "helpUrl": ""
  };
-Blockly.Blocks[messageReactionAddName] = {
+Blockly.Blocks[EventsmessageReactionAddName] = {
     init: function() {
-        this.jsonInit(messageReactionAddData);
+        this.jsonInit(EventsmessageReactionAddData);
     }
 };
 javascript.javascriptGenerator.forBlock['messageReactionAdd'] = function(block, generator) {

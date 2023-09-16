@@ -14,9 +14,9 @@ const EventsguildBanRemoveName = "guildBanRemove";
     "tooltip": "Emitted whenever a member is unbanned from a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildBanRemoveName] = {
+Blockly.Blocks[EventsguildBanRemoveName] = {
     init: function() {
-        this.jsonInit(guildBanRemoveData);
+        this.jsonInit(EventsguildBanRemoveData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildBanRemove'] = function(block, generator) {

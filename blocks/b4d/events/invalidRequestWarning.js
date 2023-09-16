@@ -14,9 +14,9 @@ const EventsinvalidRequestWarningName = "invalidRequestWarning";
     "tooltip": "Emitted periodically when the process sends invalid requests to let users avoid the 10k invalid requests in 10 minutes threshold that causes a ban.",
     "helpUrl": ""
  };
-Blockly.Blocks[invalidRequestWarningName] = {
+Blockly.Blocks[EventsinvalidRequestWarningName] = {
     init: function() {
-        this.jsonInit(invalidRequestWarningData);
+        this.jsonInit(EventsinvalidRequestWarningData);
     }
 };
 javascript.javascriptGenerator.forBlock['invalidRequestWarning'] = function(block, generator) {

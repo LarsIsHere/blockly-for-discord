@@ -14,9 +14,9 @@ const EventsemojiDeleteName = "emojiDelete";
     "tooltip": "Emitted whenever a custom emoji is deleted in a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[EventsApiRequestName] = {
+Blockly.Blocks[EventsemojiDeleteName] = {
     init: function() {
-        this.jsonInit(EventsApiRequestData);
+        this.jsonInit(EventsemojiDeleteData);
     }
 };
 javascript.javascriptGenerator.forBlock['emojiDelete'] = function(block, generator) {

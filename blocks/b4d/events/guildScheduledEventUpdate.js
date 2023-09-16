@@ -14,9 +14,9 @@ const EventsguildScheduledEventUpdateName = "guildScheduledEventUpdate";
     "tooltip": "Emitted whenever a guild scheduled event gets updated.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildScheduledEventUpdateName] = {
+Blockly.Blocks[EventsguildScheduledEventUpdateName] = {
     init: function() {
-        this.jsonInit(guildScheduledEventUpdateData);
+        this.jsonInit(EventsguildScheduledEventUpdateData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildScheduledEventUpdate'] = function(block, generator) {

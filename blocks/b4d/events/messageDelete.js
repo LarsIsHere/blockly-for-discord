@@ -14,9 +14,9 @@ const EventsmessageDeleteName = "messageDelete";
     "tooltip": "Emitted whenever a message is deleted.",
     "helpUrl": ""
  };
-Blockly.Blocks[messageDeleteName] = {
+Blockly.Blocks[EventsmessageDeleteName] = {
     init: function() {
-        this.jsonInit(messageDeleteData);
+        this.jsonInit(EventsmessageDeleteData);
     }
 };
 javascript.javascriptGenerator.forBlock['messageDelete'] = function(block, generator) {

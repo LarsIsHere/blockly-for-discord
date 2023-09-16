@@ -14,9 +14,9 @@ const EventsinteractionCreateName = "interactionCreate";
     "tooltip": "Emitted when an interaction is created.",
     "helpUrl": ""
  };
-Blockly.Blocks[interactionCreateName] = {
+Blockly.Blocks[EventsinteractionCreateName] = {
     init: function() {
-        this.jsonInit(interactionCreateData);
+        this.jsonInit(EventsinteractionCreateData);
     }
 };
 javascript.javascriptGenerator.forBlock['interactionCreate'] = function(block, generator) {

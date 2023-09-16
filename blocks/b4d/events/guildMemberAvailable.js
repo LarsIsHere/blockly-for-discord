@@ -14,9 +14,9 @@ const EventsguildMemberAvailableName = "guildMemberAvailable";
     "tooltip": "Emitted whenever a member becomes available in a large guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildMemberAvailableName] = {
+Blockly.Blocks[EventsguildMemberAvailableName] = {
     init: function() {
-        this.jsonInit(guildMemberAvailableData);
+        this.jsonInit(EventsguildMemberAvailableData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildMemberAvailable'] = function(block, generator) {

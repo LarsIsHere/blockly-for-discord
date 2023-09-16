@@ -14,9 +14,9 @@ const EventsguildMembersChunkName = "guildMembersChunk";
     "tooltip": "Emitted whenever a chunk of guild members is received (all members come from the same guild).",
     "helpUrl": ""
  };
-Blockly.Blocks[guildMembersChunkName] = {
+Blockly.Blocks[EventsguildMembersChunkName] = {
     init: function() {
-        this.jsonInit(guildMembersChunkData);
+        this.jsonInit(EventsguildMembersChunkData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildMembersChunk'] = function(block, generator) {

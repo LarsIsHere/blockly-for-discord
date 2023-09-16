@@ -14,9 +14,9 @@ const EventsemojiUpdateName = "emojiUpdate";
     "tooltip": "Emitted whenever a custom emoji is updated in a guild.",
     "helpUrl": ""
  };
-Blockly.Blocks[EventsApiRequestName] = {
+Blockly.Blocks[EventsemojiUpdateName] = {
     init: function() {
-        this.jsonInit(EventsApiRequestData);
+        this.jsonInit(EventsemojiUpdateData);
     }
 };
 javascript.javascriptGenerator.forBlock['emojiUpdate'] = function(block, generator) {

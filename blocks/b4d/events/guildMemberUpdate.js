@@ -14,9 +14,9 @@ const EventsguildMemberUpdateName = "guildMemberUpdate";
     "tooltip": "Emitted whenever a guild member changes - i.e. new role, removed role, nickname.",
     "helpUrl": ""
  };
-Blockly.Blocks[guildMemberUpdateName] = {
+Blockly.Blocks[EventsguildMemberUpdateName] = {
     init: function() {
-        this.jsonInit(guildMemberUpdateData);
+        this.jsonInit(EventsguildMemberUpdateData);
     }
 };
 javascript.javascriptGenerator.forBlock['guildMemberUpdate'] = function(block, generator) {

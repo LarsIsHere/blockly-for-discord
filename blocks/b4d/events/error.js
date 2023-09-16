@@ -14,9 +14,9 @@ const EventserrorName = "error";
     "tooltip": "Emitted when the client encounters an error.",
     "helpUrl": ""
  };
-Blockly.Blocks[errorName] = {
+Blockly.Blocks[EventserrorName] = {
     init: function() {
-        this.jsonInit(errorData);
+        this.jsonInit(EventserrorData);
     }
 };
 javascript.javascriptGenerator.forBlock['error'] = function(block, generator) {

@@ -14,9 +14,9 @@ const EventsinviteCreateName = "inviteCreate";
     "tooltip": "Emitted when an invite is created.",
     "helpUrl": ""
  };
-Blockly.Blocks[inviteCreateName] = {
+Blockly.Blocks[EventsinviteCreateName] = {
     init: function() {
-        this.jsonInit(inviteCreateData);
+        this.jsonInit(EventsinviteCreateData);
     }
 };
 javascript.javascriptGenerator.forBlock['inviteCreate'] = function(block, generator) {
