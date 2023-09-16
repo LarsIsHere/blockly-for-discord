@@ -94,6 +94,10 @@ function start() {
     
               // Load the Blockly workspace with the parsed XML
               var xmlDome = Blockly.utils.xml.textToDom(xmlTexte);
+              const response = confirm("Do you wish to clear the workspace before importing?");
+              if (response) {
+                workspace.clear();
+              }
               Blockly.Xml.domToWorkspace(xmlDome, workspace);
               var fileName = file.name;
               SucessModal ("Imported " + fileName + " successfully", 3000, "bottom", "center")
