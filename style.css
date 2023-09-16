@@ -413,9 +413,6 @@ input:focus {
   width: 50px;
   height: 24px;
 }
-td > .switch {
-  margin-right: 15px:
-}
 .switch input { 
   opacity: 0;
   width: 0;
