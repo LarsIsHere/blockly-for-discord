@@ -13,7 +13,7 @@ const EmbedBuilderName = "embed_builder";
     ],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "#eba234",
+    "colour": 15,
     "tooltip": "",
     "helpUrl": ""
  };
@@ -29,7 +29,7 @@ Blockly.Blocks[EmbedBuilderName] = {
         var statements_properties = generator.statementToCode(block, 'properties');
         // TODO: Assemble javascript into code variable.
         var code = `const ${value_name} = new EmbedBuilder()
-        ${statements_properties}`;
+        ${statements_properties}\n`;
         return code;
       };
 

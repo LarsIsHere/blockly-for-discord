@@ -109,6 +109,15 @@
  <script src="blocks\b4d\events\warn.js"></script>
  <script src="blocks\b4d\events\webhookUpdate.js"></script>
  <script src="blocks\b4d\bot_info\bot_info.js"></script>
+ <script src="blocks\b4d\embeds\embed_title.js"></script>
+ <script src="blocks\b4d\embeds\embed_color.js"></script>
+ <script src="blocks\b4d\embeds\embed_url.js"></script>
+ <script src="blocks\b4d\embeds\embed_author.js"></script>
+ <script src="blocks\b4d\embeds\embed_description.js"></script>
+ <script src="blocks\b4d\embeds\embed_thumbnail.js"></script>
+ <script src="blocks\b4d\embeds\embed_fields.js"></script>
+ <script src="blocks\b4d\embeds\embed_field.js"></script>
+ <script src="blocks\b4d\embeds\embed_image.js"></script>
   <!-- 
     Block imports end here
   -->
@@ -865,11 +874,63 @@ if (localStorage.getItem("blocktheme") === null) {
     </category> -->
     <category name="Embeds" colour="#ebb134">
       <label text="Embed Builder"></label>
-      <block type="embed_builder">
-        <value name="name">
-          <block type="raw_text"></block>
+      <block type="embed_builder"></block>
+      <block type="embed_title">
+        <value name="title">
+          <shadow type="text">
+            <field name="TEXT">Title</field>
+          </shadow>
         </value>
       </block>
+          <block type="embed_title_url">
+            <value name="title">
+              <shadow type="text">
+                <field name="TEXT">Title URL</field>
+              </shadow>
+            </value>
+          </block>
+          <block type="embed_color">
+            <value name="title">
+              <shadow type="colour_picker">
+                <field name="COLOUR">#5fa3f5</field>
+              </shadow>
+            </value>
+            </block>
+            <block type="embed_author"></block>
+            <block type="embed_description">
+              <value name="title">
+                <shadow type="text">
+                  <field name="TEXT">Author</field>
+                </shadow>
+              </value>
+            </block>
+            <block type="embed_thumbnail">
+              <value name="title">
+                <shadow type="text">
+                  <field name="TEXT">Thumbnail URL</field>
+                </shadow>
+              </value>
+            </block>
+            <block type="embed_image">
+              <value name="title">
+                <shadow type="text">
+                  <field name="TEXT">Image URL</field>
+                </shadow>
+              </value>
+            </block>
+            <block type="embed_fields"></block>
+            <block type="embed_field">
+              <value name="name">
+                <shadow type="text">
+                  <field name="TEXT">Field Name</field>
+                </shadow>
+              </value>
+              <value name="value">
+                <shadow type="text">
+                  <field name="TEXT">Field Description</field>
+                </shadow>
+              </value>
+            </block>
       <label text="Embed Object"></label>
     </category>
   </xml>

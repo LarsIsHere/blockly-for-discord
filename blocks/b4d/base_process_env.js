@@ -23,7 +23,7 @@ Blockly.Blocks[ProcessEnv] = {
 javascript.javascriptGenerator.forBlock['base_process_env'] = function(block, generator) {
     var value_code = generator.valueToCode(block, 'CODE', javascript.Order.ATOMIC);
     // TODO: Assemble javascript into code variable.
-    var code = `process.env.[string(${value_code})]`;
+    var code = `process.env.string(${value_code})`;
     // TODO: Change ORDER_NONE to the correct strength.
     return [code, javascript.Order.ATOMIC];
   };
