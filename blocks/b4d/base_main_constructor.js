@@ -29,9 +29,9 @@ javascript.javascriptGenerator.forBlock['base_main_constructor'] = function(bloc
   var statements_name = generator.statementToCode(block, 'NAME');
   var value_token = generator.valueToCode(block, 'TOKEN', javascript.Order.ATOMIC);
   // TODO: Assemble javascript into code variable.
-  var code = `const { Client, Intents } = require("discord.js");
+  var code = `const { Client, IntentsBitField } = require("discord.js");
   const client = new Client({
-    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
+    intents: [IntentsBitField.FLags.Guilds, IntentsBitField.FLAGS.GuildMessages, IntentsBitField.FLAGS.MessageContent, IntentsBitField.Flags.GuildMembers]
   });
   
   client.on("ready", () => {

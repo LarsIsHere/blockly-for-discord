@@ -110,7 +110,7 @@ javascript.javascriptGenerator.forBlock['base_gateways'] = function(block, gener
       var code = `All gateway intents go here!`;
     }
     else {
-      var comb = "GatewayIntentBits." + dropdown_name;
+      var comb = "IntentsBitField.Flags." + dropdown_name;
       var code = comb;
     }
     // TODO: Change ORDER_NONE to the correct strength.

@@ -33,7 +33,7 @@ javascript.javascriptGenerator.forBlock['base_advanced_main_constructor'] = func
   var value_intents = generator.valueToCode(block, 'intents', javascript.Order.ATOMIC);
   var value_mobile = block.getFieldValue('mobile') === 'TRUE';
   // TODO: Assemble javascript into code variable.
-  var code = `const { Client, Events, GatewayIntentBits } = require('discord.js');
+  var code = `const { Client, Events, IntentsBitField } = require('discord.js');
 
 
   const client = new Client(
