@@ -53,6 +53,7 @@ function start() {
       shortcut: true,
     }
     const backpack = new Backpack(workspace);
+    
  backpack.init();
     const plugin = new CrossTabCopyPaste();
     plugin.init(options, () => {
