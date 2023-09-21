@@ -459,3 +459,6 @@ input:checked + .slider:before {
 ::-webkit-scrollbar:not(.blocklyToolboxDiv blocklyNonSelectable) {
   width: 16px;
 }
+.blocklyToolboxDiv::-webkit-scrollbar {
+  display: none;
+}
