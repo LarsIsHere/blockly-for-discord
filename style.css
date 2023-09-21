@@ -450,15 +450,15 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-::-webkit-scrollbar-thumb:not(.blocklyToolboxDiv blocklyNonSelectable) {
+.blocklyToolboxDiv::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb:not(.blocklyToolboxDiv) {
   background-color: gray;
   border: 4px solid transparent;
   border-radius: 8px;
   background-clip: padding-box;  
 }
-::-webkit-scrollbar:not(.blocklyToolboxDiv blocklyNonSelectable) {
+::-webkit-scrollbar:not(.blocklyToolboxDiv) {
   width: 16px;
-}
-.blocklyToolboxDiv::-webkit-scrollbar {
-  display: none;
 }
