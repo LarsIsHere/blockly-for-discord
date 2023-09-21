@@ -41,6 +41,7 @@ function start() {
   backpack_check.addEventListener('change', function() {
     if (backpack_check.checked) {
       localStorage.setItem("plugin_backpack", "true");
+      
       backpack_check.checked = true;
     } else {
       localStorage.setItem("plugin_backpack", "false");
