@@ -29,32 +29,83 @@ function start() {
     const selectedValuet = blockdropdown.value;
     localStorage.setItem("blocktheme", selectedValuet);
     
+    
+
   });
+
+  if (localStorage.getItem("plugin_backpack") === null) {
+    localStorage.setItem("plugin_backpack", "true");
+  }
+
+  const backpack_check = document.getElementById('switch-plugin-b');
+  backpack_check.addEventListener('change', function() {
+    if (backpack_check.checked) {
+      localStorage.setItem("plugin_backpack", "true");
+      backpack_check.checked = true;
+    } else {
+      localStorage.setItem("plugin_backpack", "false");
+      backpack_check.checked = false;
+    }
+    
+  });
+  if (localStorage.getItem("plugin_ctoolbox") === null) {
+    localStorage.setItem("plugin_ctoolbox", "false");
+  }
+  const ctoolbox_check = document.getElementById('switch-plugin-ct');
+  ctoolbox_check.disabled = true;
+    ctoolbox_check.addEventListener('change', function() {
+    if (ctoolbox_check.checked) {
+      localStorage.setItem("plugin_ctoolbox", "true");
+      ctoolbox_check.checked = true;
+    } else {
+      localStorage.setItem("plugin_ctoolbox", "false");
+      ctoolbox_check.checked = false;
+    }
+
+  });
+
+  const injectOptions = {
+    toolbox: document.getElementById('toolbox-categories'),
+    renderer: rendererc,
+    CORNER_RADIUS: 20,
+    theme: blockthemef,
+    zoom: {
+      controls: true,
+      wheel: true,
+      startScale: 1.0,
+      maxScale: 3,
+      minScale: 0.3,
+      scaleSpeed: 1.2,
+      pinch: true,
+    },
+    trashcan: true,
+  };
+  if (localStorage.getItem("plugin_ctoolbox") == "true") {
+    ctoolbox_check.checked = true;
+   /* injectOptions.plugins = {
+      'toolbox': ContinuousToolbox,
+      'flyoutsVerticalToolbox': ContinuousFlyout,
+      'metricsManager': ContinuousMetrics,
+    }; */
+    console.log(injectOptions);
+  } else {
+    ctoolbox_check.checked = false;
+  }
   //injection @Blockly lib
-  workspace = Blockly.inject('blocklyDiv',
-    {
-      toolbox: document.getElementById('toolbox-categories'),
-      renderer: rendererc,
-      CORNER_RADIUS: 20,
-      theme: blockthemef,
-      zoom:
-         {controls: true,
-          wheel: true,
-          startScale: 1.0,
-          maxScale: 3,
-          minScale: 0.3,
-          scaleSpeed: 1.2,
-          pinch: true},
-     trashcan: true
-    });
+  workspace = Blockly.inject('blocklyDiv', injectOptions);
 
     const options = {
       contextMenu: true,
       shortcut: true,
     }
-    const backpack = new Backpack(workspace);
-    
- backpack.init();
+    if (localStorage.getItem("plugin_backpack") == "true") {
+      backpack_check.checked = true;
+      const backpack = new Backpack(workspace);
+      backpack.init();
+    } else {
+      backpack_check.checked = false;
+    }
+
     const plugin = new CrossTabCopyPaste();
     plugin.init(options, () => {
     console.log('Use this error callback to handle TypeError while pasting');
