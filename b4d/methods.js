@@ -44,3 +44,10 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
         onClick: function(){} 
       }).showToast();
   };
+
+b4d.dialog.open = function(id) {
+  document.getElementById(id).showModal();
+}
+b4d.dialog.close = function(id) {
+  document.getElementById(id).close();
+}
