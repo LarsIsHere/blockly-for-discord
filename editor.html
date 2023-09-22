@@ -199,12 +199,24 @@ if (localStorage.getItem("blocktheme") === null) {
     </nav>
 
     <dialog id="marketplacedialog" class="settingsdialog">
-      <div class="dialogdiv"><button onclick="b4d.dialog.close('marketplacedialog')" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
-      <div style="margin-top:40px; float: left;">
-        <div style="margin-left: 10px;">
-          <p>Soon tm</p>
-        </div>
-      </div>
+      <div class="dialogdiv"><button onclick="b4d.dialog.close('marketplacedialog')" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Marketplace</h3></div>
+      <div style="margin-top:40px; float: center;">
+        <div style="margin-left: 10px; margin-right: 10px; width: 100%; display: grid;margin: 16px -4px; place-items: center;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 16px -4px; place-items: center; max-width: 70%; " class="market-parent">
+
+          <div class="market-item"><div class="market-banner"><img src="market\files.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
+        <p>Example Extension Description. Lorem Ipsum Poop</p></div>
+        <div class="market-item"><div class="market-banner"><img src="market\text.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
+        <p>Example Extension Description. Lorem Ipsum Poop</p></div>
+        <div class="market-item"><div class="market-banner"><img src="market\bitwise.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
+        <p>Example Extension Description. Lorem Ipsum Poop</p></div>
+          </div>
+          
+          </div>
+          
+          </div>
+        
+      
     </dialog>
     
     <dialog id="livedialog" class="settingsdialog">

@@ -462,3 +462,33 @@ dialog::-webkit-scrollbar-thumb {
 dialog::-webkit-scrollbar {
   width: 16px;
 }
+
+
+.market-item {
+  position: relative;
+  outline: 0.5px solid #2e3338;
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: #16191b;
+    padding: 8px;
+    transition: 500ms;
+}
+.market-item:hover {
+  background-color: #2e3338;
+}
+
+.market-banner {
+  position: relative;
+    margin: -8px -8px 0 -8px;
+}
+
+.market-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.market-parent {
+  background-color:#1e2325;
+}
