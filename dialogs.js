@@ -1,11 +1,3 @@
-function livecollabOpen() {
-    document.getElementById("livedialog").showModal();
-  }
-
-  function livecollabClose() {
-    document.getElementById("livedialog").close();
-  }
-
   function setDefault(dropdown, value) {
     for(var i, j = 0; i = dropdown.options[j]; j++) {
       if(i.value == value) {
