@@ -1,10 +1,14 @@
 const EmbedBuilderName = "embed_builder";
  const EmbedBuilderData = {
-    "message0": "Create Embed %1 %2",
+    "message0": "Create Embed %1 %2 %3",
     "args0": [
       {
-        "type": "input_value",
-        "name": "name"
+       "type": "field_input",
+       "name": "name",
+       "text": "Embed"
+      },
+      {
+       "type": "input_dummy"
       },
       {
         "type": "input_statement",
@@ -25,10 +29,10 @@ Blockly.Blocks[EmbedBuilderName] = {
     // TODO: Assemble javascript into code variable.
     // ${statements_event}
     javascript.javascriptGenerator.forBlock['embed_builder'] = function(block, generator) {
-        var value_name = generator.valueToCode(block, 'name', javascript.Order.ATOMIC);
+        var value_name = block.getFieldValue('name');
         var statements_properties = generator.statementToCode(block, 'properties');
         // TODO: Assemble javascript into code variable.
-        var code = `const ${value_name} = new EmbedBuilder()
+        var code = `const ${value_name || "Embed1"} = new EmbedBuilder()
         ${statements_properties}\n`;
         return code;
       };
