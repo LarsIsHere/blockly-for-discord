@@ -1,11 +1,14 @@
 const EmbedBuilderName = "embed_builder";
  const EmbedBuilderData = {
-    "message0": "Create Embed %1 %2",
+    "message0": "Create Embed %1 %2 %3",
     "args0": [
       {
        "type": "field_input",
        "name": "name",
        "text": "Embed"
+      },
+      {
+       "type": "input_dummy"
       },
       {
         "type": "input_statement",
