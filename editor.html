@@ -184,7 +184,7 @@ if (localStorage.getItem("blocktheme") === null) {
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
               <td><button onclick="b4d.dialog.open('marketplacedialog')" class="btnav">Marketplace</button></td>
               <td><button class="btnav" id="tb">Test Bot</button></td>
-              <td><button onclick="livecollabOpen()" class="btnav" id="lc">Live Collaboration</button></td>
+              <td><button onclick="b4d.dialog.open('livedialog')" class="btnav" id="lc">Live Collaboration</button></td>
               <td><a class="btnav" style="text-decoration: none;" id="credi">Credits</a></td>
               <script>
                 // sorry for script in body but other way doesn't work
@@ -208,7 +208,7 @@ if (localStorage.getItem("blocktheme") === null) {
     </dialog>
     
     <dialog id="livedialog" class="settingsdialog">
-      <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
+      <div class="dialogdiv"><button onclick="b4d.dialog.close('livedialog')" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
       <div style="margin-top:40px; float: left;">
         <div style="margin-left: 10px;">
         <h4 style="text-align: left;margin-bottom: 2px;">Join Collaboration</h4>
