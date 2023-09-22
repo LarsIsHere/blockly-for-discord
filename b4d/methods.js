@@ -1,4 +1,5 @@
 var b4d = {};
+b4d.dialog = {};
 
 b4d.register = function(Name, Data) {
     Blockly.Blocks[Name] = {
@@ -45,10 +46,10 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
       }).showToast();
   };
 
-b4d.dialog = {}
-b4d.dialog.open = function(id) {
-  document.getElementById(id).showModal();
-}
-b4d.dialog.close = function(id) {
-  document.getElementById(id).close();
-}
+  b4d.dialog.close = function(id){
+    document.getElementById(id).close();
+  };
+
+  b4d.dialog.open = function(id){
+    document.getElementById(id).showModal();
+  }
