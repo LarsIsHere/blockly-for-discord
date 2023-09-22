@@ -182,19 +182,30 @@ if (localStorage.getItem("blocktheme") === null) {
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
+              <td><button onclick="b4d.dialog.open('marketplacedialog')" class="btnav">Marketplace</button></td>
               <td><button class="btnav" id="tb">Test Bot</button></td>
               <td><button onclick="livecollabOpen()" class="btnav" id="lc">Live Collaboration</button></td>
-              <td><a class="btnav" style="text-decoration: none;">Credits</a></td>
+              <td><a class="btnav" style="text-decoration: none;" id="credi">Credits</a></td>
               <script>
                 // sorry for script in body but other way doesn't work
                 if (checkMobile()) {
                   document.getElementById("tb").remove();
                   document.getElementById("lc").remove();
+                  document.getElementById("credi").remove();
                 }
               </script>
           </tr>
       </table>
     </nav>
+
+    <dialog id="marketplacedialog" class="settingsdialog">
+      <div class="dialogdiv"><button onclick="b4d.dialog.close('marketplacedialog')" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
+      <div style="margin-top:40px; float: left;">
+        <div style="margin-left: 10px;">
+          <p>Soon tm</p>
+        </div>
+      </div>
+    </dialog>
     
     <dialog id="livedialog" class="settingsdialog">
       <div class="dialogdiv"><button onclick="livecollabClose()" style="float:right;margin:20px;" class="btnav">X</button><h3 class="settingsheader">Live Collaboration</h3></div>
