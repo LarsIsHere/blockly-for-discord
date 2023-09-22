@@ -22,11 +22,8 @@ const ConstructorName = "base_advanced_main_constructor";
     "tooltip": "Use this block if you want more control over your bot and the events that it's going to receive.",
     "helpUrl": ""
  };
-Blockly.Blocks[ConstructorName] = {
-    init: function() {
-        this.jsonInit(ConstructorData);
-    }
-};
+
+ b4d.register(ConstructorName, ConstructorData);
 
 javascript.javascriptGenerator.forBlock['base_advanced_main_constructor'] = function(block, generator) {
   var value_token = generator.valueToCode(block, 'token', javascript.Order.ATOMIC);

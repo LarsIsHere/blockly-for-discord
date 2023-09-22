@@ -88,7 +88,6 @@ function start() {
       'flyoutsVerticalToolbox': ContinuousFlyout,
       'metricsManager': ContinuousMetrics,
     }; */
-    console.log(injectOptions);
   } else {
     ctoolbox_check.checked = false;
   }
@@ -133,6 +132,7 @@ function start() {
       },
       onClick: function(){} 
     }).showToast();
+
     document.getElementsByClassName("blockly-ws-search-close-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-next-btn")[0].remove();
     document.getElementsByClassName("blockly-ws-search-previous-btn")[0].remove();
@@ -162,11 +162,11 @@ function start() {
               }
               Blockly.Xml.domToWorkspace(xmlDome, workspace);
               var fileName = file.name;
-              SucessModal ("Imported " + fileName + " successfully", 3000, "bottom", "center")
+              b4d.success("Imported " + fileName + " successfully", 3000, "bottom", "center")
             } catch (error) {
               console.log(error);
               var fileName = file.name;
-              WarningModal ("Error importing " + fileName +", look in the console for more information", 3000, "bottom", "center")
+              b4d.warn("Error importing " + fileName +", look in the console for more information", 3000, "bottom", "center")
             }
           };
     
@@ -222,3 +222,4 @@ downloadLink.click();
 function cleanup () {
   workspace.cleanUp();
 }
+
