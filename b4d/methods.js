@@ -45,6 +45,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
       }).showToast();
   };
 
+b4d.dialog = {}
 b4d.dialog.open = function(id) {
   document.getElementById(id).showModal();
 }
