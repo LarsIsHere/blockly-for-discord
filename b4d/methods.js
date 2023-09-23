@@ -66,7 +66,6 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
         var result = `<block type="${block}"></block>\n`;
         xmlresult = xmlresult + result;
       }
-      console.log(xmlresult);
     });
     let newXML = '<category name="' + category + '" colour="' + color + '">';
 let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+"</category></xml>";
