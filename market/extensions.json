@@ -2,6 +2,7 @@
     "Example Extension": {
        "Blocks":["label.test","test_block"],
        "banner":"market/files.svg",
+       "Color":"#0398fc",
        "Description":"Example Description: Lorem Ipsum poop"
     }
  } 
