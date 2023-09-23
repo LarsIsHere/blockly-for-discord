@@ -378,8 +378,8 @@ html, body {
 .joincollab::-webkit-outer-spin-button, .joincollab::-webkit-inner-spin-button {
   display: none;
 }
-input {
-  background: #333333;
+input:not(.blockly-ws-search-input) {
+  background: #ddd;
   color: whitesmoke;
   border-radius: 5px;
   height: 21px;
