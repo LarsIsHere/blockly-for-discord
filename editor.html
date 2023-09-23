@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="dddd">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Editor - Blockly for Discord</title>
@@ -173,9 +173,8 @@ if (localStorage.getItem("blocktheme") === null) {
                       <input type="file" id="fileInput" style="display: none;">
                       <a id="exportp">Export as Project</a>
                       <a id="open">Export as JS</a>
-                      <a>Export as File</a>
-                      <a onclick="cleanup()">Clean Up Project</a>
-                      <a onclick="screenshotspace()">Take Screenshot</a>
+                      <a id onclick="cleanup()">Clean Up Project</a>
+                      <a id onclick="screenshotspace()">Take Screenshot</a>
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
