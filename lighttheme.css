@@ -367,6 +367,7 @@ html, body {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 8px;
+  margin-right: 10px;
   background-color: #e9e6e4;
   border:none;
   border-radius: 0.5rem;
@@ -377,4 +378,145 @@ html, body {
 }
 .joincollab::-webkit-outer-spin-button, .joincollab::-webkit-inner-spin-button {
   display: none;
+}
+#blockly-0 .blocklyTreeRowContentContainer input {
+  background: #ddd;
+  color: whitesmoke;
+  border-radius: 5px;
+  height: 21px;
+  /* outline: 0.5px solid #2e3338; */
+  box-shadow: none;
+  width: 80px;
+  text-decoration: none;
+  border: none;
+  
+}
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+input:focus {
+  outline: none;
+}
+/* Toggle switches */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #888;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #88f;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.blocklyToolboxDiv::-webkit-scrollbar {
+  display: none;
+}
+dialog::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;  
+}
+dialog::-webkit-scrollbar {
+  width: 16px;
+}
+.btndefault{
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #3f3f3f;
+  border:none;
+  border-radius: 0.5rem;
+  outline: 1px solid #818181;
+  color: white;
+  transition: 500ms;
+  font-size: 20;
+}
+.btndefault:hover{
+  background-color: #818181;
+}
+
+.market-item {
+  position: relative;
+  outline: 0.5px solid #d1ccc7;
+  border-radius: 8px;
+  margin: 20px;
+  overflow: hidden;
+  background-color: #E9E6E4;
+  padding: 8px;
+  transition: 500ms;
+}
+
+.market-banner {
+  position: relative;
+  margin: -8px -8px 0 -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.market-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+.market-parent {
+  background-color:#E1DCDA;
+}
+
+.market-button {
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  background-color: #E0DDDA;
+  border: none;
+  border-radius: 0.5rem;
+  color: black;
+  transition: 500ms;
+  font-size: 20;
+  width: 100%;
+}
+
+.market-button:hover {
+  background-color: #F5F2f0;
 }
