@@ -479,7 +479,7 @@ dialog::-webkit-scrollbar {
   border-radius: 8px;
   margin: 20px;
   overflow: hidden;
-  background-color: #16191b;
+  background-color: #E9E6E4;
   padding: 8px;
   transition: 500ms;
 }
