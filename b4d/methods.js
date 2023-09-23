@@ -55,7 +55,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
     document.getElementById(id).showModal();
   }
 
-  b4d.extension.load = function(blocks, name, color){
+  b4d.extension.load = function(blocks, name, color, category){
     var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {
@@ -68,7 +68,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
       }
       console.log(xmlresult);
     });
-    let newXML = '<category name="' + name + '" colour="' + color + '">';
+    let newXML = '<category name="' + category + '" colour="' + color + '">';
 let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+"</category></xml>";
 workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
   }
