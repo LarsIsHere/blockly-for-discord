@@ -59,7 +59,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
     var xmlresult;
     blocks.forEach(function(block) {
       if (block.includes("label.")) {
-        var label = text.replace("label.","")
+        var label = block.replace("label.","")
         var labelresult = `<label text="${label}"></label>\n`;
         xmlresult = xmlresult + labelresult;
       } else {
