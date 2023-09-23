@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                             <h1>${key}</h1>
                             <p>${item.Description}</p>
-                            <button onclick="b4d.extension.load(${list})" class="market-button">Add to Toolbox</button>
+                            <button onclick="b4d.extension.load("${list}")" class="market-button">Add to Toolbox</button>
                         `;
                         parentdiv.appendChild(div);
                     }
