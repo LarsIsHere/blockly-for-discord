@@ -378,7 +378,7 @@ html, body {
 .joincollab::-webkit-outer-spin-button, .joincollab::-webkit-inner-spin-button {
   display: none;
 }
-input:not(.blockly-ws-search-input) {
+#blockly-0 .blocklyTreeRowContentContainer input {
   background: #ddd;
   color: whitesmoke;
   border-radius: 5px;
