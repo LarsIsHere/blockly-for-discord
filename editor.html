@@ -173,15 +173,15 @@ if (localStorage.getItem("blocktheme") === null) {
                       <input type="file" id="fileInput" style="display: none;">
                       <a id="exportp">Export as Project</a>
                       <a id="open">Export as JS</a>
-                      <a id onclick="cleanup()">Clean Up Project</a>
-                      <a id onclick="screenshotspace()">Take Screenshot</a>
+                      <a id="cleanupbutton" onclick="cleanup()">Clean Up Project</a>
+                      <a id="screenshotbutton" onclick="screenshotspace()">Take Screenshot</a>
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
               <td><button onclick="b4d.dialog.open('marketplacedialog')" class="btnav">Marketplace</button></td>
               <td><button class="btnav" id="tb">Test Bot</button></td>
               <td><button onclick="b4d.dialog.open('livedialog')" class="btnav" id="lc">Live Collaboration</button></td>
-              <td><a class="btnav" style="text-decoration: none;" id="credi">Credits</a></td>
+              <td><button class="btnav" id="credi">Credits</button></td>
               <script>
                 // sorry for script in body but other way doesn't work
                 if (checkMobile()) {
