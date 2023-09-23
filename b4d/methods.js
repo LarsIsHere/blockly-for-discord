@@ -56,7 +56,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
   }
 
   b4d.extension.load = function(blocks){
-    var xmlresult;
+    var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {
         var label = block.replace("label.","")
