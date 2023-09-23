@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Editor - Blockly for Discord</title>
   <link rel="icon" href="favicon.png">
-  <link rel="canonical" href="https://blockly-for-discord.xyz/" />
+  <link rel="canonical" href="https://blockly-for-discord.xyz/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This is the editor of Blockly For Discord. Where you can make the bots with no coding knowledge whatsoever.">
   <meta property="og:image" content="https://blockly-for-discord.xyz/logo.png"/>
@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="style.css" id="theme-link">
   <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
   <script src="./highlight/highlight.min.js"></script>
-  <script src="Modals.js"></script>
   <script src="dialogs.js"></script>
   <script src="https://unpkg.com/@blockly/workspace-backpack@5.2.0/dist/index.js"></script>
   <script src="b4d\methods.js"></script>
@@ -156,7 +155,6 @@ if (localStorage.getItem("blocktheme") === null) {
   localStorage.setItem("renderer", "zelos")
 } 
   </script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body onload="start()">
@@ -175,16 +173,15 @@ if (localStorage.getItem("blocktheme") === null) {
                       <input type="file" id="fileInput" style="display: none;">
                       <a id="exportp">Export as Project</a>
                       <a id="open">Export as JS</a>
-                      <a>Export as File</a>
-                      <a onclick="cleanup()">Clean Up Project</a>
-                      <a onclick="screenshotspace()">Take Screenshot</a>
+                      <a id="cleanupbutton" onclick="cleanup()">Clean Up Project</a>
+                      <a id="screenshotbutton" onclick="screenshotspace()">Take Screenshot</a>
                   </div>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
               <td><button onclick="b4d.dialog.open('marketplacedialog')" class="btnav">Marketplace</button></td>
               <td><button class="btnav" id="tb">Test Bot</button></td>
               <td><button onclick="b4d.dialog.open('livedialog')" class="btnav" id="lc">Live Collaboration</button></td>
-              <td><a class="btnav" style="text-decoration: none;" id="credi">Credits</a></td>
+              <td><button class="btnav" id="credi">Credits</button></td>
               <script>
                 // sorry for script in body but other way doesn't work
                 if (checkMobile()) {
