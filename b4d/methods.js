@@ -1,5 +1,6 @@
 var b4d = {};
 b4d.dialog = {};
+b4d.extension = {};
 
 b4d.register = function(Name, Data) {
     Blockly.Blocks[Name] = {
@@ -52,4 +53,19 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
 
   b4d.dialog.open = function(id){
     document.getElementById(id).showModal();
+  }
+
+  b4d.extension.load = function(blocks){
+    var xmlresult;
+    blocks.forEach(function(block) {
+      if (block.includes("label.")) {
+        var label = text.replace("label.","")
+        var labelresult = `<label text="${label}"></label>\n`;
+        xmlresult = xmlresult + labelresult;
+      } else {
+        var result = `<block type="${block}"></block>\n`;
+        xmlresult = xmlresult + result;
+      }
+      console.log(xmlresult);
+    });
   }

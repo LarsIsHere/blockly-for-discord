@@ -198,17 +198,9 @@ if (localStorage.getItem("blocktheme") === null) {
       <div class="dialogdiv"><button onclick="b4d.dialog.close('marketplacedialog')" style="float:right;margin:20px;" class="btnav">X</button><button onclick="b4d.warn('Not finished yet', 2000)" style="float:right;margin:20px;" class="btnav">Import custom</button><h3 class="settingsheader">Marketplace</h3></div>
       <div style="margin-top:40px; float: center;">
         <div style="margin-left: 10px; margin-right: 10px; width: 100%; display: grid;margin: 16px -4px; place-items: center;">
-          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 16px -4px; place-items: center; max-width: 70%; " class="market-parent">
+          <div id="parentmarket" style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin: 16px -4px; place-items: center; max-width: 70%; " class="market-parent">
 
-          <div class="market-item"><div class="market-banner"><img src="market\files.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
-        <p>Example Extension Description. Lorem Ipsum Poop</p>
-        <button class="market-button">Add to Toolbox</button></div>
-        <div class="market-item"><div class="market-banner"><img src="market\text.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
-        <p>Example Extension Description. Lorem Ipsum Poop</p>
-        <button class="market-button">Add to Toolbox</button></div>
-        <div class="market-item"><div class="market-banner"><img src="market\bitwise.svg" class="market-image" loading="lazy"></div><h1>Example Extension Title</h1>
-        <p>Example Extension Description. Lorem Ipsum Poop</p>
-        <button class="market-button">Add to Toolbox</button></div>
+          
           </div>
           
           </div>

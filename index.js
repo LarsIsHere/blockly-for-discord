@@ -223,3 +223,28 @@ function cleanup () {
   workspace.cleanUp();
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const parentdiv = document.getElementById("parentmarket");
+
+        fetch('https://blockly-for-discord.xyz/editor.html/market/extensions.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                for (const key in jsonData) {
+                    if (jsonData.hasOwnProperty(key)) {
+                        const item = jsonData[key];
+                        const div = document.createElement("div");
+                        div.className = "market-item";
+                        div.innerHTML = `
+                            <div class="market-banner">
+                                <img src="${item.banner}" class="market-image" loading="lazy">
+                            </div>
+                            <h1>${key}</h1>
+                            <p>${item.Description}</p>
+                            <button onclick="b4d.extension.load(${item.Blocks})" class="market-button">Add to Toolbox</button>
+                        `;
+                        parentdiv.appendChild(div);
+                    }
+                }
+            })
+});

@@ -1,0 +1,7 @@
+{
+    "Example Extension": {
+       "Blocks":["label.test","test_block"],
+       "banner":"market\files.svg",
+       "Description":"Example Description: Lorem Ipsum poop"
+    }
+ } 
