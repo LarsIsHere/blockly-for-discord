@@ -4,6 +4,7 @@
        "banner":"market/files.svg",
        "Category":"Example",
        "Color":"#0398fc",
+       "customXML":"",
        "Description":"Example Description: Lorem Ipsum poop"
     }
  } 

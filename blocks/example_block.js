@@ -25,6 +25,6 @@ Blockly.Blocks[ExampleBlock] = {
 javascript.javascriptGenerator.forBlock['aw_block'] = function(block, generator) {
     var value_name = generator.valueToCode(block, 'STRING', javascript.Order.ATOMIC);
     // TODO: Assemble javascript into code variable.
-    var code = 'awwwww';
+    var code = `awwwwwwwww ${value_name}`;
     return code;
   };
