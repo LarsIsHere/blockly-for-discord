@@ -55,7 +55,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
     document.getElementById(id).showModal();
   }
 
-  b4d.extension.load = function(blocks, name, color, category){
+  b4d.extension.load = function(blocks, name, color, category, dep="null"){
     var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {

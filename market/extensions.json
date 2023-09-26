@@ -1,10 +1,11 @@
 {
     "Example Extension": {
        "Blocks":["label.test"],
-       "banner":"market/files.svg",
+       "banner":"market/testtestest.png",
        "Category":"Example",
        "Color":"#0398fc",
        "customXML":"",
+       "Dependencies":"test,test",
        "Description":"Example Description: Lorem Ipsum poop"
     }
  } 

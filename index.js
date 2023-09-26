@@ -234,7 +234,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (jsonData.hasOwnProperty(key)) {
                         const item = jsonData[key];
                         var list = item.Blocks;
-                        var processed = JSON.stringify(list);
                         console.log(list);
                         console.log(list);
                         const div = document.createElement("div");
