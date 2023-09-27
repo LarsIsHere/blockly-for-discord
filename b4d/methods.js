@@ -56,6 +56,18 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
   }
 
   b4d.extension.load = function(blocks, name, color, category, dep="null"){
+    const itemList = dep.split(',');
+    itemList.forEach(item => {
+      const buttonId = item.trim();
+      const button = document.getElementById(buttonId);
+  
+      if (button) {
+        button.click();
+      } else {
+        console.warn(`Button with ID "${buttonId}" not found.`);
+      }
+    });
+
     var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {

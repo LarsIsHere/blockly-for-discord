@@ -15,7 +15,7 @@
       "Category":"Ptero API",
       "Color":"#0398fc",
       "customXML":"",
-      "Dependencies":"",
+      "Dependencies":"Example Extension",
       "Description":"A websocket implementation for the pterodactyl server console."
    }
  } 
