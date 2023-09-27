@@ -10,7 +10,7 @@
     },
 
     "Pterodactyl API": {
-      "Blocks":["label.e"],
+      "Blocks":["label.Required to work","ptero_require","label.Authentification","ptero_auth"],
       "banner":"market/testtestest.png",
       "Category":"Ptero API",
       "Color":"#0398fc",
