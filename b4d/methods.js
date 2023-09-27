@@ -70,4 +70,6 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
     let newXML = '<category name="' + category + '" colour="' + color + '">';
 let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+"</category></xml>";
 workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
+document.getElementById("toolbox-categories").innerHTML = completeXML;
+
   }
