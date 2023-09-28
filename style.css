@@ -507,8 +507,16 @@ dialog::-webkit-scrollbar {
   font-size: 20;
   width: 100%;
 }
+.market-button:disabled {
+  background-color: #16191b;
+  color: rgb(156, 156, 156);
+}
 
 .market-button:hover {
   
   background-color: #32363a;
+}
+button:disabled:hover {
+  background-color: #16191b;
+  color: rgb(156, 156, 156);
 }

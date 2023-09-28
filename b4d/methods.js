@@ -56,6 +56,9 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
   }
 
   b4d.extension.load = function(blocks, name, color, category, dep="null"){
+    var disable = document.getElementById(name);
+disable.disabled = true;
+disable.innerText = "Already in the Toolbox";
     const itemList = dep.split(',');
     itemList.forEach(item => {
       const buttonId = item.trim();
