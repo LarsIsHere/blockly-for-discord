@@ -233,6 +233,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 for (const key in jsonData) {
                     if (jsonData.hasOwnProperty(key)) {
                         const item = jsonData[key];
+                        var list = item.Blocks;
                         const div = document.createElement("div");
                         div.className = "market-item";
                         div.innerHTML = `
