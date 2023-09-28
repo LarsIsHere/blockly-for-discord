@@ -312,7 +312,6 @@ if (localStorage.getItem("blocktheme") === null) {
                 -->
                 </select>
               </td>
-              <td><button class="bluebtn">System Default</button></td>
             <tr>
           </table>
         </div>
@@ -331,8 +330,8 @@ if (localStorage.getItem("blocktheme") === null) {
           </table>
         </div>
         <div style="margin-left: 10px;">
-          <h4 style="text-align: left; margin-bottom: 2px;">Plugins</h4>
-          <p class="settingspara">Here you can toggle what plugins you wish to have enabled. Plugins with a star require page refresh.</p>
+          <h4 style="text-align: left; margin-bottom: 2px;">Plugins and Other</h4>
+          <p class="settingspara">Here you can toggle what Plugins / Settings you wish to have enabled. Plugins with a star require page refresh.</p>
           <table>
             <tr>
               <td>Continuous toolbox*</td>
@@ -343,20 +342,25 @@ if (localStorage.getItem("blocktheme") === null) {
               <td>    </td>
               <td>Disable Top-blocks</td>
               <td><label class="switch">
-                <input type="checkbox" id="switch-plugin-stp" checked="true">
+                <input type="checkbox" id="switch-plugin-stp" checked>
                 <span class="slider"></span>
               </label></td>
             </tr>
             <tr>
               <td>Backpack*</td>
               <td><label class="switch">
-                <input type="checkbox" id="switch-plugin-b" checked="true">
+                <input type="checkbox" id="switch-plugin-b" checked>
                 <span class="slider"></span>
               </label></td>
               <td>    </td>
               <td>Content highlighting</td>
               <td><label class="switch">
-                <input type="checkbox" id="switch-plugin-ch" checked="true">
+                <input type="checkbox" id="switch-plugin-ch">
+                <span class="slider"></span>
+              </label></td>
+              <td>Snap to Grid</td>
+              <td><label class="switch">
+                <input type="checkbox" id="switch-plugin-g">
                 <span class="slider"></span>
               </label></td>
             </tr>

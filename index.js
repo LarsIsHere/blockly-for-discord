@@ -70,6 +70,11 @@ function start() {
     renderer: rendererc,
     CORNER_RADIUS: 20,
     theme: blockthemef,
+    /* grid:
+         {spacing: 20,
+          length: 0,
+          colour: '#212529',
+          snap: true}, */
     zoom: {
       controls: true,
       wheel: true,
