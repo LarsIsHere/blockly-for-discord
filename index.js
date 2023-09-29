@@ -193,7 +193,7 @@ function changeTheme(themeName) {
 }
 
 function Collab() {
-  WarningModal ("This is currently still being developed and not ready for use.", 2000);
+  b4d.warn("This is currently still being developed and not ready for use.", 2000);
 }
 
 function checkMobile() {
