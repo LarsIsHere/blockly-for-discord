@@ -1,17 +1,7 @@
 {
-    "Example Extension": {
-       "Blocks":["label.test"],
-       "banner":"market/testtestest.png",
-       "Category":"Example",
-       "Color":"#0398fc",
-       "customXML":"",
-       "Dependencies":"test,test",
-       "Description":"Example Description: Lorem Ipsum"
-    },
-
     "Pterodactyl API": {
       "Blocks":["label.Required to work","ptero_require","label.Authentification","ptero_auth"],
-      "banner":"market/testtestest.png",
+      "banner":"market/src/banners/pterosocket.png",
       "Category":"Ptero API",
       "Color":"#0398fc",
       "customXML":"",
