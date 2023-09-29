@@ -67,10 +67,11 @@ disable.innerText = "Already in the Toolbox";
       if (button) {
         button.click();
       } else {
-        console.warn(`Button with ID "${buttonId}" not found.`);
+        console.warn(`Dependency "${buttonId}" not found.`);
+        b4d.warn("Dependency "+ buttonId + " was not found", 4000);
       }
     });
-
+    try {
     var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {
@@ -86,5 +87,8 @@ disable.innerText = "Already in the Toolbox";
 let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+"</category></xml>";
 document.getElementById("toolbox-categories").innerHTML = completeXML.replace("<xml>","").replace("</xml>","")
 workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
-
+} catch (error) {
+  console.error(error);
+  b4d.warn("Something went wrong while importing. Check the console for more information", 4000);
+}
   }
