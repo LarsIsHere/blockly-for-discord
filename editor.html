@@ -123,6 +123,11 @@
   <!-- 
     Block imports end here
   -->
+
+<!-- Shoelace -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+  
   <script>
      if (localStorage.getItem("theme") === null) {
 
@@ -168,7 +173,7 @@ if (localStorage.getItem("blocktheme") === null) {
               <td><img src="logo.svg" alt="logo" class="logo"></td>
               <a href="#"><td><h1 class="logotext">Blockly for Discord</h1></td></a>
               
-              <td class="dropdown">
+              <!--<td class="dropdown">
                   <button class="btnav">File</button>
                   <div class="dropdown-content">
                       <a id="importp">Import</a>
@@ -178,6 +183,18 @@ if (localStorage.getItem("blocktheme") === null) {
                       <a id="cleanupbutton" onclick="cleanup()">Clean Up Project</a>
                       <a id="screenshotbutton" onclick="screenshotspace()">Take Screenshot</a>
                   </div>
+              </td>-->
+              <td>
+                <sl-dropdown>
+                  <button class="btnav">File</button>
+                  <sl-menu>
+                    <sl-menu-item id="importp">Import<input type="file" id="fileInput" style="display: none;"></sl-menu-item>
+                    <sl-menu-item id="exportp">Export as Project</sl-menu-item>
+                    <sl-menu-item id="open">Export as JS</sl-menu-item>
+                    <sl-menu-item id="cleanupbutton" onclick="cleanup()">Clean Up Project</sl-menu-item>
+                    <sl-menu-item id="screenshotbutton" onclick="screenshotspace()">Take Screenshot</sl-menu-item>
+                  </sl-menu>
+                </sl-dropdown>
               </td>
               <td><button onclick="settingsOpen()" class="btnav">Settings</button></td>
               <td><button onclick="b4d.dialog.open('marketplacedialog')" class="btnav">Marketplace</button></td>
