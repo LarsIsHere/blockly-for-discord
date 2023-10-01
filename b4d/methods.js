@@ -80,9 +80,9 @@ disable.innerText = "Already in the Toolbox";
       if (!(xml == "")) {
 
         let xmlback = xml.replace(/\*/g, '"');
-        let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+xmlback+"</xml>";
-        document.getElementById("toolbox-categories").innerHTML = completeXML.replace("<xml>","").replace("</xml>","")
-        workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
+        let completeXML2 = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+xmlback+"</xml>";
+        document.getElementById("toolbox-categories").innerHTML = completeXML2.replace("<xml>","").replace("</xml>","")
+        workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML2));
 
       } else {
 
