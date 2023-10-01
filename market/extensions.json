@@ -9,11 +9,11 @@
       "Description":"A websocket implementation for the pterodactyl server console."
     },
     "Website Blocks": {
-      "Blocks":["label.Start website","website_start","label.By inv :P"],
+      "Blocks":["label.Start website"],
       "banner":"market/src/banners/website.png",
       "Category":"Website",
       "Color":"195",
-      "customXML":"",
+      "customXML":"<block type=\"website_start\"><value name="port"><shadow type="math_number"><field name="NUM">3000</field></shadow></value></block><label>By inv :P</label>",
       "Dependencies":"",
       "Description":"Create a website connection with blocks."
     }
