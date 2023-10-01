@@ -232,7 +232,7 @@ function cleanup () {
 document.addEventListener("DOMContentLoaded", function() {
   const parentdiv = document.getElementById("parentmarket");
 
-        fetch('https://blockly-for-discord.xyz/market/extensions.json')
+        fetch('/market/extensions.json')
             .then(response => response.json())
             .then(jsonData => {
                 for (const key in jsonData) {
