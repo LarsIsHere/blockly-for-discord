@@ -7,7 +7,14 @@
       "customXML":"",
       "Dependencies":"",
       "Description":"A websocket implementation for the pterodactyl server console."
-   }
- } 
-
- 
+    },
+    "Website Blocks": {
+      "Blocks":["label.Start website","website_start","label.By inv :P"],
+      "banner":"market/src/banners/website.png",
+      "Category":"Website",
+      "Color":"195",
+      "customXML":"",
+      "Dependencies":"",
+      "Description":"Create a website connection with blocks."
+    }
+ }
