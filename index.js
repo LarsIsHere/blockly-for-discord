@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const item = jsonData[key];
                         console.log (item.customXML);
                         var list = item.Blocks;
-                        let xmlfinal = item.customXML.replace(/"/g, '#');
+                        let xmlfinal = item.customXML.replace(/"/g, '*');
                         const div = document.createElement("div");
                         if (item.Dependencies && item.Dependencies.length > 0) {
                           var modifiedContent = item.Dependencies.replace(/,/g, '<br>');
