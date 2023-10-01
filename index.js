@@ -238,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 for (const key in jsonData) {
                     if (jsonData.hasOwnProperty(key)) {
                         const item = jsonData[key];
+                        console.log (item.customXML);
                         var list = item.Blocks;
                         const div = document.createElement("div");
                         if (item.Dependencies && item.Dependencies.length > 0) {
@@ -256,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <h1>${key}</h1>
                             <p>${item.Description}</p>
                             <p style="color:gray;">${result}</p>
-                            <button onclick="b4d.extension.load(['${list.join(`','`)}'], '${key}', '${item.Color}', '${item.Category}', '${item.Dependencies}')" class="market-button" id="${key}">Add to Toolbox</button>
+                            <button onclick="b4d.extension.load(['${list.join(`','`)}'], '${key}', '${item.Color}', '${item.Category}', '${item.Dependencies}' ,'${item.customXML}')" class="market-button" id="${key}">Add to Toolbox</button>
                         `;
                         parentdiv.appendChild(div);
                     }

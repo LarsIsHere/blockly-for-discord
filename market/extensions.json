@@ -4,10 +4,8 @@
       "banner":"market/src/banners/pterosocket.png",
       "Category":"Ptero API",
       "Color":"#0398fc",
-      "customXML":"",
+      "customXML":"<category name=\"e\" colour=\"#ebb134\"><category>",
       "Dependencies":"",
       "Description":"A websocket implementation for the pterodactyl server console."
    }
  } 
-
- 
