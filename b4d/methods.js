@@ -98,7 +98,7 @@ disable.innerText = "Already in the Toolbox";
       }
     });
     let newXML = '<category name="' + category + '" colour="' + color + '">';
-let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+customxml+"</category></xml>";
+let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+"</category></xml>";
 document.getElementById("toolbox-categories").innerHTML = completeXML.replace("<xml>","").replace("</xml>","")
 workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
       }
