@@ -1,7 +1,7 @@
 const website_path_name = 'website_path';
 
 const website_path_data = {
-  "message0": "On request to %1 of type %2 %3 %4",
+  "message0": "On request to %1 of type %2 do %3 %4",
   "args0": [
     {
       "type": "input_value",
