@@ -55,7 +55,7 @@ b4d.success = function(message, duration, pos1="bottom", pos2="center") {
     document.getElementById(id).showModal();
   }
 
-  b4d.extension.load = function(blocks, name, color, category, dep, customxml){
+  b4d.extension.load = function(blocks, name, color, category, dep, xml){
     var disable = document.getElementById(name);
 disable.disabled = true;
 disable.innerText = "Already in the Toolbox";
@@ -76,7 +76,17 @@ disable.innerText = "Already in the Toolbox";
       }
     });
     try {
-    var xmlresult = "";
+
+      if (!(xml == "")) {
+
+        let xmlback = xml.replace(/\*/g, '"');
+        let completeXML2 = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+xmlback+"</xml>";
+        document.getElementById("toolbox-categories").innerHTML = completeXML2.replace("<xml>","").replace("</xml>","")
+        workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML2));
+
+      } else {
+
+        var xmlresult = "";
     blocks.forEach(function(block) {
       if (block.includes("label.")) {
         var label = block.replace("label.","")
@@ -91,6 +101,8 @@ disable.innerText = "Already in the Toolbox";
 let completeXML = "<xml>"+document.getElementById("toolbox-categories").innerHTML.replaceAll("\n","")+newXML+xmlresult+customxml+"</category></xml>";
 document.getElementById("toolbox-categories").innerHTML = completeXML.replace("<xml>","").replace("</xml>","")
 workspace.updateToolbox(Blockly.utils.xml.textToDom(completeXML));
+      }
+    
 } catch (error) {
   console.error(error);
   b4d.warn("Something went wrong while importing. Check the console for more information", 4000);
