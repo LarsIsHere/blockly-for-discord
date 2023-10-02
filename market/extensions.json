@@ -13,7 +13,7 @@
       "banner":"market/src/banners/website.png",
       "Category":"Website",
       "Color":"195",
-      "customXML":"<category name=\"Website\" colour=\"195\"><label>Start website</label><block type=\"website_start\"><value name=\"port\"><shadow type=\"math_number\"><field name=\"NUM\">3000</field></shadow></value></block><label>By inv :P</label></category>",
+      "customXML":"<category name=\"Website\" colour=\"195\"><label>Start website</label><block type=\"website_start\"><value name=\"port\"><shadow type=\"math_number\"><field name=\"NUM\">3000</field></shadow></value></block><label>On request</label><block type=\"website_path\"><value name=\"path\"><shadow type=\"text\"><field name=\"TEXT\">/</field></shadow></value></block><label>By inv :P</label></category>",
       "Dependencies":"",
       "Description":"Create a website connection with blocks."
     }
