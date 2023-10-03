@@ -1,8 +1,11 @@
 const website_invalid_name = 'website_invalid';
 
 const website_invalid_data = {
-  "message0": "On non handeled request do %1",
+  "message0": "On non handeled request do %1 %2",
   "args0": [
+    {
+      "type": "input_dummy"
+    },
     {
       "type": "input_statement",
       "name": "NAME"
