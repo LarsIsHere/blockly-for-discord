@@ -85,3 +85,5 @@ To the extent possible, if any provision of this Public License is deemed unenfo
 No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
 Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+
+Contributions to the project at https://blockly-for-discord.xyz/ and subpages hosted on https://github.com/LarsIsHere/blockly-for-discord are welcome and encouraged, even though the project is subject to the above license. We believe in fostering an open and collaborative development environment, where individuals can share their expertise and ideas to enhance the project's quality and functionality.
