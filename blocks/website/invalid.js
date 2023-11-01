@@ -23,6 +23,6 @@ b4d.register(website_invalid_name, website_invalid_data)
 javascript.javascriptGenerator.forBlock[website_invalid_name] = function(block, generator) {
   var statements_name = generator.statementToCode(block, 'NAME');
   return `express_app.use(function(req, res) {
-  ${statements_name}
+${statements_name}
 });\n`
 };
