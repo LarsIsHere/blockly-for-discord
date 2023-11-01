@@ -12,7 +12,7 @@ const website_status_code_data = {
   "previousStatement": null,
   "nextStatement": null,
   "colour": 195,
-  "tooltip": "Respond with text",
+  "tooltip": "Set status code on response",
   "helpUrl": ""
 }
 
