@@ -12,7 +12,7 @@ const website_send_file_data = {
   "previousStatement": null,
   "nextStatement": null,
   "colour": 195,
-  "tooltip": "Respond with text",
+  "tooltip": "Respond with file",
   "helpUrl": ""
 }
 
