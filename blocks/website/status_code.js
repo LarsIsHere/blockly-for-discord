@@ -1,4 +1,4 @@
-const website_send_text_name = 'website_status_code';
+const website_status_code_name = 'website_status_code';
 
 const website_status_code_data = {
   "message0": "Set status code to %1",
