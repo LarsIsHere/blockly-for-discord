@@ -56,6 +56,6 @@ javascript.javascriptGenerator.forBlock[website_path_name] = function(block, gen
   var dropdown_name = block.getFieldValue('NAME');
   var statements_name = generator.statementToCode(block, 'NAME');
   return `express_app.${dropdown_name.replaceAll("'","")}(${value_path.replaceAll(" ","-")}, async function(req, res) {
-  ${statements_name}
+${statements_name}
 });\n`
 };
