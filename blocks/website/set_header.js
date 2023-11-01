@@ -17,7 +17,7 @@ const website_set_header_data = {
   "previousStatement": null,
   "nextStatement": null,
   "colour": 195,
-  "tooltip": "Respond with text",
+  "tooltip": "Set header on response",
   "helpUrl": ""
 }
 
