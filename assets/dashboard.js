@@ -32,7 +32,7 @@ const router = {
       case 'dashboard':
         console.log("dashboard");
         break;
-      case 'browse':
+      case 'browse_projects':
         console.log("browse");
         break;
       
