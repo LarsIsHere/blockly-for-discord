@@ -28,10 +28,10 @@ const router = {
   function LoadContent (item) {
     switch(item) {
       case 'dashboard':
-        //dashboard code stuff blabla
+        console.log("dashboard");
         break;
       case 'browse':
-        //browse code stuff blabla
+        console.log("browse");
         break;
       
     }
