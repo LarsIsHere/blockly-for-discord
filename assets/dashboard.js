@@ -35,6 +35,8 @@ const router = {
       case 'browse_projects':
         console.log("browse");
         break;
+      case '404':
+        console.log("404");
       
     }
   }
