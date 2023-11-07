@@ -8,9 +8,9 @@
       ],
       "redirects": [
         {
-          "source": "/dashboard/:slug/dashboard.js",
-          "destination": "/assets/dashboard.js",
-          "statusCode": 301
+            "source": "/dashboard/:dynamicSegment*",
+            "destination": "/assets/dashboard.js",
+            "statusCode": 301
         }
       ]
   }
