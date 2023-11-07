@@ -30,13 +30,15 @@ const router = {
   function LoadContent (item) {
     switch(item) {
       case 'dashboard':
-        console.log("dashboard");
+        document.title = "B4D │ Dashboard";
+        
         break;
       case 'browse_projects':
-        console.log("browse");
+        document.title = "B4D │ Browse Projects";
+
         break;
       case '404':
-        console.log("404");
+        document.title = "B4D │ 404";
       
     }
   }
