@@ -5,5 +5,12 @@
           "source": "/dashboard/(.*)",
           "destination": "/dashboard"
         }
+      ],
+      "redirects": [
+        {
+          "source": "/dashboard/:slug/dashboard.js",
+          "destination": "/assets/dashboard.js",
+          "statusCode": 301
+        }
       ]
   }
