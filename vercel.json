@@ -1,3 +1,9 @@
 {
-    "cleanUrls": true
+    "cleanUrls": true,
+    "rewrites": [
+        {
+          "source": "/dashboard/(.*)",
+          "destination": "/dashboard"
+        }
+      ]
   }
