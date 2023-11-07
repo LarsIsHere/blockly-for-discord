@@ -13,7 +13,7 @@ const router = {
   
   document.addEventListener('DOMContentLoaded', function() {
     
-    const parts = windows.location.pathname.split('/dashboard/')[1];
+    const parts = window.location.pathname.split('/dashboard/')[1];
     const first_path = parts.split('/')[0];
     if (window.location.pathname === '/dashboard' || window.location.pathname === '/dashboard/') {
       LoadContent(router["/"].dest);
