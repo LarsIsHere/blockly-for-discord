@@ -35,13 +35,22 @@
     --content-title-icon-div: #141520; 
     --content-title-div-radius: 8px;
     --content-title-icon: #dadada;
-    --content-title-div-padding: 20px;
+    --content-title-div-padding: 20px 20px 0;
     --content-title-icon-padding: 8px;
     --content-title-div-gradient: linear-gradient(0deg, rgb(38 39 57) 40%, rgb(25 26 39) 100%);
     --content-title-margin: 10px;
     --content-title-font-size: 25px;
     --content-title-font-weight: 600;
     --content-title-font-color: #d5d5d5;
+    --content-padding: 35px 20px 20px;
+    --content-border: 1px solid #38394b;
+    --nav-button-padding: 14px;
+    --nav-button-color: #c4c4c4;
+    --nav-button-font-size: 14px;
+    --nav-button-border-active: 2px solid #3AA27D;
+    --nav-button-border-hover: 2px solid #22664e;
+    --nav-button-color-hover-active: #ffffff;
+    --nav-button-padding-hover-active: 12px;
 }
 
 .page {
@@ -149,4 +158,38 @@
     font-size: var(--content-title-font-size);
     font-weight: var(--content-title-font-weight);
     color: var(--content-title-font-color);
+}
+
+.ContentBuffer {
+    padding: var(--content-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main {
+    border-top: var(--content-border);
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbutton {
+    background: transparent;
+    border: none;
+    padding: var(--nav-button-padding);
+    color: var(--nav-button-color);
+    font-size: var(--nav-button-padding);
+}
+
+.navbutton:hover {
+    border-bottom: var(--nav-button-border-hover);
+    padding: var(--nav-button-padding-hover-active);
+    cursor: pointer;
+    color: var(--nav-button-color-hover-active);
+}
+.navbutton:active {
+    border-bottom: var(--nav-button-border-active);
+    padding: var(--nav-button-padding-hover-active);
+    color: var(--nav-button-color-hover-active);
 }
