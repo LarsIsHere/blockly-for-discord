@@ -10,7 +10,9 @@
     --main-page-background: #343546;
     --page-relative-w: 100vw;
     --page-relative-h: 100vh;
+    --sidebar-bg: linear-gradient(0deg, rgb(38 39 57) 90%, rgb(25 26 39) 100%);
     --header-bg: #262739;
+    --actual-header-bg: rgb(25 26 39);
     --header-radius: 10px;
     --header-padding: 15px;
     --header-logo-size: 25px;
@@ -30,9 +32,16 @@
     --tooltip-padding: 5px 10px;
     --tooltip-radius: 4px;
     --tooltip-font-size: 13px;
-    --content-title-div: #141520; 
+    --content-title-icon-div: #141520; 
     --content-title-div-radius: 8px;
     --content-title-icon: #dadada;
+    --content-title-div-padding: 20px;
+    --content-title-icon-padding: 8px;
+    --content-title-div-gradient: linear-gradient(0deg, rgb(38 39 57) 40%, rgb(25 26 39) 100%);
+    --content-title-margin: 10px;
+    --content-title-font-size: 25px;
+    --content-title-font-weight: 600;
+    --content-title-font-color: #d5d5d5;
 }
 
 .page {
@@ -46,7 +55,7 @@
     width: inherit;
     margin: var(--global-margin);
     padding: var(--header-padding);
-    background-color: var(--header-bg);
+    background-color: var(--actual-header-bg);
     border-radius: var(--header-radius);
     display: flex;
     justify-content: space-between;
@@ -70,13 +79,13 @@
     width: 100%;
     margin-left: 0px;
     display: flex;
-
+    flex-direction: column;
 }
 
 .sidebar {
     margin: var(--global-margin);
     padding: var(--header-padding);
-    background-color: var(--header-bg);
+    background: var(--sidebar-bg);
     border-radius: var(--header-radius);
     display: flex;
     flex-direction: column;
@@ -116,10 +125,28 @@
 .ContentHead {
     display: flex;
     align-items: flex-start;
+    align-items: center;
+    padding: var(--content-title-div-padding);
+    background: var(--content-title-div-gradient);
+    border-radius: var(--header-radius);
 }
 
 .ContentTitleIcon {
     display: flex;
-    background-color: var(--content-title-div);
+    background-color: var(--content-title-icon-div);
     border-radius: var(--content-title-div-radius);
+    padding: var(--content-title-icon-padding);
+}
+
+.title-icon {
+    height: var(--icon-height);
+    width: var(--icon-width);
+    fill: var(--content-title-icon);
+}
+
+.ContentTitle {
+    margin-left: var(--content-title-margin);
+    font-size: var(--content-title-font-size);
+    font-weight: var(--content-title-font-weight);
+    color: var(--content-title-font-color);
 }
