@@ -42,3 +42,20 @@ const router = {
       
     }
   }
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the div element
+    setTimeout(function() {
+    const fadeOutDiv = document.getElementById('preloader');
+    
+    // Gradually decrease opacity
+    fadeOutDiv.style.opacity = '0';
+    
+    // Set display to none after opacity transition ends
+    fadeOutDiv.addEventListener('transitionend', function() {
+      fadeOutDiv.style.display = 'none';
+    });
+  }, 2000);
+  });
