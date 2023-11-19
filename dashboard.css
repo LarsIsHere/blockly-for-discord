@@ -14,7 +14,8 @@
     --header-bg: rgb(32 33 53);
     --actual-header-bg: rgb(25 26 39);
     --header-radius: 10px;
-    --header-padding: 15px;
+    --global-padding: 15px;
+    --header-padding: 10px;
     --header-logo-size: 25px;
     --header-logo-weight: 800;
     --header-logo-color: #e7e7e7;
@@ -151,13 +152,15 @@
     background-color: var(--actual-header-bg);
     border-radius: var(--header-radius);
     display: flex;
-    justify-content: space-between;
     margin-bottom: 0px;
+    align-items: center;
+
 }
 .logo {
     font-size: var(--header-logo-size);
     font-weight: var(--header-logo-weight);
     color: var(--header-logo-color);
+    margin-left: 10px;
 }
 
 .main {
@@ -177,13 +180,14 @@
 
 .sidebar {
     margin: var(--global-margin);
-    padding: var(--header-padding);
+    padding: var(--global-padding);
     background: var(--sidebar-bg);
     border-radius: var(--header-radius);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-top: 0px;
 }
 
 .icon {
@@ -358,14 +362,14 @@
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
-      animation-timing-function: ease-in; /* Ease-in transition */
+      animation-timing-function: ease-in;
     }
     25% {
       transform: rotate(180deg);
     }
     75% {
       transform: rotate(360deg);
-      animation-timing-function: ease-out; /* Ease-out transition */
+      animation-timing-function: ease-out; 
     }
     100% {
       transform: rotate(360deg);
@@ -377,18 +381,24 @@
     font-size: 25px;
     font-family: Roboto;
     color: white;
-    animation: growShrink 4s infinite;
+    animation: growShrink 2s infinite;
     font-family: 'Montserrat';
     font-weight: 600;
   }
   @keyframes growShrink {
     0% {
-      color: white; /* Initial font size */
+      color: white; 
     }
     50% {
-      color: gray; /* Max font size during animation */
+      color: gray;
     }
     100% {
-      color: white; /* Back to initial font size */
+      color: white;
     }
+  }
+
+
+  .logosvg {
+    height: 45px;
+    width: 45px;
   }
