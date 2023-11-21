@@ -1,10 +1,7 @@
-import Toastify from 'toastify-js';
-
 
 Toastify({
     text: "This is a toast",
     duration: 12000,
-    destination: "https://github.com/apvarun/toastify-js",
     newWindow: true,
     close: true,
     gravity: "top", // `top` or `bottom`
