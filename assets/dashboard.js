@@ -35,7 +35,7 @@ const router = {
     switch(item) {
       case 'dashboard':
         document.title = "B4D │ Dashboard";
-        b4d.page.load("dashboard", false);
+        
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";
