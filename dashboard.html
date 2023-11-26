@@ -13,6 +13,7 @@
     <script src="https://blockly-for-discord.xyz/assets/dashboard.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://blockly-for-discord.xyz/assets/modal.js"></script>
+    <script src="https://blockly-for-discord.xyz/assets/b4d/system/methods.js"></script>
 
     
 </head>
@@ -39,8 +40,18 @@
         <div class="main">
             <div class="sidebar">
                 <div class="menu">
+                  <div class="mhome">
+                    <svg class="icon topicon" id="home" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                  </div>
+                  <script>
+                    tippy('#home', {
+                      content: 'Home',
+                      placement: 'right',
+                    });
+                  </script>
+                  <div class="sep"></div>
                     <div class="mdashboard">
-                        <svg class="icon topicon" id="dashboard" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
+                        <svg class="icon" id="dashboard" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg>
                     </div>
                     <script>
                         tippy('#dashboard', {
@@ -128,21 +139,22 @@
                       </script>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" id="content">
               
-              <div class="content-header">
+              <div class="content-header" id="content-header">
                 <h2>Dashboard</h2>
                 <p>You can create, edit and delete Projects here</p>
               </div>
-              <div class="content-nav">
+              <div class="content-nav" id="content-nav">
                 <input spellcheck="false" class="default-input" type="text" placeholder="Search Project">
               
                 
                 <div style="display: flex">
-                  <select class="default-input right-binder" name="filter" id="filter">
+                  <select id="examplee" class="default-input right-binder" name="filter" id="filter">
                     <option value="all">Sort by All</option>
                     <option value="date">Sort by Date</option>
                   </select>
+                  
                   <button class="button-base button-action left-binder">Create Project</button>
                 </div>
               </div>
@@ -155,9 +167,17 @@
                     </div>
                     <div class="card-other">
                       <div><h2 class="card-title">Example Bot (1)</h2>
-                        <p class="card-description">This is an example Description for an amazing bot</p></div>
+                        <p class="card-description">This is an example Description for an amazing bot</p>
+                      <p class="card-details">DiscordJS - 3942 Blocks</p>
+                    </div>
                       
-                      <div><button class="button-base button-action card-button">Open Project</button><button class="button-base button-default card-button-margin card-button">Manage</button></div>
+                      <div><button id="open-project-btn" class="button-base button-action card-button">Open Project</button><button class="button-base button-default card-button-margin card-button">Manage</button></div>
+                      <script>
+                        tippy('#open-project-btn', {
+                          content: 'Your Project has been suspended',
+                          placement: 'bottom',
+                        });
+                      </script>
                     </div>
 
                     
@@ -181,6 +201,18 @@
               </div>
             </div>
         </div>
+    </div>
+    <div class="loadingel" id="loadingel">
+      <div class="loading-content">
+        <div class="loading-text" id="loading-text"></div>
+      <div class="loading-alt" id="loading-alt"></div>
+      </div>
+      <div class="loading-loader">
+        <div class="loading-bar" id="loading-bar">
+
+        </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>

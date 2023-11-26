@@ -1,4 +1,7 @@
 
+
+
+
 const router = {
     "/": {
       "dest" : "dashboard"
@@ -47,17 +50,48 @@ const router = {
 
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Get the div element
+
     setTimeout(function() {
     const fadeOutDiv = document.getElementById('preloader');
     
-    // Gradually decrease opacity
     fadeOutDiv.style.opacity = '0';
     
-    // Set display to none after opacity transition ends
     fadeOutDiv.addEventListener('transitionend', function() {
       fadeOutDiv.style.display = 'none';
     });
   }, 2000);
   });
+
+  
+  
+  function showDiv(Progress, MainText, AltText, inject) {
+    if (Progress === true) {
+      ProgressBarEnabled = true;
+    } else {
+      ProgressBarEnabled = false;
+    }
+    const LoadingPrincipal = document.getElementById('loading-text');
+    LoadingPrincipal.textContent = MainText;
+    
+      const LoadingSecondary = document.getElementById('loading-alt');
+      LoadingSecondary.textContent = AltText;
+    
+    if (!inject === undefined) {
+      const LoadingSecondary = document.getElementById('loading-alt');
+      LoadingSecondary.innerHTML = inject;
+    }
+    const bottomDiv = document.getElementById('loadingel');
+    bottomDiv.classList.add('appear');
+  }
+  
+  function hideDiv() {
+    const bottomDiv = document.getElementById('loadingel');
+    bottomDiv.classList.remove('appear');
+  }
+  
+  function toggleDiv() {
+    const bottomDiv = document.getElementById('loadingel');
+    bottomDiv.classList.toggle('appear');
+  }
+
 
