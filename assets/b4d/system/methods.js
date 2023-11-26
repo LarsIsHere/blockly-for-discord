@@ -78,7 +78,53 @@ function SwitchPage (page) {
           
     // TODO: Add Functions and Injection
 
+    LoadHeader("Dashboard", "You can create, edit and delete Projects here");
+    LoadNav(`<input spellcheck="false" class="default-input" type="text" placeholder="Search Project">
+              
+                
+    <div style="display: flex">
+      <select id="examplee" class="default-input right-binder" name="filter" id="filter">
+        <option value="all">Sort by All</option>
+        <option value="date">Sort by Date</option>
+      </select>
+      
+      <button class="button-base button-action left-binder">Create Project</button>
+    </div>`);
+    LoadMain (`                <div class="content-grid">
+    <div class="project-card">
+      <div class="card-img">
+        <img class="card-img2" src="https://cdn.discordapp.com/avatars/816691475844694047/889e4aa22a1441ca6ff5ef15d8204aeb?size=1024" alt="">
+      </div>
+      <div class="card-other">
+        <div><h2 class="card-title">Example Bot (1)</h2>
+          <p class="card-description">This is an example Description for an amazing bot</p>
+        <p class="card-details">DiscordJS - 3942 Blocks</p>
+      </div>
+        
+        <div><button id="open-project-btn" class="button-base button-action card-button">Open Project</button><button class="button-base button-default card-button-margin card-button">Manage</button></div>
+        <script>
+          tippy('#open-project-btn', {
+            content: 'Your Project has been suspended',
+            placement: 'bottom',
+          });
+        </script>
+      </div>
 
+      
+    </div>
+    <div class="project-card">
+
+    </div>
+    <div class="project-card">
+      
+    </div>
+    <div class="project-card">
+      
+    </div>
+    <div class="project-card">
+      
+    </div>
+  </div>`, false, true);
     
       break;
     case 'browse':
@@ -114,14 +160,14 @@ function LoadNav (HtmlInjection) {
 function LoadMain (html, preloader, seperator) {
   const element = document.getElementById('content-content');
 
-  if (!element) {
+/*  if (element) {
     if (seperator === true) {
       element.innerHTML = `<div class="content-seperator"></div><div class="content-content"></div>`;
     } else {
       element.innerHTML = `<div class="content-content"></div>`;
     }
     
-  } 
+  } */
   if (preloader === true) {
 
     // TODO: Make preloader 
