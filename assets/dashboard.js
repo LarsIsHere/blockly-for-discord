@@ -36,7 +36,7 @@ const router = {
       case 'dashboard':
         document.title = "B4D │ Dashboard";
         const parent = document.getElementById('content');
-        parent.innerHTML = e;
+        //parent.innerHTML = e;
         
         fetch('https://blockly-for-discord.xyz/assets/sites/find_projects/index.html')
         .then(response => {
