@@ -94,7 +94,7 @@ const router = {
         </div>
         `;
         parent.innerHTML = examplehtml;
-        
+        console.log("test");
 
         break;
       case 'browse_projects':
