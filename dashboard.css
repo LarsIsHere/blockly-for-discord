@@ -27,6 +27,7 @@
     --icon-height: 26px;
     --icon-transition: 0.5s ease-in-out;
     --icon-hover: #3AA27D;
+    --icon-active: #dbdbdb;
     --icon-settings-hover: #dd9f19;
     --icon-account-hover: #c4c4c4;
     --tooltip-background: #333;
@@ -206,6 +207,10 @@ body {
     height: var(--icon-height);
     width: var(--icon-width);
     outline: none;
+}
+
+.icon:active {
+  fill: var(--icon-active);
 }
 .icon:hover {
     fill: var(--icon-hover);
