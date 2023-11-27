@@ -39,13 +39,11 @@ const router = {
         parent.innerHTML = e;
         
         fetch('https://blockly-for-discord.xyz/assets/sites/find_projects/index.html')
-        .then(response => {
+        .then(async response => {
           if (!response.ok) {
             console.error("B4D - Couldn't fetch html");
           }
-        })
-        .then(htmlContent => {
-          parent.innerHTML = htmlContent;
+          parent.innerHTML = await htmlContent.text();
         })
         .catch(error => {
           console.error('B4D - There was a problem fetching the HTML file:', error);
