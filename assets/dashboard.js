@@ -106,7 +106,9 @@ const router = {
     }
   }
 
-
+  function SwitchPage(item) {
+    LoadContent (item);
+  }
 
   document.addEventListener('DOMContentLoaded', function() {
 
