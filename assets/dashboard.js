@@ -36,20 +36,65 @@ const router = {
       case 'dashboard':
         document.title = "B4D │ Dashboard";
         const parent = document.getElementById('content');
-        parent.innerHTML = e;
+        const examplehtml = `              
+        <div class="content-header" id="content-header">
+          <h2>Dashboard</h2>
+          <p>You can create, edit and delete Projects here</p>
+        </div>
+        <div class="content-nav" id="content-nav">
+          <input spellcheck="false" class="default-input" type="text" placeholder="Search Project">
         
-        fetch('https://blockly-for-discord.xyz/assets/sites/find_projects/index.html')
-        .then(response => {
-          if (!response.ok) {
-            console.error("B4D - Couldn't fetch html");
-          }
-        })
-        .then(htmlContent => {
-          parent.innerHTML = htmlContent;
-        })
-        .catch(error => {
-          console.error('B4D - There was a problem fetching the HTML file:', error);
-        });
+          
+          <div style="display: flex">
+            <select id="examplee" class="default-input right-binder" name="filter" id="filter">
+              <option value="all">Sort by All</option>
+              <option value="date">Sort by Date</option>
+            </select>
+            
+            <button class="button-base button-action left-binder">Create Project</button>
+          </div>
+        </div>
+        <div class="content-seperator"></div>
+        <div class="content-content">
+          <div class="content-grid">
+            <div class="project-card">
+              <div class="card-img">
+                <img class="card-img2" src="https://cdn.discordapp.com/avatars/816691475844694047/889e4aa22a1441ca6ff5ef15d8204aeb?size=1024" alt="">
+              </div>
+              <div class="card-other">
+                <div><h2 class="card-title">Example Bot (1)</h2>
+                  <p class="card-description">This is an example Description for an amazing bot</p>
+                <p class="card-details">DiscordJS - 3942 Blocks</p>
+              </div>
+                
+                <div><button id="open-project-btn" class="button-base button-action card-button">Open Project</button><button class="button-base button-default card-button-margin card-button">Manage</button></div>
+                <script>
+                  tippy('#open-project-btn', {
+                    content: 'Your Project has been suspended',
+                    placement: 'bottom',
+                  });
+                </script>
+              </div>
+
+              
+            </div>
+            <div class="project-card">
+
+            </div>
+            <div class="project-card">
+              
+            </div>
+            <div class="project-card">
+              
+            </div>
+            <div class="project-card">
+              
+            </div>
+          </div>
+        </div>
+        `;
+        parent.innerHTML = examplehtml;
+        
 
         break;
       case 'browse_projects':
