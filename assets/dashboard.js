@@ -35,7 +35,22 @@ const router = {
     switch(item) {
       case 'dashboard':
         document.title = "B4D │ Dashboard";
+        const parent = document.getElementById('content');
+        parent.innerHTML = e;
         
+        fetch('https://blockly-for-discord.xyz/assets/sites/find_projects/index.html')
+        .then(response => {
+          if (!response.ok) {
+            console.error("B4D - Couldn't fetch html");
+          }
+        })
+        .then(htmlContent => {
+          parent.innerHTML = htmlContent;
+        })
+        .catch(error => {
+          console.error('B4D - There was a problem fetching the HTML file:', error);
+        });
+
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";
