@@ -1,6 +1,6 @@
 
 
-
+let CurrentPage;
 
 const router = {
     "/": {
@@ -94,7 +94,8 @@ const router = {
         </div>
         `;
         parent.innerHTML = examplehtml;
-
+        
+        CurrentPage = "dashboard";
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";

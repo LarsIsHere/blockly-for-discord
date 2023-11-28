@@ -152,6 +152,7 @@ body {
     flex-direction: column;
 }
 .header {
+    border: 0.5px solid #51536f;
     width: inherit;
     margin: var(--global-margin);
     padding: var(--header-padding);
@@ -177,6 +178,7 @@ body {
 }
 
 .content {
+    border: 0.5px solid #51536f;
     background-color: var(--header-bg);
     border-radius: var(--header-radius); 
     margin: var(--global-margin);
@@ -188,6 +190,7 @@ body {
 }
 
 .sidebar {
+    border: 0.5px solid #51536f;
     margin: var(--global-margin);
     padding: var(--global-padding);
     background: var(--sidebar-bg);
