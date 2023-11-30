@@ -309,6 +309,9 @@ body {
     color: var(--base-input-color);
     resize: var(--base-input-resize);
 }
+.default-input:hover {
+  background: #0c0d12;
+}
 .default-input::placeholder {
     color: var(--base-input-placeholder-color);
 }
@@ -646,6 +649,3 @@ select {
   cursor: pointer;
 }
 
-select:hover {
-  background: #1d1e2d;
-}
