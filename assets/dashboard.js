@@ -50,8 +50,8 @@ const router = {
                 <span class="input-group-text default-input hover-fix" id="basic-addon1">Sort by</span>
                 <select class="form-select default-input right-binder" aria-label="Filter" data-bs-theme="dark" name="filter" id="filter">
             <option value="1" selected>All</option>
-            <option value="2">Alphabetic order</option>
-            <option value="3">by Date</option>
+            <option value="2">A - Z</option>
+            <option value="3">Date</option>
           </select>
               </div>
 
