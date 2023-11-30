@@ -308,7 +308,7 @@ body {
     background-color: var(--base-input-bg);
     color: var(--base-input-color);
     resize: var(--base-input-resize);
-    transition: 0.5s;
+    transition: background 0.5s;
 }
 .default-input:hover {
   background: #0c0d12;
