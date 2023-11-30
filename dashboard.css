@@ -679,11 +679,11 @@ select {
   color: #bdbdbd;
 }
 
-.shortcuttext h3 {
+h3.shortcuttext {
   margin-bottom: 25px;
   font-weight: 400;
 }
 
-.shortcuttext h1 {
+h1.shortcuttext {
   margin-bottom: 7px;
 }
