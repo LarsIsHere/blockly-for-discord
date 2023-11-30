@@ -668,13 +668,14 @@ select {
 }
 .quickmenu {
   border-radius: 8px;
-  width: 300px;
+  width: 400px;
   height: 300px;
   background-color: #141423;
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
   padding: 15px;
+  justify-content: space-between;
 }
 
 .shortcuttext {
@@ -691,5 +692,39 @@ h1.shortcuttext {
 }
 
 .quickitem {
-  
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #999999;
+  fill: #999999;
+  transition: 0.5s;
+}
+
+.quickitem svg {
+  margin-bottom: 15px;
+}
+.quickleft {
+  margin-right: 10px; 
+}
+.quickleft:hover {
+  color: #bdbdbd;
+  fill: rgb(169, 102, 231);
+  background-color: #ffffff0e;
+  cursor: pointer;
+}
+.quickright {
+  margin-left: 10px;
+}
+.quickright:hover {
+  color: #bdbdbd;
+  fill: rgb(231, 175, 102);
+  background-color: #ffffff0e;
+  cursor: pointer;
 }
