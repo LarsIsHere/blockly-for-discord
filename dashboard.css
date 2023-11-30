@@ -674,6 +674,7 @@ select {
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
+  padding: 15px;
 }
 
 .shortcuttext {
@@ -687,4 +688,8 @@ h3.shortcuttext {
 
 h1.shortcuttext {
   margin-bottom: 7px;
+}
+
+.quickitem {
+  
 }
