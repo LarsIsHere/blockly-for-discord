@@ -641,8 +641,3 @@ select {
   color: rgb(131, 131, 131);
   
 }
-
-select option:first-child {
-	color: grey;
-  display: none;
-}
