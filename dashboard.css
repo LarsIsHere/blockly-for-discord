@@ -645,3 +645,7 @@ select {
 select {
   cursor: pointer;
 }
+
+select:hover {
+  background: #1d1e2d;
+}
