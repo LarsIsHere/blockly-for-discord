@@ -46,12 +46,15 @@ const router = {
         
           
           <div style="display: flex">
-            <select class="form-select default-input right-binder" aria-label="Filter" data-bs-theme="dark" name="filter" id="filter">
+          <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <select class="form-select default-input right-binder" aria-label="Filter" data-bs-theme="dark" name="filter" id="filter">
             <option value="1" selected>Sort by All</option>
             <option value="2">Sort from A-Z</option>
             <option value="3">Sort by Date</option>
           </select>
-            
+              </div>
+
             <button class="button-base button-action left-binder">Create Project</button>
           </div>
         </div>
