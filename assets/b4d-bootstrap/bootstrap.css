@@ -11982,5 +11982,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:focus, .btn-primary.focus
+{
+    box-shadow:none;
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */
