@@ -676,3 +676,7 @@ select {
 .shortcuttext {
   color: #bdbdbd;
 }
+
+.shortcuttext h1 {
+  margin-bottom: 15px;
+}
