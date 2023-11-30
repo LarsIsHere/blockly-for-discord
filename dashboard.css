@@ -654,3 +654,7 @@ select {
   cursor: pointer;
 }
 
+.hover-fix {
+  background-color: #161721 !important;
+}
+

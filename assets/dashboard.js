@@ -47,7 +47,7 @@ const router = {
           
           <div style="display: flex">
           <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
+                <span class="input-group-text default-input hover-fix" id="basic-addon1">@</span>
                 <select class="form-select default-input right-binder" aria-label="Filter" data-bs-theme="dark" name="filter" id="filter">
             <option value="1" selected>Sort by All</option>
             <option value="2">Sort from A-Z</option>
