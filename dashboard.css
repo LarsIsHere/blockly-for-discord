@@ -200,6 +200,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 0px;
+    transition: 0.5s;
+}
+.sidebar:hover {
+  border: 0.5px solid #71738b;
 }
 
 .icon {
@@ -647,6 +651,6 @@ select {
 }
 
 select {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
