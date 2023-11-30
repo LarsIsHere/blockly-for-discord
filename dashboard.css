@@ -673,6 +673,7 @@ select {
   background-color: #141423;
   display: flex;
   flex-direction: column;
+  margin-bottom: 90px;
 }
 
 .shortcuttext {
