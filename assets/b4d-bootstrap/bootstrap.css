@@ -181,11 +181,7 @@
   --bs-form-invalid-border-color: #ea868f;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -2230,7 +2226,7 @@ textarea.form-control-lg {
 .form-select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   display: block;
-  width: 100%;
+  /* width: 100%; */
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -4429,7 +4425,7 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-.card-img,
+/* .card-img,
 .card-img-top {
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
@@ -4440,7 +4436,7 @@ textarea.form-control-lg {
   border-bottom-right-radius: var(--bs-card-inner-border-radius);
   border-bottom-left-radius: var(--bs-card-inner-border-radius);
 }
-
+*/
 .card-group > .card {
   margin-bottom: var(--bs-card-group-margin);
 }
