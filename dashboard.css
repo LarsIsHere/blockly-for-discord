@@ -766,7 +766,7 @@ h1.shortcuttext {
   border: 1.5px solid #e9e9e9;
   color: #e9e9e9;
   margin-right: 10px;
-  transition: 0.5s;
+  transition: 0.25s;
   background: transparent;
 }
 .noscript-why:hover {
@@ -777,7 +777,7 @@ h1.shortcuttext {
 .noscript-reload {
   margin-left: 10px;
   background-color: #e9e9e9;
-  transition: 0.5s;
+  transition: 0.25s;
   color: #1d1d1d;
 }
 
