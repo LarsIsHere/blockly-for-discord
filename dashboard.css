@@ -370,7 +370,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    z-index: 9999;
+    z-index: 99;
     position: fixed;
     /* font-family: 'Montserrat'; */
     background-color: rgb(25 26 39);
@@ -727,4 +727,19 @@ h1.shortcuttext {
   fill: rgb(231, 175, 102);
   background-color: #ffffff0e;
   cursor: pointer;
+}
+
+
+.noscript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  /* font-family: 'Montserrat'; */
+  background-color: rgb(236, 44, 76);
+  opacity: 1;
 }
