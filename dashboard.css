@@ -742,10 +742,11 @@ h1.shortcuttext {
   /* font-family: 'Montserrat'; */
   background-color: rgb(241, 49, 81);
   opacity: 1;
-  fill: #e9e9e9;
+  color: #e9e9e9;
 }
 
-.noscript svg {
+.noscriptsvg {
   width: 150px;
   height: 150px;
+  fill: #e9e9e9;
 }
