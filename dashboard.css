@@ -740,13 +740,43 @@ h1.shortcuttext {
   z-index: 100;
   position: fixed;
   /* font-family: 'Montserrat'; */
-  background-color: rgb(241, 49, 81);
+  background-color: rgb(199 12 43);
   opacity: 1;
   color: #e9e9e9;
+  
+}
+
+h3.noscript {
+  font-weight: 400;
 }
 
 .noscriptsvg {
   width: 150px;
   height: 150px;
   fill: #e9e9e9;
+}
+
+.noscript-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.noscript-why {
+  border: 1.5px solid #e9e9e9;
+  color: #e9e9e9;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.noscript-why:hover {
+  background-color: #e9e9e9;
+}
+
+.noscript-reload {
+  margin-left: 20px;
+  background-color: #e9e9e9;
+  transition: 0.5s;
+}
+
+.noscript-reload:hover {
+  background-color: #c0c0c0;
 }
