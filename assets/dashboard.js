@@ -161,3 +161,13 @@ const router = {
   }
 
 
+  function openDialog() {
+    const dialog = document.getElementById("dialog");
+    dialog.showModal();
+  }
+  
+  function closeDialog() {
+    const dialog = document.getElementById("dialog");
+    dialog.close();
+  }
+  

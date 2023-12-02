@@ -6,12 +6,12 @@
     <title>B4D</title>
     <!-- link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css ?v=1.2" -->
     <link href="https://blockly-for-discord.xyz/assets/b4d-bootstrap/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="icon" href="https://blockly-for-discord.xyz/favicon.svg" type="image/svg+xml">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script src="https://blockly-for-discord.xyz/assets/dashboard.js?v=3"></script>
+    <script src="assets/dashboard.js?v=3"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://blockly-for-discord.xyz/assets/modal.js"></script>
     <script src="https://blockly-for-discord.xyz/assets/b4d/system/methods.js"></script>
@@ -19,6 +19,7 @@
     
 </head>
 <body>
+  <!-- noscript, dialogs, modals,... hidden items -->
     <noscript>
       <div class="noscript">
         <svg class="noscriptsvg" xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
@@ -31,6 +32,32 @@
       </div>
       </div>
     </noscript>
+
+
+    <dialog class="dialog" id="dialog">
+      <div class="b4d-modal">
+        <div>
+          <div class="b4d-modal-header">
+            <h2>Change Username</h2>
+            <p>Enter a new username and your password</p>
+          </div>
+        <div class="b4d-modal-body">
+          <p class="b4d-modal-text">Username</P>
+          <input class="default-input b4d-modal-input" placeholder="@hitbyathunder" type="text">
+          <p class="b4d-modal-text">Password</p>
+            <input class="default-input b4d-modal-input" type="password">
+            <p class="b4d-modal-text">Range Slider</p>
+            <input type="range" class="form-range" id="customRange1" data-bs-theme="dark">
+        </div>
+      </div>
+        <div class="b4d-modal-footer">
+          <button class="button-base button-transparent">Cancel</button>
+          <button class="button-base button-action">Submit</button>
+        </div>
+      </div>
+    </dialog>
+  <!--  -->
+
     <div class="preloader" id="preloader">
       <div class="preloader-logo"><svg class="preloader-svg" id="e4DSeBsOtCT1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><ellipse rx="240.406676" ry="240.406676" transform="matrix(1.039905 0 0 1.039905 249.999896 250)" fill="#1a45b6" stroke-width="0"/><ellipse rx="196.522027" ry="196.522027" transform="matrix(1.029934 0 0 1.029934 249.999896 250)" fill="#2365ff" stroke-width="0"/><path d="M303.57854,234.42147c-20.98682,0-38-17.01318-38-38v-45.97798c0-20.98682,17.01318-38,38-38h45.97798c20.98682,0,38,17.01318,38,38v45.97798c0,20.98682-17.01318,38-38,38h-45.97798Zm45.97798,26.53701c20.98682,0,38,17.01323,38,38.00011v45.97812c0,20.98688-17.01318,38.00011-38,38.00011h-191.24305c-21.76375,0-39.40676-17.01323-39.40676-38.00011v-194.49348c0-20.98688,17.64301-38.00011,39.40676-38.00011h47.68008c21.76375,0,39.40676,17.01323,39.40676,38.00011v110.51524l104.15621.00001Z" transform="matrix(0 0.819278-.819278 0 452.926839 42.532909)" fill="#ebf1ff" stroke-width="0"/></svg>
       </div>

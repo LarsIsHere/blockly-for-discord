@@ -127,6 +127,15 @@ body {
 .button-default:hover {
     background-color: var(--button-default-bg-hover);
 }
+
+.button-transparent {
+  background-color: transparent;
+  color: gray !important;
+}
+
+.button-transparent:hover {
+  color: rgb(206, 206, 206) !important;
+}
 .left-binder {
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
@@ -783,4 +792,74 @@ h1.shortcuttext {
 
 .noscript-reload:hover {
   background-color: #c0c0c0;
+}
+
+.dialog {
+  width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    /* border-radius: 5px; 
+    background-color: rgb(255 255 255 / 1%);
+    backdrop-filter: blur(2px); */
+    border: none;
+    background: #0000003d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.b4d-modal {
+  background: #0c0c12;
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 350px;
+  border-radius: 15px;
+  outline: #262635 solid 0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.b4d-modal-footer {
+    background: #07070a;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 10px;
+}
+
+.b4d-modal-body {
+  padding: 15px;
+}
+
+.b4d-modal-input {
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.b4d-modal-text {
+  margin-bottom: 5px;
+  color: #999999;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 1px;
+  font-family: 'Montserrat';
+}
+.b4d-modal-header{
+  text-align: center;
+}
+
+.b4d-modal-header h2 {
+  color: rgb(226, 226, 226);
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.b4d-modal-header p {
+  color: rgb(139, 139, 139);
 }
