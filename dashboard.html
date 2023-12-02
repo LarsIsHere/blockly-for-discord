@@ -6,12 +6,12 @@
     <title>B4D</title>
     <!-- link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css ?v=1.2" -->
     <link href="https://blockly-for-discord.xyz/assets/b4d-bootstrap/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="icon" href="https://blockly-for-discord.xyz/favicon.svg" type="image/svg+xml">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script src="assets/dashboard.js?v=3"></script>
+    <script src="https://blockly-for-discord.xyz/assets/dashboard.js?v=3"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://blockly-for-discord.xyz/assets/modal.js"></script>
     <script src="https://blockly-for-discord.xyz/assets/b4d/system/methods.js"></script>
@@ -34,8 +34,8 @@
     </noscript>
 
 
-    <dialog class="dialog" id="dialog">
-      <div class="b4d-modal">
+    <div class="dialog" id="dialog" style="display: none;">
+      <div class="b4d-modal" id="b4d-modal">
         <div>
           <div class="b4d-modal-header">
             <h2>Change Username</h2>
@@ -55,7 +55,7 @@
           <button class="button-base button-action">Submit</button>
         </div>
       </div>
-    </dialog>
+    </div>
   <!--  -->
 
     <div class="preloader" id="preloader">
