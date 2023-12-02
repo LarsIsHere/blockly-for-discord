@@ -102,7 +102,9 @@ const router = {
         `;
         parent.innerHTML = examplehtml;
         
-        CurrentPage = "dashboard";
+        CurrentPage = "projects";
+
+        history.pushState({}, '', '/dashboard/projects');
         break;
 
         case 'dashboard':
@@ -144,6 +146,9 @@ const router = {
         </div>`;
 
         parent.innerHTML = dashboardHTML;
+        CurrentPage = "dashboard";
+
+        history.pushState({}, '', '/dashboard');
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";
