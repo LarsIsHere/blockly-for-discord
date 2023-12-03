@@ -245,16 +245,9 @@ async function hideDialog() {
 }
 
 
-function LoadPreloader (div, time=0, inject=' ') {
+function LoadPreloader (div) {
   const ParentElement = document.getElementById(div);
-
   ParentElement.innerHTML = `<div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div>`;
-  if (!time === 0) {
-    setTimeout(() => {
-      ParentElement.innerHTML = inject;
-    }, time);
-
-  }
 
 }
 
