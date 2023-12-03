@@ -267,6 +267,9 @@ const elements = menu.querySelectorAll('*');
 
 function removeActiveClass() {
   elements.forEach(function(element) {
-    element.classList.remove('active');
+    const grandchildren = element.querySelectorAll('*');
+    grandchildren.forEach(function(grandchild) {
+      grandchild.classList.remove('active');
+    });
   });
 }
