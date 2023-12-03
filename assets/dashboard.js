@@ -106,7 +106,7 @@ const router = {
 
         history.pushState({}, '', '/dashboard/projects');
         removeActiveClass();
-        const button2 = getElementById('dashboard');
+        const button2 = document.getElementById('dashboard');
         button2.classList.add('icoactive');
         break;
 
@@ -156,7 +156,7 @@ const router = {
 
         history.pushState({}, '', '/dashboard');
         removeActiveClass();
-        const button = getElementById('home');
+        const button = document.getElementById('home');
         button.classList.add('icoactive');
         break;
       case 'browse_projects':
