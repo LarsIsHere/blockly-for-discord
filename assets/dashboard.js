@@ -105,6 +105,9 @@ const router = {
         CurrentPage = "projects";
 
         history.pushState({}, '', '/dashboard/projects');
+        removeActiveClass();
+        const button2 = getElementById('dashboard');
+        button2.classList.add('active');
         break;
 
         case 'dashboard':
@@ -152,6 +155,10 @@ const router = {
         CurrentPage = "dashboard";
 
         history.pushState({}, '', '/dashboard');
+        removeActiveClass();
+        const button = getElementById('home');
+        button.classList.add('active');
+
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";
@@ -252,3 +259,14 @@ function LoadPreloader (div) {
 }
 
 
+
+
+
+const menu = document.getElementById('menu');
+const elements = menuFirst.querySelectorAll('*');
+
+function removeActiveClass() {
+  elements.forEach(function(element) {
+    element.classList.remove('active');
+  });
+}

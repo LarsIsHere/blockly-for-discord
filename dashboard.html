@@ -6,7 +6,7 @@
     <title>B4D</title>
     <!-- link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css ?v=1.2" -->
     <link href="https://blockly-for-discord.xyz/assets/b4d-bootstrap/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://blockly-for-discord.xyz/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="icon" href="https://blockly-for-discord.xyz/favicon.svg" type="image/svg+xml">
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
@@ -78,7 +78,7 @@
         </header>
         <div class="main">
             <div class="sidebar">
-                <div class="menu">
+                <div class="menu" id="menu">
                   <div onclick="SwitchPage('dashboard')" class="mhome">
                     <svg class="icon topicon" id="home" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
                   </div>
@@ -182,15 +182,29 @@
               <div class="content-header" id="content-header">
                 <h2>Marketplace</h2>
                 <p>Find extensions to expand your bot's functionality</p>
-                <div class="content-seperator"></div>
+                <div class="market-selector">
+                  <button class="button-base market-btn-selec">Discover</button>
+                  <button class="button-base market-btn-selec">Extensions</button>
+                  <button class="button-base market-btn-selec">Themes</button>
+                </div>
+                <div class="content-seperator" style="margin-top: 0px;"></div>
                 <div class="market-banner">
                  <div class="banner-text">
-                  <h1 class="banner-text">Welcome to the B4D Marketplace</h1>
+                  <h1>Welcome to the B4D Marketplace</h1>
                  </div>
-                 <p class="banner-text">
-                  Improve and Expand your bots functionality by adding some Extensions
-                 </p>
+                 <div class="banner-text">
+                  <p >Improve and Expand your bots functionality by adding some Extensions</p>
+                 </div>
+                 <div>
+                  <svg class="market-icon" id="e4DSeBsOtCT1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><ellipse rx="240.406676" ry="240.406676" transform="matrix(1.039905 0 0 1.039905 249.999896 250)" fill="#1a45b6" stroke-width="0"/><ellipse rx="196.522027" ry="196.522027" transform="matrix(1.029934 0 0 1.029934 249.999896 250)" fill="#2365ff" stroke-width="0"/><path d="M303.57854,234.42147c-20.98682,0-38-17.01318-38-38v-45.97798c0-20.98682,17.01318-38,38-38h45.97798c20.98682,0,38,17.01318,38,38v45.97798c0,20.98682-17.01318,38-38,38h-45.97798Zm45.97798,26.53701c20.98682,0,38,17.01323,38,38.00011v45.97812c0,20.98688-17.01318,38.00011-38,38.00011h-191.24305c-21.76375,0-39.40676-17.01323-39.40676-38.00011v-194.49348c0-20.98688,17.64301-38.00011,39.40676-38.00011h47.68008c21.76375,0,39.40676,17.01323,39.40676,38.00011v110.51524l104.15621.00001Z" transform="matrix(0 0.819278-.819278 0 452.926839 42.532909)" fill="#ebf1ff" stroke-width="0"/></svg>
+                 </div>
                 </div>
+              </div>
+              <div class="content-seperator"></div>
+              <div class="market-nav">
+                <button class="button-base market-button">Recent</button>
+                <button class="button-base market-button">Popular</button>
+                <button class="button-base market-button">Most Used</button>
               </div>
             </div>
         </div>
