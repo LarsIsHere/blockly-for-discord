@@ -225,7 +225,7 @@ body {
     outline: none;
 }
 
-.icon:active {
+.icoactive {
   fill: var(--icon-active);
 }
 .icon:hover {

@@ -107,7 +107,7 @@ const router = {
         history.pushState({}, '', '/dashboard/projects');
         removeActiveClass();
         const button2 = getElementById('dashboard');
-        button2.classList.add('active');
+        button2.classList.add('icoactive');
         break;
 
         case 'dashboard':
@@ -157,8 +157,7 @@ const router = {
         history.pushState({}, '', '/dashboard');
         removeActiveClass();
         const button = getElementById('home');
-        button.classList.add('active');
-
+        button.classList.add('icoactive');
         break;
       case 'browse_projects':
         document.title = "B4D │ Browse Projects";
@@ -262,14 +261,10 @@ function LoadPreloader (div) {
 
 
 
-const menu = document.getElementById('menu');
-const elements = menu.querySelectorAll('*');
+function removeActiveClass () {
+  const elementsWithIcoactive = document.querySelectorAll('.icoactive');
 
-function removeActiveClass() {
-  elements.forEach(function(element) {
-    const grandchildren = element.querySelectorAll('*');
-    grandchildren.forEach(function(grandchild) {
-      grandchild.classList.remove('active');
-    });
-  });
+elementsWithIcoactive.forEach(element => {
+    element.classList.remove('icoactive');
+});
 }
