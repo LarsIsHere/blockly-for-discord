@@ -263,7 +263,7 @@ function LoadPreloader (div) {
 
 
 const menu = document.getElementById('menu');
-const elements = menuFirst.querySelectorAll('*');
+const elements = menu.querySelectorAll('*');
 
 function removeActiveClass() {
   elements.forEach(function(element) {
