@@ -883,4 +883,6 @@ h1.shortcuttext {
     width: 100%;
     overflow: hidden;
     border-radius: 25px;
+    display: flex;
+    background: url(https://blockly-for-discord.xyz/media/sun-tornado.png);
 }
