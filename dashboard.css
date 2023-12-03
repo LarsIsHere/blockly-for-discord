@@ -879,5 +879,8 @@ h1.shortcuttext {
 
 
 .market-banner {
-  
+  height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
 }
