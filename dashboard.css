@@ -12,6 +12,7 @@
     --page-relative-w: 100vw;
     --page-relative-h: 100vh;
     --sidebar-bg: rgb(25 26 39);
+    --sidebar-hover-bg: rgb(19, 19, 29); 
     --header-bg: rgb(32 33 53);
     --actual-header-bg: rgb(25 26 39);
     --header-radius: 10px;
@@ -161,7 +162,6 @@ body {
     flex-direction: column;
 }
 .header {
-    border: 0.5px solid #51536f;
     width: inherit;
     margin: var(--global-margin);
     padding: var(--header-padding);
@@ -187,7 +187,6 @@ body {
 }
 
 .content {
-    border: 0.5px solid #51536f;
     background-color: var(--header-bg);
     border-radius: var(--header-radius); 
     margin: var(--global-margin);
@@ -199,7 +198,6 @@ body {
 }
 
 .sidebar {
-    border: 0.5px solid #51536f;
     margin: var(--global-margin);
     padding: var(--global-padding);
     background: var(--sidebar-bg);
@@ -212,7 +210,7 @@ body {
     transition: 0.5s;
 }
 .sidebar:hover {
-  border: 0.5px solid #71738b;
+  background: var(--sidebar-hover-bg);
 }
 
 .icon {
@@ -949,4 +947,8 @@ h1.shortcuttext {
 
 .market-selector button:hover {
   border-bottom: 2px solid #3AA27D;
+}
+
+.my-dropdown-toggle::after {
+  content: none;
 }
