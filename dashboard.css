@@ -952,3 +952,17 @@ h1.shortcuttext {
 .my-dropdown-toggle::after {
   content: none;
 }
+
+.search-container {
+  contain: layout;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
