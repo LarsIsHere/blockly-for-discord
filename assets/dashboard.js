@@ -276,18 +276,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const inputElement = document.getElementById('global_search');
 
 
-inputElement.addEventListener('click', function(event) {
+  inputElement.addEventListener('click', function(event) {
   
-  const searchcontainer = document.getElementById('searchcontainer');
-  searchcontainer.classList.add('search-active');
-});
-
-});
-
-document.getElementById('searchcontainer').addEventListener('click', function(event) {
-  if (event.target === this) {
-      
     const searchcontainer = document.getElementById('searchcontainer');
-    searchcontainer.classList.remove('search-active');
-  } 
+    searchcontainer.classList.add('search-active');
 });
+
+  document.getElementById('searchcontainer').addEventListener('click', function(event) {
+    if (event.target === this) {
+      
+      const searchcontainer = document.getElementById('searchcontainer');
+      searchcontainer.classList.remove('search-active');
+    } 
+  });
+});
+
