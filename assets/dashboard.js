@@ -271,10 +271,14 @@ elementsWithIcoactive.forEach(element => {
 
 
 
-const inputElement = document.getElementById('global_search');
+
+document.addEventListener('DOMContentLoaded', function() {
+  const inputElement = document.getElementById('global_search');
 
 
 inputElement.addEventListener('click', function(event) {
   
   console.log('Input clicked');
+});
+
 });
