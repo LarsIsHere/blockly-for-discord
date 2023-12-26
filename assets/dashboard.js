@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
 inputElement.addEventListener('click', function(event) {
   
   const searchcontainer = document.getElementById('searchcontainer');
-  searchContainer.classList.add('search-active');
+  searchcontainer.classList.add('search-active');
 });
 
 });
