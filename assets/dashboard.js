@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     const searchcontainer = document.getElementById('searchcontainer');
     searchcontainer.classList.add('search-active');
+    inputElement.blur();
 });
 
   document.getElementById('searchcontainer').addEventListener('click', function(event) {
