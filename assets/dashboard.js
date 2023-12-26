@@ -283,3 +283,11 @@ inputElement.addEventListener('click', function(event) {
 });
 
 });
+
+document.getElementById('searchcontainer').addEventListener('click', function(event) {
+  if (event.target === this) {
+      
+    const searchcontainer = document.getElementById('searchcontainer');
+    searchcontainer.classList.remove('search-active');
+  } 
+});
