@@ -268,3 +268,13 @@ elementsWithIcoactive.forEach(element => {
     element.classList.remove('icoactive');
 });
 }
+
+
+
+const inputElement = document.getElementById('global_search');
+
+
+inputElement.addEventListener('click', function(event) {
+  
+  console.log('Input clicked');
+});
