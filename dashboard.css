@@ -968,5 +968,5 @@ h1.shortcuttext {
 }
 
 .search-active {
-  display: sticky;
+  display: block;
 }
