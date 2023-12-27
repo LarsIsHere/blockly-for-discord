@@ -21,9 +21,11 @@
 </head>
 <body>
   <script>
-        keyboardJS.bind('ctr + s', (e) => {
+        keyboardJS.bind('shift + s', (e) => {
           e.preventRepeat();
         console.log("works");
+        const searchcontainer = document.getElementById('searchcontainer');
+    searchcontainer.classList.add('search-active');
     });
     </script>
   <!-- noscript, dialogs, modals,... hidden items...-->
