@@ -281,6 +281,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchcontainer = document.getElementById('searchcontainer');
     searchcontainer.classList.add('search-active');
     inputElement.blur();
+    searchcontainer.classList.add('search-active');
+    document.getElementById('default-input').focus();
+
 });
 
   document.getElementById('searchcontainer').addEventListener('click', function(event) {
