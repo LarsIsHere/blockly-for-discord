@@ -1001,6 +1001,7 @@ h1.shortcuttext {
   color: #a9a8a8;
   justify-content: space-between;
   padding-right: 20px;
+  border-bottom: 0.5px #1a1b25 solid;
 }
 
 .search-item:hover {
