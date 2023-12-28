@@ -999,6 +999,7 @@ h1.shortcuttext {
     align-items: center;
     padding-left: 10px;
     color: #a9a8a8;
+    justify-content: space-between;
 }
 
 .search-item:hover {
