@@ -991,3 +991,24 @@ h1.shortcuttext {
   border-radius: 8px;
   margin-top: 30px;
 }
+
+.search-item {
+  height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #a9a8a8;
+}
+
+.search-item:hover {
+  background: #12141a;
+}
+.search-item-top:hover {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.search-item-bottom:hover {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
