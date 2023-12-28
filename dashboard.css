@@ -990,6 +990,7 @@ h1.shortcuttext {
   border: 0.5px #333545 solid;
   border-radius: 8px;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .search-item {
