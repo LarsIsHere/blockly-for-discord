@@ -5,10 +5,11 @@ You can visit the site at https://blockly-for-discord.xyz/
 Inspired by https://github.com/scratch-for-discord/Web-Application_Frontend
 
 ### currently:
-- Looking for contributors
-- Adding Events, Themes, Settings page
+- DO NOT FORK
 
-image:
+DEVELOPMENT PAUSED 
+
+image: (OUTDATED) (/old b4d)
 ![image](https://github.com/LarsIsHere/blockly-for-discord/assets/118752107/caf289d2-ab6a-4fe5-b086-4087623cf3c9)
 
 
