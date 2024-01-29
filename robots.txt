@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://blockly-for-discord.xyz/gog/sitemap.xml
