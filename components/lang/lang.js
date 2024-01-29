@@ -22,3 +22,4 @@ const config = {
 function test () {
     console.log(en_US);
 }
+window.lang = test
