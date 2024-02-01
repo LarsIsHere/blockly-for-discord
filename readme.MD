@@ -1,4 +1,4 @@
-
+**!!We've moved!! This repo is no longer being updated but do not fret! You can find us here: https://github.com/Blockly-For-Discord/web**
 # Blockly For Discord
 
 Blockly for Discord is a project we made to build Discord Bots with simple blocks, so you dont have to touch a line of code. All of your blocks then can get translated to either DiscordJS or Discord.py .
